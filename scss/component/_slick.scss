@@ -1,0 +1,115 @@
+.slick-next, .slick-prev{
+    width: 3rem;
+    height: 3rem;
+    color: $white;
+    background-color: $main-header-color;
+    border-radius: 50%;
+    z-index: 1;
+    &:hover, &:focus{
+        background-color: $sub-header-color;
+    } 
+    &::before{
+        content: "\f105";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
+}
+.slick-prev{
+    &::before{
+        content: "\f104";
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 0.8rem;
+    opacity: 1;
+    color: #E8F0FC;
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: $primary;
+}
+
+.slick_shadow .slick-list{
+    &::before,
+    &::after{
+        content: '';
+        width: 3rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background: rgb(247,247,252);
+        background: -moz-linear-gradient(90deg, rgba(247,247,252,1) 10%, rgba(247,247,252,0) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(247,247,252,1) 10%, rgba(247,247,252,0) 100%);
+        background: linear-gradient(90deg, rgba(247,247,252,1) 10%, rgba(247,247,252,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7fc",endColorstr="#f7f7fc",GradientType=1);
+    }
+    &::after{
+        left: auto;
+        right: 0;
+        transform: rotate(180deg);
+    }
+}
+
+.slick-w-custom-nav{
+    .slick-arrow{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.custom_nav_container{
+    @extend %flex-a-center-j-between;
+    .custom_nav{
+        display: flex;
+    }
+    .fake-prev, .fake-next{
+        cursor: pointer;
+        @extend %flex-a-center-j-center;
+        @extend .slick-next;
+    }
+    .fake-prev{
+        margin-right: 1rem;
+        &::before{
+            content: "\f104";
+        }
+    }
+}
+.logo-img_carousel{
+    .logo-img_container{
+        margin: 1rem;
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px #ddd;
+    }
+}
+
+.testimonial_slick{ 
+    .c-card_title-w-img img{
+        max-width: 5rem;
+    }
+    .testimonial-item{
+        margin: 1rem;
+        margin-bottom: 2rem;
+        position: relative;
+        &::before{
+            content: url('../img/icon-quote.svg');
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .slick-slider{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }  
+}
+@media screen and (max-width:1199px) {
+    .blogs_slick_nav{
+        margin-top: -2rem;
+    }
+}

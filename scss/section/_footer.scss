@@ -1,0 +1,121 @@
+footer {
+  padding-block: 2rem;
+}
+.nav-footer {
+  font-size: $smaller-font-size;
+  column-count: 2;
+  .nav-link {
+    color: $sub-header-color;
+    @extend %hover-underline;
+  }
+  .nav-item.active {
+    .nav-link {
+      font-weight: bold;
+    }
+  }
+}
+.copyright {
+  font-size: $smaller-font-size;
+  color: #c3ccdd;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .nav-footer .nav-link {
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer {
+  background: url(../img/footerback.png) no-repeat;
+  background-size: cover;
+  h4 {
+    font-size: 2rem;
+    font-family: "Athiti-Light";
+  }
+  li {
+    margin-bottom: 1rem;
+    a {
+      color: #3e4852;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-family: "Athiti-Bold";
+    }
+  }
+  .phone-wrap {
+    a {
+      color: #3e4852;
+    }
+  }
+  .email-wrap {
+    a {
+      color: #3e4852;
+    }
+  }
+  .icon-wrap {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 6px 16px #93614724;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-right: 1rem;
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.footer-mn .social-container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.footer-mn .social-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.875rem;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  background-color: #3e4852;
+  box-shadow: 0px 0 0 transparent;
+}
+
+footer {
+  .nav {
+    li {
+      margin-right: 1rem;
+      a {
+        font-family: "Athiti";
+        text-transform: capitalize;
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  footer {
+    .nav {
+      display: block;
+      margin: auto;
+    }
+  }
+}

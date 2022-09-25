@@ -1,0 +1,15 @@
+.btn{
+  text-transform: uppercase;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus,
+.btn-outline-secondary:hover, .btn-outline-secondary:focus{
+    color: $white;
+}
+
+.btn-white{
+  @include button-white-variant();
+}
+.btn-outline-white{
+  @include button-outline-white-variant();
+}

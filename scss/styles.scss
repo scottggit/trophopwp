@@ -1,0 +1,31 @@
+@import "component/_variables.scss";
+
+// Bootstrap and Fontawesome Include
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "custom";
+
+@import "component/mixins";
+@import "component/buttons";
+@import "component/typography";
+@import "component/form";
+@import "component/accordion";
+@import "component/animations";
+@import "component/star";
+@import "component/social";
+@import "component/card_car";
+@import "component/find_more_popup";
+@import "component/slick";
+
+@import "section/pagination";
+@import "section/navbar";
+@import "section/sections";
+@import "section/blog";
+@import "section/footer";
+
+@import "ryan/custom";
+
+@import "scott/custom";

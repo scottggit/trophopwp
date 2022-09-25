@@ -1,0 +1,35 @@
+.accordion{
+    .accordion-item, 
+    .accordion-button{
+        border-radius: 0.75rem;
+    }
+    .accordion-item{
+        margin-bottom: 1rem;
+        border: none;
+    }
+    .accordion-button{
+        font-size: 1.125rem;
+        background-color: $main-header-color;
+        color: $white;
+        &:not(.collapsed){
+            color: $main-header-color;
+            background-color: $white;
+        }
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(30, 42, 91, 0.3);
+        }
+        &::after{
+            width: 3rem;
+            height: 3rem;
+            background-color: $primary;
+            background-position: center;
+            border-radius: 0.5rem;
+            box-shadow: 0px -8px 20px rgb(40 91 154 / 9%);
+        }
+    }
+}
+
+.accordion-item:first-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type .accordion-button.collapsed{
+    border-radius: 0.75rem;
+}

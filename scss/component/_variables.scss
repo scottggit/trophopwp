@@ -1,0 +1,109 @@
+$font-family-base: "Athiti";
+$font-family-heading: "Athiti";
+$font-family-bold: "Athiti-Bold";
+$font-family-light: "Athiti-Light";
+$font-family-Extralight: "Athiti-ExtraLight";
+$font-family-long: "Athiti";
+$font-family-daylight: "DaylightDreams";
+$font-size-base: 1rem;
+$line-height-base: 2;
+$line-height-sm: 1.5;
+$line-height-lg: 2.2;
+$fa-font-path: "../fonts/webfonts";
+
+$font-family-base-bold-weight: 700;
+$enable-shadows: true;
+
+$bg-s-light: #f7f7fc;
+
+$white: #fff;
+$black: #000;
+$red: #e20e37;
+$blue: #00b8fa;
+$yellow: #f2ac3c;
+$primary: $red;
+$secondary: $blue;
+
+$body-color: #6e7280;
+$sub-header-color: #5e759b;
+$main-header-color: #3e4352;
+
+$headings-font-family: $font-family-heading;
+$headings-color: $main-header-color;
+$h1-font-size: $font-size-base * 2.5; //40
+$h2-font-size: $font-size-base * 2; //32
+$h3-font-size: $font-size-base * 1.75; //28
+$h4-font-size: $font-size-base * 1.5; //24
+$h5-font-size: $font-size-base * 1.25; //20
+$h6-font-size: $font-size-base; //16
+$small-font-size: 0.875rem; //14
+$smaller-font-size: $font-size-base * 0.75; //12
+$smallest-font-size: $font-size-base * 0.625; //10
+
+$sub-header-font-size: $font-size-base * 1.562; //25
+
+$display-font-sizes: (
+  1: 7.5rem,
+  //120
+  2: 5rem,
+  //80
+  3: 4rem,
+  //64
+  4: 3.5rem,
+  //56
+  5: 2.81rem,
+  //45
+  6: 1.125rem //18,,,,,,,,,,,,,,
+);
+
+$link-decoration: none;
+$dark: $main-header-color;
+
+$navbar-light-color: $main-header-color;
+$navbar-light-hover-color: $main-header-color;
+$navbar-light-active-color: $main-header-color;
+
+$btn-border-radius: 0.625rem; //10
+$btn-font-size: 0.875em; //14
+$btn-font-size-lg: $font-size-base * 1.125; //18
+$btn-font-weight: bold;
+$btn-padding-x: 2rem;
+$btn-padding-y: 0.875em;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 3rem;
+$btn-border-radius-lg: 0.6rem;
+$btn-white-space: nowrap;
+
+$accordion-border-color: transparent;
+$accordion-border-radius: 1rem;
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 2.5rem;
+//$accordion-icon-transform:              rotate(0);
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='#{$white}'> <path d='M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z'/></svg>");
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='#{$white}'><path d='M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z'/></svg>");
+
+$input-font-size: $smaller-font-size;
+$input-border-width: 0;
+$input-border-radius: 0.25rem;
+$input-border-radius-lg: 0.5rem;
+$input-border-color: $white;
+$input-padding-x: 1.25rem;
+$input-padding-y: 0.641rem;
+$input-padding-x-lg: 2rem;
+$input-padding-y-lg: 1rem;
+$input-box-shadow: 0px 6px 10px rgba(40, 91, 154, 0.09);
+$input-placeholder-color: rgba($sub-header-color, 0.3);
+$input-plaintext-color: $sub-header-color;
+
+$form-label-margin-bottom: 0.5rem;
+$form-label-font-size: $small-font-size;
+$form-label-font-style: null;
+$form-label-font-weight: $font-family-base-bold-weight;
+$form-label-color: $sub-header-color;
+
+$form-select-indicator-color: $primary;
+$form-select-box-shadow: 0px 6px 10px rgba(40, 91, 154, 0.09),
+  inset 0 0px 0px transparent;
+
+$pagination-border-width: 0;

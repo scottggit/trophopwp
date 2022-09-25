@@ -1,0 +1,22 @@
+.page-item {
+  --pagination-border-radius: 0.6rem;
+  .page-link {
+    font-family: $headings-font-family;
+    color: $main-header-color;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0 0.8rem;
+    border-radius: var(--pagination-border-radius);
+    box-shadow: 0px 6px 10px #285b9a17;
+    @extend %flex-a-center-j-center;
+  }
+  &:first-child .page-link {
+    border-top-left-radius: var(--pagination-border-radius);
+    border-bottom-left-radius: var(--pagination-border-radius);
+  }
+  &:last-child .page-link {
+    border-top-right-radius: var(--pagination-border-radius);
+    border-bottom-right-radius: var(--pagination-border-radius);
+  }
+}

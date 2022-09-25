@@ -1,0 +1,26 @@
+.bi-social{
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    a{
+        width: 2.2rem;
+        height: 2.2rem;
+        color: $main-header-color;
+        border-radius: 50%;
+        background-color: $white;
+        margin-inline: 0.75rem;
+        box-shadow: 0px 6px 10px rgba(40, 91, 154, 0.09);
+        @extend %flex-a-center-j-center;
+        transition: 
+        color 0.3s ease, 
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+        &:hover, &:focus{
+            outline: none;
+            font-size: 12px;
+            color: $white;
+            background-color: $primary;
+            box-shadow: 0px 6px 10px rgba($primary, 0.3);
+        }
+    }
+}

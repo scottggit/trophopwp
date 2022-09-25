@@ -1,0 +1,51 @@
+.find_more_popup{
+    z-index: 2;
+    &.fixed{
+        position: fixed;
+        bottom: 14rem;
+        right: 0;
+    }
+    &:not(.fixed){
+        position: sticky;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-bottom: -2rem;
+    }
+    .btn-toggle{
+        border-radius: 0;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        &-close{
+            position: absolute;
+            right: 1rem;
+            top: 2rem;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            transition: all 0.3s ease;
+            &:hover, &:focus{
+                color: $primary;
+                background-color: $white;
+            } 
+        }
+    }
+    .c-card{
+        position: absolute;
+        top: 0rem;
+        right: 0;
+        min-width: 20rem;
+        max-width: 20rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .find_more_car{
+        max-width: 90%;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+        margin-inline: auto;
+    }
+}
