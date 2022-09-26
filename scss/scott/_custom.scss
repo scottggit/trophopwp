@@ -166,3 +166,87 @@
     border: 0 !important;
   }
 }
+
+.strore-wrap {
+  border: #dbb3833c 1px solid;
+  padding: 2rem;
+  margin-bottom: 8rem;
+  position: relative;
+  .logo {
+    position: absolute;
+    border: 1px solid #dbb3833c;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5rem;
+    background: #fff;
+    img {
+      width: 100%;
+    }
+  }
+  .desc-wrap {
+    padding-top: 5rem;
+    font-family: "Athiti";
+    h3 {
+      font-family: "Athiti-Bold";
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+    img {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.wp-pagenavi {
+  ul {
+    list-style: none;
+    margin-bottom: 5rem;
+    li {
+      a {
+        padding: 0.5rem;
+        border: #3e4852 1px solid;
+        margin-right: 1rem;
+        line-height: 0.7;
+        color: #3e4852;
+      }
+      span.current {
+        padding: 0.5rem;
+        border: #3e4852 1px solid;
+        margin-right: 1rem;
+        line-height: 0.7;
+        background-color: #3e4852;
+        color: #fff;
+      }
+      .next {
+        padding: 0.5rem;
+        border: #3e4852 1px solid;
+        margin-right: 1rem;
+        line-height: 0.7;
+        background-color: #3e4852;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn-wrap {
+  margin-top: 2rem;
+  & > a {
+    padding: 0.5rem;
+    font-family: "Athiti-Bold";
+    color: #3e4852;
+    text-transform: uppercase;
+  }
+  .directions {
+    border: 1px solid #3e4852;
+    color: #fff;
+    background: #3e4852;
+  }
+}
