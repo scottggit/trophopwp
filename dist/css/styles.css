@@ -21316,6 +21316,31 @@ h1, .h1 {
   top: 50%;
 }
 
+.search-form {
+  position: relative;
+}
+
+.search-form button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1b2033;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+}
+
+.searchwrap {
+  width: 100%;
+}
+
+.form-control {
+  padding: 0.641rem 4.25rem;
+}
+
 .page-item .page-link, .custom_nav_container .fake-prev, .custom_nav_container .fake-next, .c-card_rounded_img, .bi-social a {
   display: flex;
   align-items: center;
