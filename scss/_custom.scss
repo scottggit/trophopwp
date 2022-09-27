@@ -9,3 +9,36 @@
 h1 {
   font-family: "DaylightDreams";
 }
+
+.view-all {
+  text-transform: uppercase;
+  font-family: "Athiti-Bold";
+  border: 1px solid #3e4852;
+  color: #3e4852;
+  text-align: center;
+
+  padding: 0.8rem 1rem;
+}
+
+.add-to-cart {
+  text-transform: uppercase;
+  padding: 0.8rem 3rem 0.8rem 5rem;
+  box-shadow: 0px 6px 16px #5e5f5f15;
+  font-family: "Athiti-Bold";
+  background: #ffff;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: url(../../dist/img/cart-small.svg);
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    background-size: contain;
+    transform: translate(-340%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+}

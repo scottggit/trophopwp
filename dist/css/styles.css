@@ -21284,6 +21284,38 @@ h1, .h1 {
   font-family: "DaylightDreams";
 }
 
+.view-all {
+  text-transform: uppercase;
+  font-family: "Athiti-Bold";
+  border: 1px solid #3e4852;
+  color: #3e4852;
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+.add-to-cart {
+  text-transform: uppercase;
+  padding: 0.8rem 3rem 0.8rem 5rem;
+  box-shadow: 0px 6px 16px rgba(94, 95, 95, 0.0823529412);
+  font-family: "Athiti-Bold";
+  background: white;
+  position: relative;
+}
+.add-to-cart:before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background: url(../../dist/img/cart-small.svg);
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  transform: translate(-340%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
 .page-item .page-link, .custom_nav_container .fake-prev, .custom_nav_container .fake-next, .c-card_rounded_img, .bi-social a {
   display: flex;
   align-items: center;
@@ -21389,6 +21421,10 @@ h1, .h1 {
 @font-face {
   font-family: Athiti-Light;
   src: url(../fonts/Athiti-Light.ttf);
+}
+@font-face {
+  font-family: Athiti-Medium;
+  src: url(../fonts/Athiti-Medium.ttf);
 }
 @font-face {
   font-family: Athiti-ExtraLight;
@@ -26212,6 +26248,71 @@ footer .nav li a {
   border: 1px solid #3e4852;
   color: #fff;
   background: #3e4852;
+}
+
+.img-wrap {
+  width: 10rem;
+  padding: 3rem 0;
+  margin: auto;
+}
+
+.img-back {
+  position: relative;
+}
+
+.blueback:before {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-color: #e8ffff;
+  content: "";
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.greenback:before {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-color: #f0f8f1;
+  content: "";
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.orangeback:before {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-color: #fdf5f4;
+  content: "";
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.shop-top h4, .shop-top .h4 {
+  font-family: "Athiti-Light";
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.shop-top h3, .shop-top .h3 {
+  font-family: "Athiti-Medium";
+  text-transform: uppercase;
+}
+
+.shop-bottom h2, .shop-bottom .h2 {
+  font-family: "DaylightDreams";
+}
+.shop-bottom h5, .shop-bottom .h5 {
+  font-family: "Athiti-Bold";
+}
+.shop-bottom .other-wrap {
+  margin-bottom: 2rem;
+  background: #f9f9fc;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
