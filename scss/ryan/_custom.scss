@@ -1,0 +1,26 @@
+.product-tri img{
+    &.can-1.slideUp{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    &.slideUp:nth-child(2){
+        transform: translate(-50%, -150%);
+        opacity: 0;
+    }
+    &.slideUp:nth-child(3){
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+}
+.product-tri img,
+.sec2Img,
+.sec3Img{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s linear;
+    &.slideUp{        
+        transform: translateY(150%);
+        opacity: 0;
+    }
+}
+

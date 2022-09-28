@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
     <?php wp_head();?>
   </head>
-  <body>
+  <body <?php body_class()?>>
     <span class="bg-grad"></span>
     <nav
       class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4"
     >
       <div class="container-fluid px-lg-3">
-        <a class="navbar-brand logo" href="/"></a>
+        <a class="navbar-brand logo" href="/">
           <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt="Logo" class="img-fluid"
         /></a>
         <button
