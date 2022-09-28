@@ -29,7 +29,7 @@
       class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4"
     >
       <div class="container-fluid px-lg-3">
-        <a class="navbar-brand logo" href="/"></a>
+        <a class="navbar-brand logo" href="<?php echo get_site_url() ?>">
           <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt="Logo" class="img-fluid"
         /></a>
         <button
@@ -45,26 +45,18 @@
           class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5"
           id="bi-navbar"
         >
-          <ul class="nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-link" href="our_process.html">Shop</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="credit_app.html">Where to buy</a>
-            </li>
+        <?php 
+            
+            // Primary navigation menu.
+wp_nav_menu( array(
+    'menu_class'     => 'nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0',
+    'theme_location' => 'main',
+    'link_before'    => '',
+    'walker'         => new trop_menu_walker(),
+) );
 
-           
-            <li class="nav-item">
-              <a class="nav-link" href="blogs.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact_us.html">Contact Us</a>
-            </li>
-          </ul>
+            ?>
+          
           <form action="#" class="search-box">
             <input
               type="search"
