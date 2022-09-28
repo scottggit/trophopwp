@@ -30,7 +30,7 @@
 </div>
 <div class="main-container">
     <section class="first">
-        <div class="section-content py-5 mt-5">
+        <div class="section-content py-5">
             <div class="container">
                 <div class="row align-items-center justify-content-end justify-content-sm-start">
                     <div class="col-6 col-sm-5 order-sm-2">
@@ -63,7 +63,7 @@
         </div>
     </section>
     <section class="second">
-        <div class="section-content py-5 mt-5">
+        <div class="section-content py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-6 pe-sm-5">
@@ -88,7 +88,7 @@
         </div>
     </section>
     <section class="third">
-        <div class="section-content py-5 mt-5">
+        <div class="section-content py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-6 pe-sm-5">
@@ -125,6 +125,7 @@
 
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
+        console.log(jQuery(element).attr('class') + ':::'+rect.bottom +':::'+window.innerHeight);
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -144,6 +145,7 @@
                     $('.product-tri img').removeClass('slideUp');
                     $('.sec2Img').addClass('slideUp');
                     $('.up-section').addClass('opacity-25');
+                    $('.product-nav').removeClass('product-fix');
                 }
                 if (sec == 'second') {
                     $('.product-tri img').addClass('slideUp');
@@ -151,12 +153,14 @@
                     $('.sec3Img').addClass('slideUp');
                     $('.up-section').removeClass('opacity-25');
                     $('.down-section').removeClass('opacity-25');
+                    $('.product-nav').addClass('product-fix');
                 }
 
                 if (sec == 'third') {
                     $('.sec2Img').addClass('slideUp');
                     $('.sec3Img').removeClass('slideUp');
                     $('.down-section').addClass('opacity-25');
+                    $('.product-nav').addClass('product-fix');
                 }
             }
         })

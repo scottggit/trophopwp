@@ -92,7 +92,8 @@
         font-family: $font-family-bold;
     }
 
-    .line-1, .line-2 {
+    .line-1,
+    .line-2 {
         width: 50%;
         height: 3px;
         display: block;
@@ -102,6 +103,7 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
     .line-2 {
         background-color: #AAB583;
     }
@@ -122,28 +124,38 @@
         border: 3px solid #444;
         border-radius: 50%;
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 1rem;
         cursor: pointer;
         box-shadow: 0px 0px 16px 0px transparent;
-        &:hover{
-            box-shadow: 0px 0px 10px 0px rgba(68,68,68,.2);
+
+        img {
+            width: 80%;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(68, 68, 68, .2);
         }
     }
-    .opacity-25{
+
+    .opacity-25 {
         pointer-events: none;
     }
-    .down-section{
+
+    .down-section {
         width: 4rem;
         height: 4rem;
     }
 }
 
-.product-nav{
+.product-nav {
     position: fixed;
     left: 2rem;
     bottom: 2rem;
     z-index: 3;
-    ul{
+
+    ul {
         list-style: none;
         display: flex;
         align-items: center;
@@ -151,9 +163,52 @@
         margin-bottom: 0;
         margin-top: 1rem;
     }
-    img{
+
+    img {
         max-height: 6rem;
         margin-right: 1rem;
+
+        &:hover {}
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+    .display-1,
+    .display-2 {
+        font-size: calc(1rem + 6vw);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-nav {
+        top: auto;
+        left: 1rem;
+        transition: all 0.3s ease;
+
+        img {
+            max-height: 4rem;
+        }
+    }
+
+    .product-nav:not(.product-fix) {
+        top: 7rem;
+        bottom: auto;
+    }
+
+    .sec2Img,
+    .sec3Img {
+        max-height: 40vh;
+        float: right;
+    }
+
+    .main-container {
+        min-height: 99vh;
+        max-height: 99vh;
+        &>section {
+            min-height: 97vh;
+            max-height: 97vh;
+        }
     }
 }
 
@@ -173,13 +228,15 @@
             height: 30vh;
         }
     }
+
     .arrow-nav {
         span {
             width: 4rem;
             height: 4rem;
             border: 4px solid #444;
         }
-        .down-section{
+
+        .down-section {
             width: 5rem;
             height: 5rem;
         }
