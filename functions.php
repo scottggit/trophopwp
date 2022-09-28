@@ -46,7 +46,7 @@ function clm_main_nav()
         'menu' => 'Main Navigation', // nav name
         'menu_id' => '', // custom id
         'menu_class' => 'nav', // custom class
-        'items_wrap' => '<ul class="nav">%3$s</ul>',
+        'items_wrap' => '<ul class="nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0">%3$s</ul>',
         'theme_location' => 'main', // where it's located in the theme
         'before' => '', // before the menu
         'after' => '', // after the menu
@@ -173,10 +173,11 @@ if (!function_exists('twentysixteen_child_cf7_button_handler')) {
     }
 
     
+
 /**
  * main menu custom nav walker
  */
-class revealize_menu_walker extends Walker_Nav_Menu {
+class trop_menu_walker extends Walker_Nav_Menu {
 
   
 	function start_lvl(&$output, $depth = 0, $args = array()) {
@@ -200,6 +201,9 @@ class revealize_menu_walker extends Walker_Nav_Menu {
 		$class_names = ' class="nav-item dropdown-submenu'. '"';
 	  }elseif(in_array('menu-item-has-children', $classes )) {
 		$class_names = ' class="nav-item dropdown'. '"';
+	  }
+      elseif((in_array("current_page_item",$classes))?'active ':"") {
+		$class_names = ' class="nav-item active'. '"';
 	  }
 	  else {
 		$class_names = ' class="nav-item' . '"';
@@ -237,6 +241,8 @@ class revealize_menu_walker extends Walker_Nav_Menu {
 
 
   }
+
+
 
 
   

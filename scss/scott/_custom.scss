@@ -252,7 +252,6 @@
 }
 
 .img-wrap {
-  width: 10rem;
   padding: 3rem 0;
   margin: auto;
 }
@@ -300,6 +299,9 @@
 }
 
 .shop-top {
+  .img-wrap {
+    width: 10rem;
+  }
   h4 {
     font-family: "Athiti-Light";
     text-transform: uppercase;

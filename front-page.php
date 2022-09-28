@@ -11,7 +11,7 @@
           <h4>Authenticity in every sip</h4>
           <h1 class="display-1">TROP HOP</h1>
           <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal </p>
-          <a href="" class="btn">Shop Merchandise</a>
+          <a href="" class="btn shop">Shop Merchandise</a>
         </div>   
         </div>
         </div>
@@ -43,7 +43,7 @@
         <li> labore Dolore magna aliquyam erat, sed diam 
       </li>
     </ul>
-    <a href="" class="btn add-to-cart">Add to cart</a>
+    <a href="" class="btn add-to-cart blue">Add to cart</a>
   </div>
 </div>
         </div>
@@ -64,7 +64,7 @@
         <li> labore Dolore magna aliquyam erat, sed diam 
       </li>
     </ul>
-    <a href="" class="btn add-to-cart">Add to cart</a>
+    <a href="" class="btn add-to-cart green">Add to cart</a>
   </div>
   <div class="col-md-6">  
     <img src="<?php bloginfo('template_directory')?>/dist/img/light-lager.png" alt=""  class="w-100">
