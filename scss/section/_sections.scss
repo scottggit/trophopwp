@@ -52,6 +52,7 @@
     position: relative;
     isolation: isolate;
     margin-bottom: -4rem;
+
     img {
         width: auto;
     }
@@ -84,12 +85,14 @@
     display: flex;
     align-content: center;
     justify-content: end;
-    p{
+
+    p {
         font-size: 22px;
         margin-bottom: 0;
         font-family: $font-family-bold;
     }
-    .line-1 {
+
+    .line-1, .line-2 {
         width: 50%;
         height: 3px;
         display: block;
@@ -99,10 +102,65 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    .line-2 {
+        background-color: #AAB583;
+    }
 }
+
+.arrow-nav {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid #444;
+        border-radius: 50%;
+        display: flex;
+        margin-top: 1rem;
+        cursor: pointer;
+        box-shadow: 0px 0px 16px 0px transparent;
+        &:hover{
+            box-shadow: 0px 0px 10px 0px rgba(68,68,68,.2);
+        }
+    }
+    .opacity-25{
+        pointer-events: none;
+    }
+    .down-section{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.product-nav{
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 3;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    img{
+        max-height: 6rem;
+        margin-right: 1rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .product-tri {
         margin-bottom: 0;
+
         img:first-child {
             height: 38vh;
         }
@@ -115,7 +173,19 @@
             height: 30vh;
         }
     }
+    .arrow-nav {
+        span {
+            width: 4rem;
+            height: 4rem;
+            border: 4px solid #444;
+        }
+        .down-section{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
 }
+
 @media screen and (min-width: 992px) {
     .product-tri {
         img:first-child {

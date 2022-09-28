@@ -1,18 +1,46 @@
-<?php /* Template Name: Beers Single */ ?>
 <?php get_header(); ?>
+<style>
+    html {
+        margin: 0 !important;
+    }
+
+    #wpadminbar {
+        display: none;
+    }
+
+    #shopwp-root {
+        display: none;
+    }
+</style>
+<div class="arrow-nav">
+    <span class="up-section opacity-25" onclick="goCarousel('previous')">
+        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
+    </span>
+    <span class="down-section" onclick="goCarousel('next')">
+        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-down.svg" alt="" class="arrow-down">
+    </span>
+</div>
+<div class="product-nav">
+    <small>OUR BEERS</small>
+    <ul>
+        <li><a href="<?php echo get_site_url() ?>/tropical-fruited/" class="opacity-50"><img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="Tropical Fruited"></a></li>
+        <li><a href="<?php echo get_site_url() ?>/luxury-lightlager/"><img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="Luxury Lightlager"></a></li>
+        <li><a href="<?php echo get_site_url() ?>/beach-wheat-ale/"><img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="Beach Wheat Ale"></a></li>
+    </ul>
+</div>
 <div class="main-container">
     <section class="first">
         <div class="section-content py-5 mt-5">
             <div class="container">
                 <div class="row align-items-center justify-content-end justify-content-sm-start">
-                    <div class="col-6 col-sm-6 order-sm-2">
+                    <div class="col-6 col-sm-5 order-sm-2">
                         <div class="product-tri">
-                            <img src="<?php bloginfo('template_directory') ?>/dist/img/1.png" alt="" class="can can-1">
-                            <img src="<?php bloginfo('template_directory') ?>/dist/img/1.png" alt="" class="can can-2">
-                            <img src="<?php bloginfo('template_directory') ?>/dist/img/1.png" alt="" class="can can-3">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can can-1">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can can-2">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can can-3">
                         </div>
                     </div>
-                    <div class="col-sm-6 pe-sm-5">
+                    <div class="col-sm-7 pe-sm-5">
                         <small>Authenticity in every sip</small>
                         <h1 class="display-1 mb-3">
                             TROPICAL <br />
@@ -115,22 +143,68 @@
 
             if (isInViewport(ele[0])) {
                 let sec = jQuery(ele).attr('class');
-                
+
                 if (sec == 'first') {
                     $('.product-tri img').removeClass('slideUp');
                     $('.sec2Img').addClass('slideUp');
+                    $('.up-section').addClass('opacity-25');
                 }
                 if (sec == 'second') {
                     $('.product-tri img').addClass('slideUp');
                     $('.sec2Img').removeClass('slideUp');
                     $('.sec3Img').addClass('slideUp');
+                    $('.up-section').removeClass('opacity-25');
+                    $('.down-section').removeClass('opacity-25');
                 }
 
                 if (sec == 'third') {
                     $('.sec2Img').addClass('slideUp');
                     $('.sec3Img').removeClass('slideUp');
+                    $('.down-section').addClass('opacity-25');
                 }
             }
         })
     });
+
+    function getCarouselPositions() {
+        carouselPositions = [];
+        document.querySelectorAll('.main-container section').forEach(function(div) {
+            carouselPositions.push([div.offsetTop, div.offsetTop + div.offsetHeight]); // add to array the positions information
+        })
+        halfContainer = document.querySelector('.main-container').offsetHeight / 2;
+    }
+
+    getCarouselPositions(); // call it once
+
+    function goCarousel(direction) {
+
+        var currentScrollTop = document.querySelector('.main-container').scrollTop;
+        var currentScrollBottom = currentScrollTop + document.querySelector('.main-container').offsetHeight;
+
+        if (currentScrollTop === 0 && direction === 'next') {
+            currentItem = 1;
+        } else if (currentScrollBottom === document.querySelector('.main-container').scrollHeight && direction === 'previous') {
+            console.log('here')
+            currentItem = carouselPositions.length - 2;
+        } else {
+            var currentMiddlePosition = currentScrollTop + halfContainer;
+            for (var i = 0; i < carouselPositions.length; i++) {
+                if (currentMiddlePosition > carouselPositions[i][0] && currentMiddlePosition < carouselPositions[i][1]) {
+                    currentItem = i;
+                    if (direction === 'next') {
+                        currentItem++;
+                    } else if (direction === 'previous') {
+                        currentItem--
+                    }
+                }
+            }
+        }
+
+        document.querySelector('.main-container').scrollTo({
+            top: carouselPositions[currentItem][0],
+            behavior: 'smooth'
+        });
+
+    }
+    window.addEventListener('resize', getCarouselPositions);
 </script>
