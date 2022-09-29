@@ -25778,9 +25778,13 @@ h1, .h1 {
 
 .search-box {
   max-width: 22.5rem;
-  margin: auto;
   position: relative;
   transition: all 0.3s;
+}
+@media screen and (min-width: 1400px) {
+  .search-box {
+    margin: auto;
+  }
 }
 .search-box input,
 .search-box button {

@@ -18,7 +18,7 @@
       <section class="home-banner mb-5 pb-5">
       <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-5 col-md-6 offset-lg-2 mb-5 mb-lg-0">
+        <div class="col-lg-5 col-md-6 offset-lg-2 mb-5 mb-lg-0 order-lg-1 order-2">
 <div class="d-flex align-items-center h-100">
 <div class="banner-left-wrap">
           <h4>Authenticity in every sip</h4>
@@ -28,7 +28,7 @@
         </div>   
         </div>
         </div>
-        <div class="col-md-6 col-lg-5 p-md-0 p-lg-0 position-relative">
+        <div class="col-md-6 col-lg-5 p-md-0 p-lg-0 position-relative  order-lg-2 order-1 pb-lg-0 pb-5 mb-lg-0 mb-5">
           <div class="img-wrap">
           <img src="<?php bloginfo('template_directory')?>/dist/img/home-banner.png" alt="" class="w-100"> 
         </div>
@@ -47,7 +47,7 @@
   </div>
   <div class="col-md-5">  
     <h3>Tropical</h3>
-    <h1 class="display-1">Fruited</h1>
+    <h1 class="display-2">Fruited</h1>
     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogona</p>
     <ul class="theme-list">
       <li>
@@ -66,9 +66,9 @@
       <section class="light-lager mt-5 pt-5">
         <div class="container">
 <div class="row">
-  <div class="col-md-6">  
+  <div class="col-md-6 order-lg-1 order-2">  
     <h3>Luxury</h3>
-    <h1 class="display-1">LIGHT LAGER</h1>
+    <h1 class="display-2">LIGHT LAGER</h1>
     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogona</p>
     <ul class="theme-list">
       <li>
@@ -79,7 +79,7 @@
     </ul>
     <a href="" class="btn add-to-cart green">Add to cart</a>
   </div>
-  <div class="col-md-6">  
+  <div class="col-md-6 order-lg-2 order-1 mb-lg-0 mb-5">  
     <img src="<?php bloginfo('template_directory')?>/dist/img/light-lager.png" alt=""  class="w-100">
   </div>
 
@@ -97,7 +97,7 @@
   </div>
   <div class="col-md-5">  
     <h3>Beach</h3>
-    <h1 class="display-1">Wheat Ale</h1>
+    <h1 class="display-2">Wheat Ale</h1>
     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogona</p>
     <ul class="theme-list">
       <li>
@@ -124,7 +124,7 @@
 <div class="col-md-12 text-center">
 
   <h3>Hat</h3>
-  <h2 class="display-1">Collection</h2>
+  <h2 class="display-2">Collection</h2>
 </div>
 
 </div>

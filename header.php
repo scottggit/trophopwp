@@ -42,7 +42,7 @@
           aria-label="Toggle navigation"
         ></button>
         <div
-          class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5"
+          class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5 pt-lg-0 pt-3"
           id="bi-navbar"
         >
         <?php 
