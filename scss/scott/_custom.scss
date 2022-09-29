@@ -36,6 +36,9 @@
   bottom: 0;
 
   transform: translate(-60%, 10%);
+  @media screen and (max-width: 1440px) {
+    width: 12rem;
+  }
   img {
     width: 100%;
   }
@@ -252,7 +255,6 @@
 }
 
 .img-wrap {
-  padding: 3rem 0;
   margin: auto;
 }
 
@@ -324,5 +326,11 @@
     margin-bottom: 2rem;
     background: #f9f9fc;
     padding: 2rem;
+  }
+}
+
+.img-back {
+  .img-wrap {
+    padding: 3rem 0;
   }
 }

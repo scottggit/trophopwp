@@ -1,11 +1,24 @@
 <?php get_header(); 
 
 ?>
+<style>
+    html {
+        margin: 0 !important;
+    }
+
+    #wpadminbar {
+        display: none;
+    }
+
+    #shopwp-root {
+        display: none;
+    }
+</style>
      <div class="content">
       <section class="home-banner mb-5 pb-5">
       <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5 offset-lg-2">
+        <div class="col-lg-5 col-md-6 offset-lg-2 mb-5 mb-lg-0">
 <div class="d-flex align-items-center h-100">
 <div class="banner-left-wrap">
           <h4>Authenticity in every sip</h4>
@@ -15,7 +28,7 @@
         </div>   
         </div>
         </div>
-        <div class="col-md-5 p-lg-0 position-relative">
+        <div class="col-md-6 col-lg-5 p-md-0 p-lg-0 position-relative">
           <div class="img-wrap">
           <img src="<?php bloginfo('template_directory')?>/dist/img/home-banner.png" alt="" class="w-100"> 
         </div>

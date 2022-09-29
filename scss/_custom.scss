@@ -110,3 +110,13 @@ h1 {
     top: 50%;
   }
 }
+
+.main-container.content > section::before {
+  display: none;
+}
+
+.content {
+  @media screen and (max-width: 768px) {
+    padding-top: 7rem;
+  }
+}

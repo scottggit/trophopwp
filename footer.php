@@ -1,6 +1,6 @@
 <footer>
      
-     <div class="footer-lg py-5 mt-5">
+     <div class="footer-lg py-5 mt-lg-5">
        <div class="container">
          <div class="row">
            <div
@@ -8,7 +8,7 @@
            >
              <div class="pe-xl-5">
 <div class="row ">
-   <div class="col-md-4">
+   <div class="col-md-4 text-center">
                <img
                  src="<?php bloginfo('template_directory')?>/dist/img/footer-logo.png"
                  alt="Logo"
@@ -24,9 +24,9 @@
            </div>
              </div>
            </div>
-           <div class="col-xl-5 col-lg-7 ">
+           <div class="col-xl-5 col-lg-5 ">
              <div class="row">
-               <div class="col-xl-4 col-lg-4 col-7 mb-5 mb-lg-0">
+               <div class="col-xl-4 col-md-6 col-lg-4 col-12 mb-5 mb-lg-0">
                  <h4 class="font-bold mb-4">Navigation</h4>
                  <ul class="list-unstyled p-0">
                    <li><a href="#">Home</a></li>
@@ -36,7 +36,7 @@
                  </ul>
                </div>
           
-               <div class="col-xl-7 col-lg-7">
+               <div class="col-xl-7 col-md-6 col-12 col-lg-7">
                  <div class="row">
                    <div class="col-lg-12 col-sm-6">
                      <h4 class="font-bold mb-4">Contact Us</h4>
@@ -77,7 +77,7 @@
      </div>
      <div class="footer-mn">
        <div class="container">
-           <div class="footer-cprt d-lg-flex justify-content-between text-center">
+           <div class="footer-cprt d-lg-flex justify-content-between ">
                <span>© 2022, Trophop Beers</span>
                <ul class="social-container">
                    <li><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
