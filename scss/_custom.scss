@@ -120,3 +120,14 @@ h1 {
     padding-top: 7rem;
   }
 }
+
+.page-banner {
+  .searchwrap {
+    @media screen and (min-width: 1440px) {
+      margin-left: 4rem;
+      z-index: 99999;
+      position: relative;
+      background: #fff;
+    }
+  }
+}
