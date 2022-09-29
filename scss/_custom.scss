@@ -131,3 +131,26 @@ h1 {
     }
   }
 }
+
+.other-wrap {
+  a.add-to-cart.btn {
+    margin-top: 2rem;
+  }
+  h5 {
+    margin-bottom: 2rem;
+  }
+}
+
+.hat-img_carousel .slick-arrow {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.navbar-collapse {
+  .search-box {
+    @media screen and (max-width: 768px) {
+      padding: 0 0.5rem;
+    }
+  }
+}
