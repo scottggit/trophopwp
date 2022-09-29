@@ -84,12 +84,25 @@ wp_nav_menu( array(
           <ul class="nav woocommerce-nav">
             <li>
               <a href="">
-                <img src="<?php bloginfo('template_directory')?>/dist/img/cart.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.37" height="14.762" viewBox="0 0 15.37 14.762">
+  <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(-0.5 -0.5)">
+    <path id="Path_7" data-name="Path 7" d="M13.215,30.608A.608.608,0,1,1,12.608,30,.608.608,0,0,1,13.215,30.608Z" transform="translate(-6.246 -16.953)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_8" data-name="Path 8" d="M29.715,30.608A.608.608,0,1,1,29.108,30,.608.608,0,0,1,29.715,30.608Z" transform="translate(-16.061 -16.953)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_9" data-name="Path 9" d="M1.5,1.5H3.931L5.56,9.637a1.215,1.215,0,0,0,1.215.978h5.907A1.215,1.215,0,0,0,13.9,9.637l.972-5.1H4.539" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
+
               </a>
             </li>
             <li>
               <a href="">
-                <img src="<?php bloginfo('template_directory')?>/dist/img/user.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.416" height="14.843" viewBox="0 0 13.416 14.843">
+  <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(-5 -3.5)">
+    <path id="Path_12" data-name="Path 12" d="M17.416,26.781V25.354A2.854,2.854,0,0,0,14.562,22.5H8.854A2.854,2.854,0,0,0,6,25.354v1.427" transform="translate(0 -9.438)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_13" data-name="Path 13" d="M17.708,7.354A2.854,2.854,0,1,1,14.854,4.5a2.854,2.854,0,0,1,2.854,2.854Z" transform="translate(-3.146 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
+
               </a>
             </li>
           </ul>

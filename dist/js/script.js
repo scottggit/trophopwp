@@ -100,6 +100,18 @@ $(".custom_nav").on("click", ".fake-next", function (event) {
 /* Logo Carousel End */
 
 $(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 100) {
+      //clearHeader, not clearheader - caps H
+      $("body").addClass("fixednav");
+    } else {
+      $("body").removeClass("fixednav");
+    }
+  }); //missing );
+
   /* Element Animate */
   $(".animate__animated").scrolla({
     once: true,

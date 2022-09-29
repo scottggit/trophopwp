@@ -26031,6 +26031,19 @@ h1, .h1 {
   }
 }
 
+.fixednav > nav {
+  background: #fff;
+}
+.fixednav .header-social li a {
+  color: #3e4352;
+}
+.fixednav svg path {
+  stroke: #3e4352;
+}
+.fixednav .woocommerce-nav li {
+  border: 2px solid #3e4352;
+}
+
 .main-container {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -26434,7 +26447,7 @@ footer .nav li a {
   bottom: 0;
   transform: translate(-60%, 10%);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
   .big-can-img {
     width: 12rem;
   }
