@@ -335,7 +335,7 @@
 
 #menu-main-menu {
   .nav-link {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1440px) {
       color: #fff;
     }
   }
@@ -343,7 +343,7 @@
 
 .header-social,
 .woocommerce-nav {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     padding-left: 1rem;
   }
 }
@@ -355,17 +355,19 @@
 }
 
 .fixednav {
-  & > nav {
-    background: #fff;
-  }
+  @media screen and (max-width: 1440px) {
+    & > nav {
+      background: #fff;
+    }
 
-  .header-social li a {
-    color: #3e4352;
-  }
-  svg path {
-    stroke: #3e4352;
-  }
-  .woocommerce-nav li {
-    border: 2px solid #3e4352;
+    .header-social li a {
+      color: #3e4352;
+    }
+    svg path {
+      stroke: #3e4352;
+    }
+    .woocommerce-nav li {
+      border: 2px solid #3e4352;
+    }
   }
 }
