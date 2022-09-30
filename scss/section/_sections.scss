@@ -1,15 +1,6 @@
-.main-container {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    min-height: 100vh;
-    max-height: 100vh;
-    overflow-y: scroll;
-}
-
 .main-container>section {
     min-height: 100vh;
     max-height: 100vh;
-    scroll-snap-align: end;
     position: relative;
     display: flex;
     align-items: center;

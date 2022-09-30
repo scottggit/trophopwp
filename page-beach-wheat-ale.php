@@ -11,12 +11,16 @@
     #shopwp-root {
         display: none;
     }
+
+    .fixednav>nav {
+        background: transparent;
+    }
 </style>
 <div class="arrow-nav">
-    <span class="up-section opacity-25" onclick="goCarousel('previous')">
+    <span class="up-section opacity-25">
         <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
     </span>
-    <span class="down-section" onclick="goCarousel('next')">
+    <span class="down-section">
         <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-down.svg" alt="" class="arrow-down">
     </span>
 </div>
@@ -29,7 +33,7 @@
     </ul>
 </div>
 <div class="main-container">
-    <section class="first">
+    <section class="first active">
         <div class="section-content py-5">
             <div class="container">
                 <div class="row align-items-center justify-content-end justify-content-sm-start">
@@ -81,13 +85,13 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="<?php bloginfo('template_directory') ?>/dist/img/Group 202@2x.png" alt="" class="img-fluid imgSlideUp sec2Img slideUp">
+                        <img src="<?php bloginfo('template_directory') ?>/dist/img/Group 202@2x.png" alt="" class="img-fluid imgSlideUp secImg">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="third">
+    <section class="last">
         <div class="section-content py-5">
             <div class="container">
                 <div class="row align-items-center">
@@ -106,106 +110,12 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="<?php bloginfo('template_directory') ?>/dist/img/Group 203@2x.png" alt="" class="img-fluid imgSlideUp sec3Img slideUp">
+                        <img src="<?php bloginfo('template_directory') ?>/dist/img/Group 203@2x.png" alt="" class="img-fluid imgSlideUp secImg">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<?php include get_template_directory() . '/inc/beer-animate.php';?>
 <?php get_footer('beer'); ?>
-<script>
-    $(window).bind('load scroll', function() {
-        if ($(window).scrollTop() > 10) {
-            $('.product-tri .can').addClass('slideUp');
-        } else {
-            $('.product-tri .can').removeClass('slideUp');
-        }
-    });
-
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        console.log(jQuery(element).attr('class') + ':::'+rect.bottom +':::'+window.innerHeight);
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    document.querySelector('.main-container').addEventListener('scroll', (e) => {
-        jQuery('.main-container section').map(function(e) {
-            let ele = jQuery(`.main-container section:eq(${e})`);
-
-            if (isInViewport(ele[0])) {
-                let sec = jQuery(ele).attr('class');
-
-                if (sec == 'first') {
-                    $('.product-tri img').removeClass('slideUp');
-                    $('.sec2Img').addClass('slideUp');
-                    $('.up-section').addClass('opacity-25');
-                    $('.product-nav').removeClass('product-fix');
-                }
-                if (sec == 'second') {
-                    $('.product-tri img').addClass('slideUp');
-                    $('.sec2Img').removeClass('slideUp');
-                    $('.sec3Img').addClass('slideUp');
-                    $('.up-section').removeClass('opacity-25');
-                    $('.down-section').removeClass('opacity-25');
-                    $('.product-nav').addClass('product-fix');
-                }
-
-                if (sec == 'third') {
-                    $('.sec2Img').addClass('slideUp');
-                    $('.sec3Img').removeClass('slideUp');
-                    $('.down-section').addClass('opacity-25');
-                    $('.product-nav').addClass('product-fix');
-                }
-            }
-        })
-    });
-
-
-    function getCarouselPositions() {
-        carouselPositions = [];
-        document.querySelectorAll('.main-container section').forEach(function(div) {
-            carouselPositions.push([div.offsetTop, div.offsetTop + div.offsetHeight]); // add to array the positions information
-        })
-        halfContainer = document.querySelector('.main-container').offsetHeight / 2;
-    }
-
-    getCarouselPositions(); // call it once
-
-    function goCarousel(direction) {
-
-        var currentScrollTop = document.querySelector('.main-container').scrollTop;
-        var currentScrollBottom = currentScrollTop + document.querySelector('.main-container').offsetHeight;
-
-        if (currentScrollTop === 0 && direction === 'next') {
-            currentItem = 1;
-        } else if (currentScrollBottom === document.querySelector('.main-container').scrollHeight && direction === 'previous') {
-            console.log('here')
-            currentItem = carouselPositions.length - 2;
-        } else {
-            var currentMiddlePosition = currentScrollTop + halfContainer;
-            for (var i = 0; i < carouselPositions.length; i++) {
-                if (currentMiddlePosition > carouselPositions[i][0] && currentMiddlePosition < carouselPositions[i][1]) {
-                    currentItem = i;
-                    if (direction === 'next') {
-                        currentItem++;
-                    } else if (direction === 'previous') {
-                        currentItem--
-                    }
-                }
-            }
-        }
-
-        document.querySelector('.main-container').scrollTo({
-            top: carouselPositions[currentItem][0],
-            behavior: 'smooth'
-        });
-
-    }
-    window.addEventListener('resize', getCarouselPositions);
-</script>
