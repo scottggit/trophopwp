@@ -27,9 +27,9 @@
 <div class="product-nav">
     <small>OUR BEERS</small>
     <ul>
-        <li><a href="<?php echo get_site_url() ?>/tropical-fruited/"><img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="Tropical Fruited"></a></li>
-        <li><a href="<?php echo get_site_url() ?>/luxury-lightlager/" class="opacity-50"><img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="Luxury Lightlager"></a></li>
-        <li><a href="<?php echo get_site_url() ?>/beach-wheat-ale/"><img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="Beach Wheat Ale"></a></li>
+        <li><a href="<?php echo get_site_url() ?>/shop/tropical-fruited/"><img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="Tropical Fruited"></a></li>
+        <li><a href="<?php echo get_site_url() ?>/shop/luxury-lightlager/" class="opacity-50"><img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="Luxury Lightlager"></a></li>
+        <li><a href="<?php echo get_site_url() ?>/shop/beach-wheat-ale/"><img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="Beach Wheat Ale"></a></li>
     </ul>
 </div>
 <div class="main-container">
