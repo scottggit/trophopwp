@@ -62,7 +62,7 @@
                                 <p class="font-smaller">
                                     Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal
                                 </p>
-                                <a href="#" class="btn btn-dark"> <img src="<?php bloginfo('template_directory') ?>/dist/img/cart.svg" alt="" class="btn-cart me-2"> SHOP NOW</a>
+                                <a href="<?php echo get_site_url(); ?>/shop/" class="btn btn-dark"> <img src="<?php bloginfo('template_directory') ?>/dist/img/cart.svg" alt="" class="btn-cart me-2"> SHOP NOW</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                                 <p class="font-smaller">
                                     Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal products after intermandated outsourcing.
                                 </p>
-                                <a href="#" class="btn btn-dark">OUR DISTRIBUTION</a>
+                                <a href="<?php echo get_site_url(); ?>/representatives/" class="btn btn-dark">OUR DISTRIBUTION</a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                                 <p class="font-smaller">
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                                 </p>
-                                <a href="#" class="btn btn-dark">WHERE TO BUY</a>
+                                <a href="<?php echo get_site_url(); ?>/where-to-buy/" class="btn btn-dark">WHERE TO BUY</a>
                             </div>
                         </div>
                     </div>
