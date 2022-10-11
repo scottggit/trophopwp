@@ -1,29 +1,4 @@
 <?php get_header(); ?>
-<style>
-    html {
-        margin: 0 !important;
-    }
-
-    #wpadminbar {
-        display: none;
-    }
-
-    #shopwp-root {
-        display: none;
-    }
-
-    .fixednav>nav {
-        background: transparent;
-    }
-</style>
-<div class="arrow-nav">
-    <span class="up-section opacity-25">
-        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
-    </span>
-    <span class="down-section">
-        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-down.svg" alt="" class="arrow-down">
-    </span>
-</div>
 <div class="product-nav">
     <small>OUR BEERS</small>
     <ul>
@@ -62,7 +37,6 @@
                                 <p class="font-smaller">
                                     Compellingly optimize backend leadership is-a-vis collaborative technology. Compellingly implement orthogonal
                                 </p>
-                                <a href="<?php echo get_site_url(); ?>/shop/" class="btn btn-dark"> <img src="<?php bloginfo('template_directory') ?>/dist/img/cart.svg" alt="" class="btn-cart me-2"> SHOP NOW</a>
                             </div>
                         </div>
                     </div>

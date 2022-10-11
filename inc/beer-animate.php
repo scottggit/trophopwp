@@ -1,3 +1,44 @@
+<style>
+    html {
+        margin: 0 !important;
+    }
+
+    #wpadminbar {
+        display: none;
+    }
+
+    #shopwp-root {
+        display: none;
+    }
+
+    .fixednav>nav {
+        background: transparent;
+    }
+
+    body .header-social li a {
+        color: #3e4352;
+    }
+
+    body svg path {
+        stroke: #3e4352;
+    }
+
+    body .woocommerce-nav li {
+        border: 2px solid #3e4352;
+    }
+
+    .can {
+        opacity: 0;
+    }
+</style>
+<div class="arrow-nav">
+    <span class="up-section opacity-25">
+        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
+    </span>
+    <span class="down-section">
+        <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-down.svg" alt="" class="arrow-down">
+    </span>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 <script>
@@ -72,33 +113,43 @@
         // you can also define things like start, end, etc.
     });
 
-    ScrollTrigger.batch(".can", {
-        interval: 0.1, // time window (in seconds) for batching to occur. 
-        //batchMax: 3,   // maximum batch size (targets)
-        onLeave: batch => gsap.to(batch, {
-            opacity: 0,
-            y: -400,
-            stagger: 0.15,
-            overwrite: true
-        }),
-        onEnterBack: batch => gsap.to(batch, {
-            opacity: 1,
-            y: 0,
-            stagger: 0.15,
-            overwrite: true
-        }),
-        onLeaveBack: batch => gsap.set(batch, {
-            opacity: 0,
-            y: 400,
-            overwrite: true
-        }),
-        start: "top bottom",
-        end: "bottom-=300 top+=200"
-        // you can also define things like start, end, etc.
-    });
-
-
     window.addEventListener("load", function() {
+        gsap.set(".can", {
+            y: 200,
+            opacity: 0,
+        });
+
+        ScrollTrigger.batch(".can", {
+            interval: 0.1, // time window (in seconds) for batching to occur. 
+            //batchMax: 3,   // maximum batch size (targets),
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.15,
+                overwrite: true
+            }),
+            onLeave: batch => gsap.to(batch, {
+                opacity: 0,
+                y: -400,
+                stagger: 0.15,
+                overwrite: true
+            }),
+            onEnterBack: batch => gsap.to(batch, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.15,
+                overwrite: true
+            }),
+            onLeaveBack: batch => gsap.set(batch, {
+                opacity: 0,
+                y: 400,
+                overwrite: true
+            }),
+            start: "top bottom",
+            end: "bottom-=300 top+=200"
+            // you can also define things like start, end, etc.
+        });
+
         jQuery('.arrow-nav').on('click', '.up-section', function() {
             var prev = $(".active").prev();
             console.log(prev);

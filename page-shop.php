@@ -8,7 +8,7 @@
 
    <div class="searchwrap">
 <h1 class="display-1">Shop</h1>
-<form action="https://revealize.com/blogs" method="GET" class="search-form">
+<form action="index.php" method="GET" class="search-form">
 <input type="text" name="search" value="" class="form-control py-4" id="exampleInputEmail1" aria-describedby="First Name" placeholder=" Search by Product">
 <button type="submit" class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>
 </form>

@@ -56,7 +56,7 @@
             <li> labore Dolore magna aliquyam erat, sed diam
             </li>
           </ul>
-          <a href="<?php echo get_site_url(); ?>/shop/tropical-fruited/" class="learn-more">Learn More</a>
+          <a href="<?php echo get_site_url(); ?>/tropical-fruited/" class="learn-more">Learn More</a>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
             <li> labore Dolore magna aliquyam erat, sed diam
             </li>
           </ul>
-          <a href="<?php echo get_site_url(); ?>/shop/luxury-lightlager/" class="learn-more">Learn More</a>
+          <a href="<?php echo get_site_url(); ?>/luxury-lightlager/" class="learn-more">Learn More</a>
         </div>
         <div class="col-md-6 order-lg-2 order-1 mb-lg-0 mb-5">
           <img src="<?php bloginfo('template_directory') ?>/dist/img/light-lager.png" alt="" class="w-100 animate__animated" data-animate="fadeInRight">
@@ -106,7 +106,7 @@
             <li> labore Dolore magna aliquyam erat, sed diam
             </li>
           </ul>
-          <a href="<?php echo get_site_url(); ?>/shop/beach-wheat-ale/" class="learn-more">Learn More</a>
+          <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="learn-more">Learn More</a>
         </div>
 
 
@@ -134,29 +134,33 @@
 
         <div class="animate__animated" data-animate="slideInUp">
           <div class="hat-img_carousel slick_shadow slick_trigger">
-          <?php 
-    $args = array(
- 'post_type'        => 'product',
-'posts_per_page'   => -1,
-);
-$query = new WP_Query( $args ); 
-if ( $query->have_posts() ) {
-while ( $query->have_posts() ) {
-$query->the_post(); 
-?>
-            
-            <span class="logo-img_container">
-              <p><?php echo get_the_title(); ?></p>
-              <div class="price"><?php if(get_field('price')){echo get_field('price');}else{echo 'Sold Out';} ?></div>
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
-              <a href="<?php echo get_field('product_url'); ?>" class="btn add-to-cart">View Product</a>
-            </span>
+            <?php
+            $args = array(
+              'post_type'        => 'product',
+              'posts_per_page'   => -1,
+            );
+            $query = new WP_Query($args);
+            if ($query->have_posts()) {
+              while ($query->have_posts()) {
+                $query->the_post();
+            ?>
+
+                <span class="logo-img_container">
+                  <p><?php echo get_the_title(); ?></p>
+                  <div class="price"><?php if (get_field('price')) {
+                                        echo get_field('price');
+                                      } else {
+                                        echo 'Sold Out';
+                                      } ?></div>
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
+                  <a href="<?php echo get_field('product_url'); ?>" class="btn add-to-cart">View Product</a>
+                </span>
 
             <?php
-} // end while
-} // end if
-wp_reset_query();
-    ?>
+              } // end while
+            } // end if
+            wp_reset_query();
+            ?>
 
           </div>
         </div>

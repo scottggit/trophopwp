@@ -8,6 +8,7 @@
 
    <div class="searchwrap">
 <h1 class="display-1">WHERE TO BUY</h1>
+    <p>Beer availability  at stores/restaurants depend on inventory supply please call to confirm</p>
 
 </div>
 </div>

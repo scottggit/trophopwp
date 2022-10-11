@@ -1,23 +1,50 @@
 <?php get_header();?>
+<style>
+    @media screen and (min-width: 768px) {
+        .bg-title-white {
+            position: relative;
+            isolation: isolate;
+        }
+
+        .bg-title-white::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .rep-banner {
+            max-height: 40vh;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+</style>
 <div class="content">
       <section class="page-banner mb-5 pb-5">
       <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-md-6 offset-lg-1">
-         <div class="d-flex align-items-center h-100">
-
-   <div class="searchwrap">
-<h1 class="display-1">Distribution</h1>
-<form action="https://revealize.com/blogs" method="GET" class="search-form">
-<input type="text" name="search" value="" class="form-control py-4" id="exampleInputEmail1" aria-describedby="First Name" placeholder=" Search">
-<button type="submit" class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>
-</form>
-</div>
-</div>
-        </div>
-        <div class="col-lg-7 col-md-6 p-0">
-         <img src="<?php bloginfo('template_directory')?>/dist/img/representative-banner.png" alt="" class="w-100">
-        </div>
+        <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
+                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100 rep-banner">
+                </div>
+                <div class="col-lg-4 col-md-6 offset-lg-1 order-md-1">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="searchwrap">
+                            <h1 class="display-1 mb-4"><span class="bg-title-white">Distribution</span></h1>
+                            <form action="https://revealize.com/blogs" method="GET" class="search-form">
+                                <input type="text" name="search" value="" class="form-control py-4 fa-1x" id="exampleInputEmail1" aria-describedby="First Name" placeholder=" Search">
+                                <button type="submit" class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
       </div>
       </div>
       </section>
