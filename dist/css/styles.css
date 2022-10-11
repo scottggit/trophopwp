@@ -21396,10 +21396,19 @@ h1, .h1 {
 
 @media screen and (min-width: 1440px) {
   .page-banner .searchwrap {
-    margin-left: 4rem;
+    margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .page-banner .searchwrap h1, .page-banner .searchwrap .h1 {
     z-index: 99999;
     position: relative;
     background: #fff;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .page-banner .searchwrap .search-form {
+    width: 80%;
   }
 }
 
@@ -21419,6 +21428,12 @@ h1, .h1 {
 @media screen and (max-width: 1440px) {
   .navbar-collapse .search-box {
     padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .font-8 {
+    font-size: 8rem;
   }
 }
 
@@ -26050,18 +26065,9 @@ h1, .h1 {
   }
 }
 
-.main-container {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow-y: scroll;
-}
-
 .main-container > section {
   min-height: 100vh;
   max-height: 100vh;
-  scroll-snap-align: end;
   position: relative;
   display: flex;
   align-items: center;
@@ -26389,33 +26395,33 @@ footer .nav li a {
   }
 }
 
-.product-tri img.can-1.slideUp {
-  transform: translateY(-100%);
-  opacity: 0;
+/* .product-tri img{
+    &.can-1.slideUp{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    &.slideUp:nth-child(2){
+        transform: translate(-50%, -150%);
+        opacity: 0;
+    }
+    &.slideUp:nth-child(3){
+        transform: translateY(-150%);
+        opacity: 0;
+    }
 }
-.product-tri img.slideUp:nth-child(2) {
-  transform: translate(-50%, -150%);
-  opacity: 0;
-}
-.product-tri img.slideUp:nth-child(3) {
-  transform: translateY(-150%);
-  opacity: 0;
-}
-
 .product-tri img,
 .sec2Img,
-.sec3Img {
-  transform: translateY(0);
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-.product-tri img.slideUp,
-.sec2Img.slideUp,
-.sec3Img.slideUp {
-  transform: translateY(150%);
-  opacity: 0;
+.sec3Img{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s linear;
+    &.slideUp{        
+        transform: translateY(150%);
+        opacity: 0;
+    }
 }
 
+ */
 @media screen and (min-width: 1400px) {
   .gutters-50 {
     margin-left: -5rem;
@@ -26510,7 +26516,7 @@ footer .nav li a {
 .collection h3, .collection .h3 {
   font-family: "Atithi-ExtraLight";
   font-family: "Athiti-ExtraLight";
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 20px;
   text-transform: uppercase;
 }

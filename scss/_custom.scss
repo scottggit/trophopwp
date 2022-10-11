@@ -124,10 +124,19 @@ h1 {
 .page-banner {
   .searchwrap {
     @media screen and (min-width: 1440px) {
-      margin-left: 4rem;
-      z-index: 99999;
-      position: relative;
-      background: #fff;
+      margin-left: 5rem;
+    }
+    h1 {
+      @media screen and (min-width: 1440px) {
+        z-index: 99999;
+        position: relative;
+        background: #fff;
+      }
+    }
+    .search-form {
+      @media screen and (min-width: 1440px) {
+        width: 80%;
+      }
     }
   }
 }
@@ -152,5 +161,11 @@ h1 {
     @media screen and (max-width: 1440px) {
       padding: 0 0.5rem;
     }
+  }
+}
+
+.font-8 {
+  @media screen and (min-width: 768px) {
+    font-size: 8rem;
   }
 }
