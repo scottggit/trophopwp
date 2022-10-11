@@ -70,54 +70,34 @@
             </div>
             </div>
             <div class="row text-center">
+            <?php 
+    $args = array(
+ 'post_type'        => 'product',
+'posts_per_page'   => -1,
+);
+$query = new WP_Query( $args ); 
+if ( $query->have_posts() ) {
+while ( $query->have_posts() ) {
+$query->the_post(); 
+?>
 
             <div class="col-lg-3 col-md-6">
-                  <div class="other-wrap">
-                  <p>Hop Trucker Hat: Teal</p>
-                  <h5>$38,50</h5>
-                  <div class="img-wrap">
-                  <img src="<?php bloginfo('template_directory')?>/dist/img/cap1.png" alt="" class="w-100">
-                  </div>
-                  <a href="" class="add-to-cart btn">ADD TO CART</a>
-                  </div>
-
-            </div>
-            <div class="col-lg-3 col-md-6">
             <div class="other-wrap">
-                  <p>Hop Trucker Hat: Teal</p>
-                  <h5>$38,50</h5>
+                  <p><?php echo get_the_title(); ?></p>
+                  <h5><?php if(get_field('price')){echo get_field('price');}else{echo 'Sold Out';} ?></h5>
                   <div class="img-wrap">
-                  <img src="<?php bloginfo('template_directory')?>/dist/img/cap1.png" alt="" class="w-100">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="w-100">
                   </div>
-                  <a href="" class="add-to-cart btn">ADD TO CART</a>   </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="other-wrap">
-                  <p>Hop Trucker Hat: Teal</p>
-                  <h5>$38,50</h5>
-                  <div class="img-wrap">
-                  <img src="<?php bloginfo('template_directory')?>/dist/img/cap1.png" alt="" class="w-100">
-                  </div>
-                  <a href="" class="add-to-cart btn">ADD TO CART</a>   </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="other-wrap">
-                  <p>Hop Trucker Hat: Teal</p>
-                  <h5>$38,50</h5>
-                  <div class="img-wrap">
-                  <img src="<?php bloginfo('template_directory')?>/dist/img/cap1.png" alt="" class="w-100">
-                  </div>
-                  <a href="" class="add-to-cart btn">ADD TO CART</a>   </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="other-wrap">
-                  <p>Hop Trucker Hat: Teal</p>
-                  <h5>$38,50</h5>
-                  <div class="img-wrap">
-                  <img src="<?php bloginfo('template_directory')?>/dist/img/cap1.png" alt="" class="w-100">
-                  </div>
-                  <a href="" class="add-to-cart btn">ADD TO CART</a>
+                  <a href="<?php echo get_field('product_url'); ?>" class="add-to-cart btn">View Product</a>
             </div>   </div>
+
+
+
+            <?php
+} // end while
+} // end if
+wp_reset_query();
+    ?>
             </div>
             <div class="row mt-5 justify-content-center mb-5">
                   <div class="col-md-auto">

@@ -26729,6 +26729,9 @@ footer .nav li a {
   background: #f9f9fc;
   padding: 2rem;
 }
+.shop-bottom .other-wrap p {
+  line-height: 1.3;
+}
 
 .img-back .img-wrap {
   padding: 3rem 0;
