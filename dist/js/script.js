@@ -47,19 +47,14 @@ $(".testimonial_slick").slick({
 });
 /* Logo Carousel Start */
 $(".hat-img_carousel").slick({
-  centerMode: true,
   slidesToShow: 4,
-  autoplay: true,
-  autoplaySpeed: 2000,
   dots: true,
   responsive: [
     {
       breakpoint: 992,
       settings: {
         arrows: true,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 4,
+        slidesToShow: 3,
         dots: true,
       },
     },
@@ -67,8 +62,6 @@ $(".hat-img_carousel").slick({
       breakpoint: 767,
       settings: {
         arrows: true,
-        centerMode: true,
-        centerPadding: "30px",
         slidesToShow: 2,
         dots: true,
       },
@@ -77,9 +70,7 @@ $(".hat-img_carousel").slick({
       breakpoint: 360,
       settings: {
         arrows: true,
-        centerMode: true,
-        centerPadding: "10px",
-        slidesToShow: 2,
+        slidesToShow: 1,
         dots: true,
       },
     },

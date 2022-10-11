@@ -25,3 +25,55 @@
 }
 
  */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .price{
+        font-size: 24px;
+        color: #3E4852;
+        font-family: "Athiti-Bold";
+        margin-bottom: 1rem;
+    }
+}
+
+.product-img-container {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (min-width: 768px){
+    .product-container {    
+        p {
+            min-height: 90px;
+        }
+    }
+    /* Equal height Slider */
+    .slick-track {
+        display: flex !important;
+    }
+    
+    .slick-slide {
+        height: inherit !important;
+    }  
+    .slick-dots{
+        bottom: -50px;
+    }  
+}

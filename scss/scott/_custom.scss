@@ -38,6 +38,7 @@
   transform: translate(-60%, 10%);
   @media screen and (max-width: 768px) {
     width: 12rem;
+    transform: translate(50%, 10%);
   }
   img {
     width: 100%;
@@ -140,10 +141,10 @@
 }
 
 .hat-img_carousel {
-  .slick-list::before,
+  /* .slick-list::before,
   .slick-list::after {
     background: #fff !important;
-  }
+  } */
   .slick-next,
   .custom_nav_container .fake-prev,
   .custom_nav_container .fake-next,
