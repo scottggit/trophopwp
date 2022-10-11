@@ -66,10 +66,10 @@
         <div class="container">
             <div class="row">
             <div class="col-md-12 text-center">
-                  <h2 class="display-3">Other Products</h2>
+                  <h2 class="display-3 mb-5">Other Products</h2>
             </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center product-list">
             <?php 
     $args = array(
  'post_type'        => 'product',

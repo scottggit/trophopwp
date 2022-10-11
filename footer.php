@@ -116,7 +116,14 @@
    ></script>
    <script type="text/javascript" src="<?php bloginfo('template_directory')?>/dist/js/jquery.scrolla.min.js"></script>
    <script type="text/javascript" src="<?php bloginfo('template_directory')?>/dist/js/script.js"></script>
-   
+   <script>
+        $(".product-list>div").hide();
+$(".product-list>div:lt(8)").show();
+$('.shop-bottom .view-all').click(function(){
+    $(".product-list>div").show('slide');
+
+});
+   </script>
   <?php wp_footer(); ?>
 
  </body>
