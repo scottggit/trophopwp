@@ -21437,6 +21437,10 @@ h1, .h1 {
   }
 }
 
+.search-form input {
+  font-size: 1rem;
+}
+
 .page-item .page-link, .custom_nav_container .fake-prev, .custom_nav_container .fake-next, .c-card_rounded_img, .bi-social a {
   display: flex;
   align-items: center;
