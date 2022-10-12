@@ -18,10 +18,6 @@
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
 	}
-
-	.bg-light-c {
-		background-color: #F9F9FC;
-	}
 </style>
 <div class="content">
 	<section class="home-banner mb-5 pb-5">
@@ -39,7 +35,7 @@
 				</div>
 				<div class="col-md-6 col-lg-5 p-md-0 p-lg-0 position-relative  order-lg-2 order-1 pb-lg-0 pb-5 mb-lg-0 mb-5">
 					<div class="img-wrap">
-						<img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner.png" alt="" class="w-100">
+						<img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner.jpg" alt="" class="w-100">
 					</div>
 					<div class="big-can-img">
 						<div class=" animate__animated" data-animate="fadeInRight">

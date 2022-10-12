@@ -126,13 +126,6 @@ h1 {
     @media screen and (min-width: 1440px) {
       margin-left: 5rem;
     }
-    h1 {
-      @media screen and (min-width: 1440px) {
-        z-index: 99999;
-        position: relative;
-        background: #fff;
-      }
-    }
     .search-form {
       @media screen and (min-width: 1440px) {
         width: 80%;
