@@ -339,3 +339,53 @@
     padding: 3rem 0;
   }
 }
+.aboutus-section {
+  b {
+    color: #3e4852;
+  }
+  h2 {
+    font-family: "DaylightDreams";
+  }
+  .about-desc {
+    @media screen and (min-width: 1400px) {
+      margin-bottom: 20rem;
+      max-width: 70%;
+    }
+  }
+}
+
+.quotation h3 {
+  color: #dbb383;
+  font-family: "Athiti-Light";
+  margin-bottom: 0;
+}
+
+.three-blocks-section {
+  @media screen and (min-width: 1400px) {
+    margin-top: -25rem;
+  }
+  .row {
+    & > div {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    @media screen and (min-width: 1400px) {
+      & > div {
+        padding: 3rem;
+      }
+    }
+    & > div:first-child {
+      background-color: #fdf5f4;
+    }
+    & > div:nth-child(2) {
+      background-color: #e8ffff;
+    }
+    & > div:last-child {
+      background-color: #f0f8f1;
+    }
+  }
+  h2 {
+    font-family: "Athiti-Medium";
+    text-transform: uppercase;
+  }
+}
