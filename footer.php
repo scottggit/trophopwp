@@ -131,7 +131,7 @@ $('.searchandfilter').addClass('search-form');
 
 $('.sf-input-text').addClass('form-control py-4');
 
-$('#search-filter-form-300 .sf-input-text').keypress(function(event){
+$('.shop-search  .sf-input-text').keypress(function(event){
   var keycode = (event.keyCode ? event.keyCode : event.which);
   if(keycode == '13'){
     $('html, body').animate({
@@ -142,7 +142,7 @@ $('#search-filter-form-300 .sf-input-text').keypress(function(event){
   }
 });
 
-$('#search-filter-form-301 .sf-input-text').keypress(function(event){
+$('.stores-search .sf-input-text').keypress(function(event){
   var keycode = (event.keyCode ? event.keyCode : event.which);
   if(keycode == '13'){
     $('html, body').animate({

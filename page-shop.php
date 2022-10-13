@@ -6,7 +6,7 @@
                 <div class="col-lg-4 col-md-6 offset-lg-1">
                     <div class="d-flex align-items-center h-100">
 
-                        <div class="searchwrap">
+                        <div class="searchwrap shop-search">
                             <h1 class="display-1">Shop</h1>
                             <?PHP  echo do_shortcode('[searchandfilter id="300"]'); ?>
                  

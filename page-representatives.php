@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 offset-lg-1 order-md-1">
                     <div class="d-flex align-items-center h-100">
-                        <div class="searchwrap">
+                        <div class="searchwrap stores-search">
                             <h1 class="display-1 mb-4"><span class="bg-title-white">Distribution</span></h1>
                             <?PHP  echo do_shortcode('[searchandfilter id="301"]'); ?>
                          
