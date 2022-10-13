@@ -21400,13 +21400,6 @@ h1, .h1 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .page-banner .searchwrap h1, .page-banner .searchwrap .h1 {
-    z-index: 99999;
-    position: relative;
-    background: #fff;
-  }
-}
-@media screen and (min-width: 1440px) {
   .page-banner .searchwrap .search-form {
     width: 80%;
   }
@@ -26039,7 +26032,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 991px) {
   #menu-main-menu .nav-link {
     color: #fff;
   }
@@ -26058,19 +26051,17 @@ footer {
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .fixednav > nav {
-    background: #fff;
-  }
-  .fixednav .header-social li a {
-    color: #3e4352;
-  }
-  .fixednav svg path {
-    stroke: #3e4352;
-  }
-  .fixednav .woocommerce-nav li {
-    border: 2px solid #3e4352;
-  }
+.fixednav > nav {
+  background: #fff;
+}
+.fixednav .header-social li a {
+  color: #3e4352;
+}
+.fixednav svg path {
+  stroke: #3e4352;
+}
+.fixednav .woocommerce-nav li {
+  border: 2px solid #3e4352;
 }
 
 .main-container > section {
@@ -26463,6 +26454,10 @@ footer .nav li a {
   object-fit: contain;
 }
 
+.bg-light-c {
+  background-color: #F9F9FC;
+}
+
 @media screen and (min-width: 768px) {
   .product-container p {
     min-height: 90px;
@@ -26518,6 +26513,12 @@ footer .nav li a {
   bottom: 0;
   transform: translate(-60%, 10%);
 }
+@media screen and (max-width: 1400px) {
+  .big-can-img {
+    transform: translate(-60%, 10%);
+    width: 17rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .big-can-img {
     width: 12rem;
@@ -26528,6 +26529,9 @@ footer .nav li a {
   width: 100%;
 }
 
+.banner-left-wrap {
+  margin-right: 7rem;
+}
 .banner-left-wrap h4, .banner-left-wrap .h4 {
   font-family: "Athiti-Light";
   color: #dbb383;
@@ -26564,10 +26568,14 @@ footer .nav li a {
 }
 
 .tropical-fruited h3, .tropical-fruited .h3 {
-  letter-spacing: 20px;
   font-family: "Athiti-ExtraLight";
   font-size: 3rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1400px) {
+  .tropical-fruited h3, .tropical-fruited .h3 {
+    letter-spacing: 20px;
+  }
 }
 .tropical-fruited h1, .tropical-fruited .h1 {
   font-family: "DaylightDreams";
@@ -26680,7 +26688,7 @@ footer .nav li a {
 .strore-wrap .desc-wrap img {
   width: 1rem;
   height: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .wp-pagenavi ul {

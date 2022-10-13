@@ -335,7 +335,7 @@
 
 #menu-main-menu {
   .nav-link {
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 991px) {
       color: #fff;
     }
   }
@@ -355,19 +355,17 @@
 }
 
 .fixednav {
-  @media screen and (max-width: 1440px) {
-    & > nav {
-      background: #fff;
-    }
+  & > nav {
+    background: #fff;
+  }
 
-    .header-social li a {
-      color: #3e4352;
-    }
-    svg path {
-      stroke: #3e4352;
-    }
-    .woocommerce-nav li {
-      border: 2px solid #3e4352;
-    }
+  .header-social li a {
+    color: #3e4352;
+  }
+  svg path {
+    stroke: #3e4352;
+  }
+  .woocommerce-nav li {
+    border: 2px solid #3e4352;
   }
 }

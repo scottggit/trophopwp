@@ -27,7 +27,7 @@
 					<div class="d-flex align-items-center h-100">
 						<div class="banner-left-wrap">
 							<h4 class=" animate__animated" data-animate="fadeIn">Authenticity in every sip</h4>
-							<h1 class="display-1 animate__animated" data-animate="fadeIn">TROP HOP</h1>
+							<h1 class="display-2 animate__animated" data-animate="fadeIn">TROP HOP</h1>
 							<p class=" animate__animated" data-animate="fadeIn">Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal </p>
 							<a href="<?php echo get_site_url() ?>/shop" class="btn shop animate__animated" data-animate="fadeIn">Shop Merchandise</a>
 						</div>

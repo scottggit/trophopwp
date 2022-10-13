@@ -65,15 +65,29 @@ $query->the_post();
 
 <div class="col-lg-3 col-md-6">  
 <div class="strore-wrap">
+
           <div class="logo">
+            <?php if(get_field('logo')){ ?>
       <img src="<?php  echo get_field('logo'); ?>" alt="">
+      <?php }else{ ?>
+        <img src="<?php bloginfo('template_directory')?>/dist/img/logo_placeholder.png" alt="">
+    <?php } ?>
           </div>
 <div class="desc-wrap">
       <h3 class="name"><?php echo get_the_title(); ?></h3>
+      <?php if(get_field('address')){ ?>
       <div class="location"><img src="<?php bloginfo('template_directory')?>/dist/img/location.png" alt=""> <?php echo get_field('town');?>, <?php echo get_field('address');?></div>
+      <?php } ?>
+      <?php if(get_field('phone')){ ?>
+
       <div class="phone"><img src="<?php bloginfo('template_directory')?>/dist/img/phone.png" alt=""><?php echo get_field('phone');?></div>
+      <?php } ?>
+      <?php if(get_field('email')){ ?>
       <div class="email"><img src="<?php bloginfo('template_directory')?>/dist/img/email.png" alt=""><?php echo get_field('email');?></div>
+      <?php } ?>
+      <?php if(get_field('time')){ ?>
       <div class="clock"><img src="<?php bloginfo('template_directory')?>/dist/img/clock.png" alt=""><?php echo get_field('time');?></div>
+      <?php } ?>
       </div>
 
       <div class="btn-wrap">
