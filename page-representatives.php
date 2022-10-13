@@ -49,13 +49,16 @@
       </div>
       </section>
 
-      <section class="stores mt-5 pt-5">
+      <section class="stores " id="stores">
         <div class="container">
 <div class="row">
     <?php 
+    	$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+        $default_posts_per_page ='8';
     $args = array(
  'post_type'        => 'store',
-'posts_per_page'   => -1,
+'posts_per_page'   =>$default_posts_per_page,
+'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
 );
 $query = new WP_Query( $args ); 
 if ( $query->have_posts() ) {
@@ -104,15 +107,22 @@ $query->the_post();
 } // end if
 wp_reset_query();
     ?>
+
+
 </div>
-<!-- 
-<div class="row">
-<div class="wp-pagenavi" role="navigation">
-<div class="row pagination-blog mt-3"><div class="col"><ul class="d-flex justify-content-center"><li><span aria-current="page" class="current">1</span></li><li><a class="page larger" title="Page 2" href="https://www.saastock.com/blog/page/2/#all-posts">2</a></li><li><a class="page larger" title="Page 3" href="https://www.saastock.com/blog/page/3/#all-posts">3</a></li><li><a class="page larger" title="Page 4" href="https://www.saastock.com/blog/page/4/#all-posts">4</a></li><li><a class="page larger" title="Page 5" href="https://www.saastock.com/blog/page/5/#all-posts">5</a></li><li><a class="next">Next</a></li></ul></div></div>
+
+<div class="row justify-content-center">
+<?php  wp_pagenavi( array( 'query' =>$query , 'echo'=>true) ); ?>
+
 </div>
-</div> -->
 
 </div>
       </section>
 </div>
 <?php get_footer();?>
+<script>
+$('.previouspostslink, .page, .last, .nextpostslink').each( function(i,a) {
+         $(a).attr('href',$(a).attr('href')+'#stores');
+   
+     });
+</script>
