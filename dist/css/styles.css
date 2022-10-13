@@ -21438,6 +21438,10 @@ footer {
   border-top: 7px solid #dbb383;
 }
 
+.searchandfilter ul {
+  padding-left: 0;
+}
+
 .page-item .page-link, .custom_nav_container .fake-prev, .custom_nav_container .fake-next, .c-card_rounded_img, .bi-social a {
   display: flex;
   align-items: center;
@@ -26110,18 +26114,16 @@ footer {
 }
 .product-tri img:nth-child(2) {
   position: absolute;
-  top: 50%;
-  left: 56%;
-  transform: translate(-50%, -50%);
+  top: 6%;
+  left: 20%;
   height: 27vh;
   z-index: -1;
 }
 .product-tri img:nth-child(3) {
   height: 24vh;
   position: absolute;
-  top: 50%;
+  top: 10%;
   right: 0;
-  transform: translateY(-50%);
   z-index: -2;
 }
 
@@ -26231,14 +26233,21 @@ footer {
     float: right;
   }
 
-  .main-container {
-    min-height: 99vh;
-    max-height: 99vh;
-  }
-  .main-container > section {
-    min-height: 97vh;
-    max-height: 97vh;
-  }
+  /* .main-container {
+      min-height: 99vh;
+      max-height: 99vh;
+
+      &>section {
+          min-height: 97vh;
+          max-height: 97vh;
+      }
+  } */
+}
+@media screen and (max-width: 767px) {
+  /* .product-tri img{
+      opacity: 1 !important;
+      transform: translate(0, 0) !important;
+  } */
 }
 @media screen and (min-width: 768px) {
   .product-tri {
@@ -26249,9 +26258,12 @@ footer {
   }
   .product-tri img:nth-child(2) {
     height: 34vh;
+    top: 6%;
+    left: 30%;
   }
   .product-tri img:nth-child(3) {
     height: 30vh;
+    top: 10%;
   }
 
   .arrow-nav span {
@@ -26264,15 +26276,33 @@ footer {
     height: 5rem;
   }
 }
+@media screen and (min-width: 820px) and (max-width: 850px) {
+  .product-tri img:nth-child(2) {
+    left: 18%;
+  }
+}
 @media screen and (min-width: 992px) {
   .product-tri img:first-child {
     height: 70vh;
   }
   .product-tri img:nth-child(2) {
     height: 60vh;
+    top: 8%;
+    left: 22%;
   }
   .product-tri img:nth-child(3) {
     height: 50vh;
+    top: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-tri img:nth-child(2) {
+    left: 28%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .product-tri img:nth-child(2) {
+    left: 30%;
   }
 }
 footer {
@@ -26864,6 +26894,7 @@ footer .nav li a {
 }
 
 body .wp-pagenavi {
+  margin: auto;
   width: auto;
   margin-bottom: 5rem;
 }
@@ -26879,7 +26910,7 @@ body .wp-pagenavi a {
 body .wp-pagenavi span {
   border: 1px solid #bfbfbf;
   padding: 3px 5px;
-  margin: 2px;
+  margin-right: 1rem;
 }
 body .wp-pagenavi .current {
   padding: 0.5rem;
@@ -26888,6 +26919,13 @@ body .wp-pagenavi .current {
   line-height: 0.7;
   background-color: #3e4852;
   color: #fff;
+}
+
+.page-banner .searchwrap .searchandfilter {
+  width: 100%;
+}
+.page-banner .searchwrap .searchandfilter label {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -405,6 +405,7 @@
 }
 body {
   .wp-pagenavi {
+    margin: auto;
     width: auto;
     margin-bottom: 5rem;
     a {
@@ -420,7 +421,7 @@ body {
     span {
       border: 1px solid #bfbfbf;
       padding: 3px 5px;
-      margin: 2px;
+      margin-right: 1rem;
     }
     .current {
       padding: 0.5rem;
@@ -430,5 +431,12 @@ body {
       background-color: #3e4852;
       color: #fff;
     }
+  }
+}
+
+.page-banner .searchwrap .searchandfilter {
+  width: 100%;
+  label {
+    width: 100%;
   }
 }

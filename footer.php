@@ -123,6 +123,35 @@ $('.shop-bottom .view-all').click(function(){
     $(".product-list>div").show('slide');
 
 });
+
+$('.sf-field-search label').prepend($('  <button type="submit" class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>'));
+
+$('.searchandfilter').addClass('search-form');
+
+
+$('.sf-input-text').addClass('form-control py-4');
+
+$('#search-filter-form-300 .sf-input-text').keypress(function(event){
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '13'){
+    $('html, body').animate({
+      scrollTop: $("#shop-bottom").offset().top-100
+    }, 800);
+
+
+  }
+});
+
+$('#search-filter-form-301 .sf-input-text').keypress(function(event){
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '13'){
+    $('html, body').animate({
+      scrollTop: $("#stores").offset().top-100
+    }, 800);
+
+
+  }
+});
    </script>
   <?php wp_footer(); ?>
 
