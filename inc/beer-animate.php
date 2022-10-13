@@ -31,7 +31,7 @@
         opacity: 0;
     }
 </style>
-<div class="arrow-nav">
+<div class="arrow-nav d-none d-md-block">
     <span class="up-section opacity-25">
         <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
     </span>
@@ -56,7 +56,7 @@
         start: "top top",
         endTrigger: ".last",
         end: "bottom bottom",
-
+        //markers: true,
         snap: {
             snapTo: 1 / (sections.length - 1),
             duration: {
@@ -64,7 +64,7 @@
                 max: 0.5
             }, // the snap animation should be at least 0.25 seconds, but no more than 0.75 seconds (determined by velocity)
             delay: 0.25, // wait 0.125 seconds from the last scroll event before doing the snapping
-            ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
+            ease: "power3.inOut", // the ease of the snap animation ("power3" by default)
         },
     });
 
@@ -206,12 +206,16 @@
                 jQuery('section').removeClass('active');
                 jQuery('.first').addClass('active');
                 $('.up-section').addClass('opacity-25');
-                $('.down-section').removeClass('opacity-25');
+                $('.down-section').removeClass('opacity-25');                
+                $('.product-nav').removeClass('product-fix');
             } else if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
                 jQuery('section').removeClass('active');
                 jQuery('.last').addClass('active');
                 $('.up-section').removeClass('opacity-25');
                 $('.down-section').addClass('opacity-25');
+            }
+            if ($(window).scrollTop() !== 0) {
+                $('.product-nav').addClass('product-fix');
             }
         });
     });

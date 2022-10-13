@@ -54,9 +54,9 @@
 
     img:nth-child(2) {
         position: absolute;
-        top: 50%;
-        left: 56%;
-        transform: translate(-50%, -50%);
+        top: 6%;
+        left: 20%;
+        //transform: translate(-50%, -50%);
         height: 27vh;
         z-index: -1;
     }
@@ -64,9 +64,9 @@
     img:nth-child(3) {
         height: 24vh;
         position: absolute;
-        top: 50%;
+        top: 10%;
         right: 0;
-        transform: translateY(-50%);
+        //transform: translate(0%, -50%);
         z-index: -2;
     }
 }
@@ -193,16 +193,23 @@
         float: right;
     }
 
-    .main-container {
+    /* .main-container {
         min-height: 99vh;
         max-height: 99vh;
+
         &>section {
             min-height: 97vh;
             max-height: 97vh;
         }
-    }
+    } */
 }
 
+@media screen and (max-width: 767px) {
+    /* .product-tri img{
+        opacity: 1 !important;
+        transform: translate(0, 0) !important;
+    } */
+}
 @media screen and (min-width: 768px) {
     .product-tri {
         margin-bottom: 0;
@@ -213,10 +220,13 @@
 
         img:nth-child(2) {
             height: 34vh;
+            top: 6%;
+            left: 30%;
         }
 
         img:nth-child(3) {
             height: 30vh;
+            top: 10%;
         }
     }
 
@@ -234,6 +244,13 @@
     }
 }
 
+@media screen and (min-width: 820px) and (max-width:850px){
+    .product-tri {
+        img:nth-child(2) {
+            left: 18%;
+        }
+    }
+}
 @media screen and (min-width: 992px) {
     .product-tri {
         img:first-child {
@@ -242,10 +259,29 @@
 
         img:nth-child(2) {
             height: 60vh;
+            top: 8%;
+            left: 22%;
         }
 
         img:nth-child(3) {
             height: 50vh;
+            top: 15%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-tri {
+        img:nth-child(2) {
+            left: 28%;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .product-tri {
+        img:nth-child(2) {
+            left: 30%;
         }
     }
 }
