@@ -21379,7 +21379,7 @@ h1, .h1 {
   width: 1rem;
   height: 1rem;
   background-size: contain;
-  transform: translate(-460%, -50%);
+  transform: translate(-500%, -50%);
   left: 50%;
   top: 50%;
 }
