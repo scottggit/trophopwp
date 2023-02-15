@@ -40,7 +40,9 @@ if ($query->have_posts()) {
 			<div class="col-lg-3 col-md-6 mb-4">
 				<div class="product-container bg-light-c">
 					<p><?php echo get_the_title(); ?></p>
-					<div class="price">
+					<div class="price <?php if (!get_field('price')) {
+											echo 'text-primary';
+										} ?>">
 						<?php if (get_field('price')) {
 							echo '$' . get_field('price');
 						} else {

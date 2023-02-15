@@ -1,5 +1,6 @@
 * {
     --bs-dark-rgb: 62, 72, 82;
+    --bs-primary-rgb: 217, 74, 51;
 }
 
 body {
@@ -99,23 +100,6 @@ div.btn-wrap>a {
 
 .bg-title-light {
     background-color: #F8F8FF
-}
-
-@media screen and (min-width: 1400px) {
-    section#stores {
-        padding-top: 0;
-    }
-
-    .bg-title-light {
-        font-size: 157px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .img-2-lg-bg {
-        margin-bottom: -12rem;
-    }
-
 }
 
 /* Old SCSS */
@@ -219,5 +203,27 @@ div.btn-wrap>a {
 
     .slick-dots {
         bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section#stores {
+        padding-top: 0;
+    }
+
+    .bg-title-light {
+        font-size: 157px;
+    }
+
+    .collection {
+        h2 {
+            font-size: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-2-lg-bg {
+        margin-bottom: -12rem;
     }
 }
