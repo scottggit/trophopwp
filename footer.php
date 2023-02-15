@@ -90,7 +90,7 @@
   $(".product-list>div:lt(8)").show();
   $('.shop-bottom .view-all').click(function() {
     $(".product-list>div").show('slide');
-
+    $(this).hide();
   });
 
   $('.sf-field-search label').prepend($('  <button class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>'));

@@ -7,8 +7,20 @@ body {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 255, 1) 100%);
 }
 
+.font-daylight {
+    font-family: "DaylightDreams";
+}
+
 .font-bold {
     font-family: "Athiti-Bold";
+}
+
+.font-light {
+    font-family: "Athiti-Light";
+}
+
+.font-extralight {
+    font-family: "Atithi-ExtraLight";
 }
 
 .wp-pagenavi {
@@ -149,8 +161,13 @@ div.btn-wrap>a {
     background-color: #F9F9FC;
 }
 
+.btn {
+    border-radius: 0;
+    box-shadow: 0px 6px 16px #47599324;
+}
 
-.btn-hover-dark {
+.btn-hover-dark,
+.view-all {
 
     &:hover,
     &:focus {
@@ -158,6 +175,29 @@ div.btn-wrap>a {
         background-color: #3E4852;
         color: #FFFFFF;
         box-shadow: none;
+    }
+}
+
+.ls-10 {
+    letter-spacing: 10px;
+}
+
+.line-divide {
+    width: 20px;
+    height: 4px;
+    display: block;
+    margin-bottom: 1rem;
+
+    &.line-blueback {
+        background: #E8FFFF;
+    }
+
+    &.line-greenback {
+        background: #F0F8F1;
+    }
+
+    &.line-orangeback {
+        background: #EBDFC5;
     }
 }
 

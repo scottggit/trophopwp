@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="content">
-    <section class="page-banner mb-5 pb-5">
+    <section class="page-banner mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="display-3 mb-5">Coming Soon</h2>
+                    <h2 class="display-3 font-daylight mb-5">Coming Soon</h2>
                 </div>
             </div>
             <div class="row">
@@ -52,10 +52,11 @@
                             <img src="<?php bloginfo('template_directory') ?>/dist/img/fruited.png" alt="" class="w-100">
                         </div>
                     </div>
-                    <h4>Tropical</h4>
-                    <h3>Fruited</h3>
+                    <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">Tropical</h5>
+                    <h3 class="h1">Fruited</h3>
+                    <span class="line-divide line-blueback"></span>
                     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/" class="learn-more">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
                 <div class="col-md-4">
                     <div class="img-back greenback">
@@ -64,10 +65,11 @@
                         </div>
                     </div>
 
-                    <h4>LUXURY</h4>
-                    <h3>LIGHT LAGER</h3>
+                    <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">LUXURY</h5>
+                    <h3 class="h1">LIGHT LAGER</h3>
+                    <span class="line-divide line-greenback"></span>
                     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/" class="learn-more">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
                 <div class="col-md-4">
                     <div class="img-back orangeback">
@@ -75,10 +77,11 @@
                             <img src="<?php bloginfo('template_directory') ?>/dist/img/wheat.png" alt="" class="w-100">
                         </div>
                     </div>
-                    <h4>BEACH</h4>
-                    <h3>WHEAT ALE</h3>
+                    <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">BEACH</h5>
+                    <h3 class="h1">WHEAT ALE</h3>
+                    <span class="line-divide line-orangeback"></span>
                     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="learn-more">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
             </div>
         </div>
