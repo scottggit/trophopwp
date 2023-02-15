@@ -26,8 +26,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bi-navbar"
                 aria-controls="bi-navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-            <div class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5 pt-lg-0 pt-3"
-                id="bi-navbar">
+            <div class="collapse navbar-collapse justify-content-lg-between pt-lg-0 pt-3" id="bi-navbar">
 
                 <div class="d-lg-flex">
                     <?php 

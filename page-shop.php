@@ -3,13 +3,15 @@
     <section class="page-banner mb-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
-                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100 rep-banner">
+                <div class="col-lg-6 col-md-6 col-12 col-xl-5 col-lg-6-custom p-0  order-md-2 mb-4 mb-md-0">
+                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt=""
+                        class="w-100 rep-banner">
                 </div>
-                <div class="col-lg-5 col-md-6 order-md-1">
+                <div class="col-lg-5  offset-custom-md col-md-5 col-12 offset-lg-2 offset-md-1 order-md-1">
                     <div class="d-flex align-items-center h-100">
                         <div class="searchwrap stores-search">
-                            <h1 class="display-1 mb-4"><span class="bg-title-light position-relative pe-lg-2 z-2">Shop</span></h1>
+                            <h1 class="display-1 mb-4"><span
+                                    class="bg-title-light position-relative pe-lg-2 z-2">Shop</span></h1>
                             <?PHP echo do_shortcode('[searchandfilter id="491"]'); ?>
 
                         </div>
@@ -49,14 +51,17 @@
                 <div class="col-md-4">
                     <div class="img-back blueback">
                         <div class="img-wrap">
-                            <img src="<?php bloginfo('template_directory') ?>/dist/img/fruited.png" alt="" class="w-100">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/fruited.png" alt=""
+                                class="w-100">
                         </div>
                     </div>
                     <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">Tropical</h5>
                     <h3 class="h1">Fruited</h3>
                     <span class="line-divide line-blueback"></span>
-                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
+                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly
+                        implement </p>
+                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/"
+                        class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
                 <div class="col-md-4">
                     <div class="img-back greenback">
@@ -68,8 +73,10 @@
                     <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">LUXURY</h5>
                     <h3 class="h1">LIGHT LAGER</h3>
                     <span class="line-divide line-greenback"></span>
-                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
+                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly
+                        implement </p>
+                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/"
+                        class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
                 <div class="col-md-4">
                     <div class="img-back orangeback">
@@ -80,8 +87,10 @@
                     <h5 class="mt-4 mb-0 text-uppercase font-light ls-10">BEACH</h5>
                     <h3 class="h1">WHEAT ALE</h3>
                     <span class="line-divide line-orangeback"></span>
-                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
-                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="btn btn-white btn-hover-dark mt-0">Learn More</a>
+                    <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly
+                        implement </p>
+                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/"
+                        class="btn btn-white btn-hover-dark mt-0">Learn More</a>
                 </div>
             </div>
         </div>

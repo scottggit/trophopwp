@@ -300,11 +300,12 @@
 }
 @media screen and (min-width: 1400px) {
   .bi-navbar .nav-item .nav-link {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     &::before {
-      left: 1.5rem;
+      left: 50%;
+      transform: translate(-50%, 0px);
     }
   }
 }

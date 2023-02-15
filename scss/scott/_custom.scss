@@ -496,3 +496,9 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .page-banner .searchwrap {
+    margin-left: 0rem;
+  }
+}
