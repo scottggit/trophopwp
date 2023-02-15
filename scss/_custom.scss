@@ -319,3 +319,12 @@ footer .footer-mn {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+@media (min-width: 990px) and (max-width: 1900px) {
+  body .offset-custom-md {
+    margin-left: 8.322%;
+  }
+  body .col-lg-6-custom {
+    width: 50%;
+  }
+}
