@@ -150,7 +150,7 @@
 									<div class="product-img-container">
 										<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
 									</div>
-									<a href="<?php echo get_field('product_url'); ?>" class="btn add-to-cart">View Product</a>
+									<a href="<?php echo get_field('product_url'); ?>" class="btn btn-white btn-hover-dark add-to-cart">View Product</a>
 								</div>
 						<?php
 							} // end while
