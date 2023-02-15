@@ -90,7 +90,7 @@ h1 {
 
 .shop {
   text-transform: uppercase;
-  padding: 0.8rem 3rem 0.8rem 5rem;
+  padding: 0.8rem 1.5rem 0.8rem 3rem;
   box-shadow: 0px 6px 16px #5e5f5f15;
   font-family: "Athiti-Bold";
   background: #ffff;
@@ -175,4 +175,104 @@ footer {
 
 .searchandfilter ul {
   padding-left: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  body .tropical-fruited h3,
+  body .tropical-fruited h1 {
+    letter-spacing: 11px;
+  }
+}
+body .tropical-fruited h1 {
+  position: relative;
+}
+body .tropical-fruited h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2.3rem;
+  transform: translate(0%, 0);
+  border-bottom: 5px solid #e8ffff;
+}
+
+body .theme-list li:before {
+  border-radius: 10%;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-size: 10px;
+}
+
+body section.light-lager h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  color: #3e4852;
+  font-family: "Athiti-ExtraLight";
+}
+section.light-lager h1 {
+  letter-spacing: 4px;
+  position: relative;
+}
+
+body section.light-lager h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2.3rem;
+  transform: translate(0%, 0);
+  border-bottom: 5px solid #e8ffff;
+}
+
+section.light-lager .theme-list li:before {
+  background-color: #f0f8f1 !important;
+  background: url(../../dist/img/check-green.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wheat-ale h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 8px;
+  color: #3e4852;
+  font-family: "Athiti-ExtraLight";
+}
+
+body .wheat-ale h1 {
+  position: relative;
+  letter-spacing: 4px;
+}
+
+body .wheat-ale h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2.3rem;
+  transform: translate(0%, 0);
+  border-bottom: 5px solid #e5d9c029;
+}
+
+section.wheat-ale .theme-list li:before {
+  background-color: #e5d9c029 !important;
+  background: url(../../dist/img/check-grey.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .collection h3,
+body .collection .h3 {
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+
+body .collection h2:after,
+body .collection .h2:after {
+  bottom: -10px;
+  width: 4rem;
 }
