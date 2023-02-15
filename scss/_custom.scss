@@ -278,6 +278,40 @@ body .collection .h2:after {
 }
 
 .bi-navbar .nav-item.active .nav-link::before {
+  content: "";
   width: 60%;
-  border-color: #e20e37;
+  border-bottom: 4px solid #e20e37;
+  height: 7px;
+}
+
+body footer h4,
+body footer .h4 {
+  font-size: 1.78rem;
+}
+
+body footer li a {
+  font-size: 0.88rem;
+}
+
+footer .current_page_item a {
+  color: #dbb383 !important;
+}
+
+.nav-menu > li.active:first-child a {
+  color: #dbb383 !important;
+}
+
+footer .email-wrap div {
+  color: #3e4852;
+}
+footer .email-wrap a {
+  font-weight: 600;
+  color: #3e4852 !important;
+}
+
+footer .footer-mn {
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
