@@ -1,0 +1,100 @@
+* {
+    --bs-dark-rgb: 62, 72, 82;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 255, 1) 100%);
+}
+
+.font-bold {
+    font-family: "Athiti-Bold";
+}
+
+.wp-pagenavi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page-numbers {
+        height: 2.2rem;
+        width: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #3E4852;
+        transition: all 0.3s ease;
+
+        &:not(.dots):hover,
+        &:not(.dots):focus {
+            background-color: #3E4852;
+            color: #FFFFFF;
+        }
+
+        &.dots {
+            pointer-events: none;
+        }
+    }
+}
+
+div.strore-wrap {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.store-spacing {
+    margin-top: 8rem;
+}
+
+
+section#stores {
+    padding-top: 0;
+}
+
+.strore-wrap .desc-wrap img {
+    object-fit: contain;
+    margin-top: 8px;
+}
+
+div.btn-wrap>a {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: #353c42;
+        color: #FFFFFF;
+    }
+}
+
+.stores-search {
+    button {
+        padding: 0 1rem;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #D4D6DC;
+        width: 100%;
+        padding: 1rem 1rem 1rem 3rem;
+    }
+}
+
+.bg-title-light {
+    background-color: #F8F8FF
+}
+
+@media screen and (min-width: 1400px) {
+    section#stores {
+        padding-top: 0;
+    }
+
+    .bg-title-light {
+        font-size: 157px;
+    }
+}
