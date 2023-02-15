@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title><?php echo wp_title()?></title>
-
+     
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -56,11 +55,11 @@ wp_nav_menu( array(
 ) );
 
             ?>
-          
-          <form action="#" class="search-box">
+       
+          <form role="search"  method="get" id="searchform" action="<?php echo home_url( '/' ); ?>" class="search-box">
             <input
-              type="search"
-              name="search"
+              type="text"
+              value="<?php get_search_query() ?>" name="s" id="s" 
               placeholder="Search.."
               required
             />
@@ -73,7 +72,7 @@ wp_nav_menu( array(
               <a href="#">Facebook</a>
             </li>
             <li>
-              <a href="http://instagram.com/kingscallingbrewing" target="_blank">Instagram</a>
+              <a href="https://www.instagram.com/trophopbeers/" target="_blank">Instagram</a>
             </li>
             <li class="d-none">
               <a href="#">Youtube</a>

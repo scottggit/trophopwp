@@ -38,7 +38,7 @@
                     <div class="d-flex align-items-center h-100">
                         <div class="searchwrap stores-search">
                             <h1 class="display-1 mb-4"><span class="bg-title-white">Distribution</span></h1>
-                            <?PHP  echo do_shortcode('[searchandfilter id="301"]'); ?>
+                            <?PHP  echo do_shortcode('[searchandfilter id="492"]'); ?>
                          
                         </div>
                     </div>
@@ -49,7 +49,7 @@
 
       <section class="stores " id="stores">
         <div class="container">
-        <?PHP  echo do_shortcode('[searchandfilter id="301" show="results"]'); ?>  
+        <?PHP  echo do_shortcode('[searchandfilter id="492" show="results"]'); ?>  
 
       </section>
 </div>

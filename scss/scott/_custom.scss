@@ -34,28 +34,41 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  top: 50%;
+  transform: translate(-22%, -30%);
+  width: 100%;
+  max-width: 80%;
 
-  transform: translate(-60%, 10%);
   @media screen and (max-width: 1400px) {
-    transform: translate(-60%, 10%);
-    width: 17rem;
+    width: 30rem;
   }
+
   @media screen and (max-width: 768px) {
-    width: 12rem;
-    transform: translate(50%, 10%);
+    transform: translate(0, 0);
+    width: 18rem;
+    top: auto;
   }
+
   img {
     width: 100%;
   }
 }
+
 .banner-left-wrap {
   margin-right: 7rem;
+
+  @media screen and (min-width: 1800px) {
+    margin-top: -20rem;
+  }
   h4 {
     font-family: "Athiti-Light";
     color: #dbb383;
   }
   h1 {
     font-family: "DaylightDreams";
+    @media screen and (max-width: 1400px) {
+      font-size: 7rem;
+    }
   }
   p {
     @media screen and (min-width: 1400px) {

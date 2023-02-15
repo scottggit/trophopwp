@@ -26541,18 +26541,21 @@ footer .nav li a {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(-60%, 10%);
+  top: 50%;
+  transform: translate(-22%, -30%);
+  width: 100%;
+  max-width: 80%;
 }
 @media screen and (max-width: 1400px) {
   .big-can-img {
-    transform: translate(-60%, 10%);
-    width: 17rem;
+    width: 30rem;
   }
 }
 @media screen and (max-width: 768px) {
   .big-can-img {
-    width: 12rem;
-    transform: translate(50%, 10%);
+    transform: translate(0, 0);
+    width: 18rem;
+    top: auto;
   }
 }
 .big-can-img img {
@@ -26562,12 +26565,22 @@ footer .nav li a {
 .banner-left-wrap {
   margin-right: 7rem;
 }
+@media screen and (min-width: 1800px) {
+  .banner-left-wrap {
+    margin-top: -20rem;
+  }
+}
 .banner-left-wrap h4, .banner-left-wrap .h4 {
   font-family: "Athiti-Light";
   color: #dbb383;
 }
 .banner-left-wrap h1, .banner-left-wrap .h1 {
   font-family: "DaylightDreams";
+}
+@media screen and (max-width: 1400px) {
+  .banner-left-wrap h1, .banner-left-wrap .h1 {
+    font-size: 7rem;
+  }
 }
 @media screen and (min-width: 1400px) {
   .banner-left-wrap p {

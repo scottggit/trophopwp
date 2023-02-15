@@ -19,7 +19,7 @@
                <p class="m-0 pb-5 pb-lg-0">
                  Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal products after intermandated outsourcing. Authoritatively iterate enterprise architectures vis-a-vis market-driven sources. Compellingly seize long-term high-impact platforms vis-a-v
                </p>   
-           <a href="#" class="learnmore">Learn More</a>
+           <a href="<?php echo get_site_url(); ?>/about-us" class="learnmore">Learn More</a>
            </div>
            </div>
              </div>
@@ -28,19 +28,15 @@
              <div class="row">
                <div class="col-xl-4 col-md-6 col-lg-4 col-12 mb-5 mb-lg-0">
                  <h4 class="font-bold mb-4">Navigation</h4>
-                 <ul class="list-unstyled p-0">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="about">Shop</a></li>
-                   <li><a href="#">About Us</a></li>
-                   <li><a href="#">Contact Us</a></li>
-                 </ul>
+				   <?php echo clm_footer1_nav(); ?>
+        
                </div>
           
                <div class="col-xl-7 col-md-6 col-12 col-lg-7">
                  <div class="row">
                    <div class="col-lg-12 col-sm-6">
                      <h4 class="font-bold mb-4">Contact Us</h4>
-                     <div class="d-flex align-items-center lh-2 mb-2">
+                     <div class="d-flex align-items-center lh-2 mb-2 d-none">
                        <div class="icon-wrap">
                        <img
                          src="<?php bloginfo('template_directory')?>/dist/img/phone.svg"
@@ -63,7 +59,7 @@
                        </div>  
                        <div class="email-wrap">
                        <div>Email</div>
-                       <a href="#">info@kingscallingbrewing.com</a>
+                       <a href="mailto:info@trophopbeer.com">info@trophopbeer.com</a>
                      </div>
                      </div>
                    </div>
@@ -80,9 +76,9 @@
            <div class="footer-cprt d-lg-flex justify-content-between ">
                <span>© 2022, Trophop Beers</span>
                <ul class="social-container">
-                   <li><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
-                   <li><a href=""><i class="fa fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa fa-brands fa-youtube"></i></a></li>
+                   <li class="d-none"><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
+                   <li><a href="https://www.instagram.com/trophopbeers/" target="_blank"><i class="fa fa-brands fa-instagram"></i></a></li>
+                    <li class="d-none"><a href=""><i class="fa fa-brands fa-youtube"></i></a></li>
                </ul>
                <ul class="nav">
                  <li>
@@ -124,7 +120,7 @@ $('.shop-bottom .view-all').click(function(){
 
 });
 
-$('.sf-field-search label').prepend($('  <button type="submit" class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>'));
+$('.sf-field-search label').prepend($('  <button class="animate__animated mobile__animate animate__slideInLeft" data-animate="slideInLeft" style="visibility: visible;"><i class="fa-solid fa-magnifying-glass"></i></button>'));
 
 $('.searchandfilter').addClass('search-form');
 

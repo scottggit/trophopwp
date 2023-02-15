@@ -8,7 +8,7 @@
 
                         <div class="searchwrap shop-search">
                             <h1 class="display-1">Shop</h1>
-                            <?PHP  echo do_shortcode('[searchandfilter id="300"]'); ?>
+                            <?PHP  echo do_shortcode('[searchandfilter id="491"]'); ?>
                  
                         </div>
 
@@ -21,8 +21,32 @@
         </div>
     </section>
 
-    <section class="shop-top mt-5 pt-5">
+    <section class="shop-bottom mt-5 pt-5" id="shop-bottom">
         <div class="container">
+            <div class="row d-none">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-3 mb-5">Other Products</h2>
+                </div>
+            </div>
+      
+            <?php   echo do_shortcode('[searchandfilter id="491" show="results"]'); ?>
+              
+          
+            <div class="row mt-5 justify-content-center mb-5">
+                <div class="col-md-auto">
+                    <a  class="view-all">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-top mb-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-3 mb-5">Coming Soon</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="img-back blueback">
@@ -57,25 +81,6 @@
                     <h3>WHEAT ALE</h3>
                     <p>Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement </p>
                     <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="learn-more">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="shop-bottom mt-5 pt-5" id="shop-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="display-3 mb-5">Other Products</h2>
-                </div>
-            </div>
-      
-            <?php   echo do_shortcode('[searchandfilter id="300" show="results"]'); ?>
-              
-          
-            <div class="row mt-5 justify-content-center mb-5">
-                <div class="col-md-auto">
-                    <a href="#!" class="view-all">View All</a>
                 </div>
             </div>
         </div>

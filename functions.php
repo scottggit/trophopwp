@@ -66,7 +66,7 @@ function clm_footer1_nav()
         'container' => false, // remove nav container
         'menu' => 'Footer Navigation1', // nav name
         'menu_id' => '', // custom id
-        'menu_class' => 'nav', // custom class
+        'menu_class' => 'list-unstyled p-0', // custom class
         'theme_location' => 'footer1', // where it's located in the theme
         'before' => '', // before the menu
         'after' => '', // after the menu
@@ -277,4 +277,3 @@ function content($limit) {
 
   return $content;
 }
-
