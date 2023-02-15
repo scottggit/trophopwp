@@ -21383,6 +21383,9 @@ h1, .h1 {
   left: 50%;
   top: 50%;
 }
+.shop:hover:before, .shop:focus:before {
+  background: url(../../dist/img/cart.svg) no-repeat;
+}
 
 .main-container.content > section::before {
   display: none;
@@ -21540,8 +21543,43 @@ body .collection .h3 {
 }
 
 .bi-navbar .nav-item.active .nav-link::before {
+  content: "";
   width: 60%;
-  border-color: #e20e37;
+  border-bottom: 4px solid #e20e37;
+  height: 7px;
+}
+
+body footer h4,
+body footer .h4 {
+  font-size: 1.78rem;
+}
+
+body footer li a {
+  font-size: 0.88rem;
+}
+
+footer .current_page_item a {
+  color: #dbb383 !important;
+}
+
+.nav-menu > li.active:first-child a {
+  color: #dbb383 !important;
+}
+
+footer .email-wrap div {
+  color: #3e4852;
+}
+
+footer .email-wrap a {
+  font-weight: 600;
+  color: #3e4852 !important;
+}
+
+footer .footer-mn {
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .page-item .page-link, .custom_nav_container .fake-prev, .custom_nav_container .fake-next, .c-card_rounded_img, .bi-social a {
@@ -26549,7 +26587,7 @@ body {
 }
 
 .font-extralight {
-  font-family: "Atithi-ExtraLight";
+  font-family: "Athiti-ExtraLight";
 }
 
 .wp-pagenavi {
@@ -26660,6 +26698,8 @@ div.btn-wrap > a:hover, div.btn-wrap > a:focus {
 }
 
 .btn {
+  font-size: 1rem;
+  font-family: "Athiti-Medium";
   border-radius: 0;
   box-shadow: 0px 6px 16px rgba(71, 89, 147, 0.1411764706);
 }

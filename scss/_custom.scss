@@ -114,9 +114,16 @@ h1 {
     left: 50%;
     top: 50%;
   }
+
+  &:hover,
+  &:focus {
+    &:before {
+      background: url(../../dist/img/cart.svg) no-repeat;
+    }
+  }
 }
 
-.main-container.content > section::before {
+.main-container.content>section::before {
   display: none;
 }
 
@@ -185,6 +192,7 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+
   body .tropical-fruited h3,
   body .tropical-fruited h1 {
     letter-spacing: 11px;
@@ -301,13 +309,14 @@ footer .current_page_item a {
   color: #dbb383 !important;
 }
 
-.nav-menu > li.active:first-child a {
+.nav-menu>li.active:first-child a {
   color: #dbb383 !important;
 }
 
 footer .email-wrap div {
   color: #3e4852;
 }
+
 footer .email-wrap a {
   font-weight: 600;
   color: #3e4852 !important;
