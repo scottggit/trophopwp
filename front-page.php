@@ -30,8 +30,9 @@ html {
                             <h1 class="display-1 animate__animated" data-animate="fadeIn">TROP HOP</h1>
                             <p class=" animate__animated" data-animate="fadeIn">“Trophop was developed to be
                                 appreciable, tropical, and easy drinking.”</p>
-                            <a href="<?php echo get_site_url() ?>/shop" class="btn shop animate__animated"
-                                data-animate="fadeIn">Shop Merchandise</a>
+                            <a href="<?php echo get_site_url() ?>/shop"
+                                class="btn btn-white btn-hover-dark shop animate__animated" data-animate="fadeIn">Shop
+                                Merchandise</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +51,6 @@ html {
             </div>
     </section>
 
-
     <section class="tropical-fruited mt-5 pt-5">
         <div class="container">
             <div class="row">
@@ -68,8 +68,8 @@ html {
                         <li>An India Pale Ale with grapefruit and passionfruit flavor</li>
                         <li>6.1% ALC/Vol</li>
                     </ul>
-                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/" class="learn-more animate__animated"
-                        data-animate="fadeInUp">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/tropical-fruited/"
+                        class="btn btn-white btn-hover-dark animate__animated" data-animate="fadeInUp">Learn More</a>
                 </div>
             </div>
         </div>
@@ -88,8 +88,8 @@ html {
                         <li>95 calories</li>
                         <li>4.0% ALC./Vol</li>
                     </ul>
-                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/" class="learn-more animate__animated"
-                        data-animate="fadeInUp">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/luxury-lightlager/"
+                        class="btn btn-white btn-hover-dark animate__animated" data-animate="fadeInUp">Learn More</a>
                 </div>
                 <div class="col-md-6 order-lg-2 order-1 mb-lg-0 mb-5 animate__animated" data-animate="fadeInRight">
                     <img src="<?php bloginfo('template_directory') ?>/dist/img/light-lager.png" alt="" class="w-100">
@@ -115,8 +115,8 @@ html {
                         <li>This release is crafted to be just as approachable as the original</li>
                         <li>4.5% Alc./Vo</li>
                     </ul>
-                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/" class="learn-more animate__animated"
-                        data-animate="fadeInUp">Learn More</a>
+                    <a href="<?php echo get_site_url(); ?>/beach-wheat-ale/"
+                        class="btn btn-white btn-hover-dark animate__animated" data-animate="fadeInUp">Learn More</a>
                 </div>
 
 

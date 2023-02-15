@@ -110,9 +110,16 @@ h1 {
     width: 1rem;
     height: 1rem;
     background-size: contain;
-    transform: translate(-460%, -50%);
+    transform: translate(-500%, -50%);
     left: 50%;
     top: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      background: url(../../dist/img/cart.svg) no-repeat;
+    }
   }
 }
 
@@ -308,6 +315,7 @@ footer .current_page_item a {
 footer .email-wrap div {
   color: #3e4852;
 }
+
 footer .email-wrap a {
   font-weight: 600;
   color: #3e4852 !important;
