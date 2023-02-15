@@ -10,8 +10,9 @@
                 <img src="<?php bloginfo('template_directory') ?>/dist/img/footer-logo.png" alt="Logo" class="footer-logo mb-5 w-100" />
               </div>
               <div class="col-md-8">
+                <h3 class="h1 font-daylight">Trop Hop</h3>
                 <p class="m-0 pb-5 pb-lg-0">
-                  Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal products after intermandated outsourcing. Authoritatively iterate enterprise architectures vis-a-vis market-driven sources. Compellingly seize long-term high-impact platforms vis-a-v
+                  We are a brewing company located in Beautiful charleston, SC and our goal is to get delicious liquid in your hands (and belly) but since we (unfortunately) can’t ship Trop Hop directly to you, we hope that we can send you some merch instead!
                 </p>
                 <a href="<?php echo get_site_url(); ?>/about-us" class="learnmore">Learn More</a>
               </div>

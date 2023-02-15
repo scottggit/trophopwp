@@ -123,7 +123,7 @@ h1 {
   }
 }
 
-.main-container.content > section::before {
+.main-container.content>section::before {
   display: none;
 }
 
@@ -192,6 +192,7 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+
   body .tropical-fruited h3,
   body .tropical-fruited h1 {
     letter-spacing: 11px;
@@ -291,8 +292,7 @@ body .collection .h3 {
 .bi-navbar .nav-item.active .nav-link::before {
   content: "";
   width: 60%;
-  border-bottom: 4px solid #dbb383;
-  height: 7px;
+  border-color: #dbb383;
 }
 
 body footer h4,
@@ -308,7 +308,7 @@ footer .current_page_item a {
   color: #dbb383 !important;
 }
 
-.nav-menu > li.active:first-child a {
+.nav-menu>li.active:first-child a {
   color: #dbb383 !important;
 }
 
@@ -332,6 +332,7 @@ footer .footer-mn {
   body .offset-custom-md {
     margin-left: 8.322%;
   }
+
   body .col-lg-6-custom {
     width: 50%;
   }

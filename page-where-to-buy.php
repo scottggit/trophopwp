@@ -1,38 +1,36 @@
-
 <?php //Template Name: Store Location Map 
-    get_header();
+get_header();
 
-    $posts = get_posts(array(
-	    'posts_per_page'	=> -1,
-        'post_type'			=> 'store'
-    ));
+$posts = get_posts(array(
+    'posts_per_page'    => -1,
+    'post_type'            => 'store'
+));
 
-    $posts = array_map(function ($posts) {
-        $posts->lat = get_field('latitude', $posts->ID);
-        $posts->long = get_field('longitude', $posts->ID);
-        return $posts;
-    }, $posts);
+$posts = array_map(function ($posts) {
+    $posts->lat = get_field('latitude', $posts->ID);
+    $posts->long = get_field('longitude', $posts->ID);
+    return $posts;
+}, $posts);
 ?>
 
 <style>
-
     .accordion .accordion-button::after {
-        width: 2rem!important;
-        height: 2rem!important;
+        width: 2rem !important;
+        height: 2rem !important;
         stroke: #dbb383;
         background-position: center;
-        background-color: unset!important; 
+        background-color: unset !important;
         border-radius: 0.5rem;
-        box-shadow: unset!important;
+        box-shadow: unset !important;
         background-repeat: no-repeat;
-        background-size: contain !important; 
+        background-size: contain !important;
         background: url(<?php bloginfo('template_directory') ?>/dist/img/arrow-circle.png);
     }
 
-    .accordion-button:not(.collapsed)::after{
+    .accordion-button:not(.collapsed)::after {
         transform: rotate(-270deg);
         background-repeat: no-repeat;
-        background-size: contain !important; 
+        background-size: contain !important;
         background: url(<?php bloginfo('template_directory') ?>/dist/img/arrow-circle.png);
     }
 
@@ -40,7 +38,7 @@
         z-index: 999999
     }
 
-    #map { 
+    #map {
         height: 85vh;
     }
 
@@ -48,23 +46,27 @@
         width: 100%;
     }
 
-    .modal .feather-map-pin path{
-        stroke: #DBB383!important
+    .modal .feather-map-pin path {
+        stroke: #DBB383 !important
     }
 
-    .feather-map-pin path{
-        stroke: #fff!important
+    .feather-map-pin path {
+        stroke: #fff !important
     }
-    .feather-arrow-right-circle circle, .feather-arrow-right-circle polyline, .feather-arrow-right-circle line {
+
+    .feather-arrow-right-circle circle,
+    .feather-arrow-right-circle polyline,
+    .feather-arrow-right-circle line {
         stroke: #DBB383
     }
 
-    .accordion .accordion-button:focus, select:focus {
-        box-shadow: unset!important
+    .accordion .accordion-button:focus,
+    select:focus {
+        box-shadow: unset !important
     }
 
     .collapse {
-        visibility: visible!important;
+        visibility: visible !important;
     }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -77,34 +79,33 @@
 
 <div class="content">
     <section class="page-banner" style="background:#F8F8FF">
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 offset-lg-1">
-         <div class="d-flex align-items-center h-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
+                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100 rep-banner">
+                </div>
+                <div class="col-lg-5 col-md-6 order-md-1">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="searchwrap">
+                            <h1 class="display-1 mb-4"><span class="bg-title-light">Where To Buy</span></h1>
 
-        <div class="searchwrap" style="background:#F8F8FF; z-index: 99">
-            <h1 class="display-1" style="background:#F8F8FF">Where To Buy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        
-        <div class="lg-6 col-md-6 p-0 offset-lg-1">
-         <img src="https://trophop.testpage1.com/wp-content/themes/trophop/dist/img/representative-banner.png" alt="" class="w-100">
-        </div>
-      </div>
-      </div>
-      </section>
+    </section>
 
-      <div id="demo"></div>
+    <div id="demo"></div>
 
-      <section class="map">  
-      <div class="container-fluid p-0">
+    <section class="map">
+        <div class="container-fluid p-0">
             <div class="row m-0">
                 <div class="col-md-9 px-0">
                     <div class="bg-[#DBB383] p-5 relative">
                         <div class="loader absolute z-[999] bg-[#00000033] top-0 bottom-0 right-0 left-0 d-flex">
                             <div class="m-auto">
-                                <i data-feather="loader" class="fa fa-loader fa-spin"></i>   
+                                <i data-feather="loader" class="fa fa-loader fa-spin"></i>
                             </div>
                         </div>
 
@@ -115,11 +116,11 @@
                                 </div>
 
                                 <div class="relative w-100">
-                                        <input id="autocomplete" class="options text-white w-100 focus:outline-none my-auto pb-1 uppercase text-[20px] placeholder-[#fefff5a6] bg-transparent border-b-[1px] border-b-[#fff]" placeholder="Enter a Location"/>
-                                    
-                                        <div id="searchResult" class=" max-h-[300px] overflow-scroll d-none bg-white options absolute z-[999] left-0 right-0 rounded-[12px] px-[19px] py-[10px] mt-[10px]">
-                                            <p class="cursor-pointer">Searching...</p>
-                                        </div>
+                                    <input id="autocomplete" class="options text-white w-100 focus:outline-none my-auto pb-1 uppercase text-[20px] placeholder-[#fefff5a6] bg-transparent border-b-[1px] border-b-[#fff]" placeholder="Enter a Location" />
+
+                                    <div id="searchResult" class=" max-h-[300px] overflow-scroll d-none bg-white options absolute z-[999] left-0 right-0 rounded-[12px] px-[19px] py-[10px] mt-[10px]">
+                                        <p class="cursor-pointer">Searching...</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -153,13 +154,13 @@
                     <div class="loader-side">
                         <div class="absolute z-[999] bg-[#00000033] top-0 bottom-0 right-0 left-0 d-flex">
                             <div class="m-auto">
-                                <i data-feather="loader" class="fa fa-loader fa-spin"></i>   
+                                <i data-feather="loader" class="fa fa-loader fa-spin"></i>
                             </div>
                         </div>
                     </div>
                     <div class="" style='overflow:scroll;height:100%;'>
                         <div class="accordion accordion-flush" id="accordionFlushExample" style='height:100vh;'>
-                            <?php foreach($posts as $post): ?>
+                            <?php foreach ($posts as $post) : ?>
                                 <div class="accordion-item mb-0">
                                     <h2 class="accordion-header" id="flush-<?php echo $post->ID ?>">
                                         <button style="border-bottom: 1px solid #EFEFF5; border-radius: 0" class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $post->ID ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $post->ID ?>">
@@ -183,8 +184,9 @@
                         </div>
                     </div>
                 </div>
-            </div>   </div>
-      </section>
+            </div>
+        </div>
+    </section>
 
 </div>
 
@@ -215,22 +217,24 @@
 </div> -->
 
 <script>
-    let lon,lat;
+    let lon, lat;
     google.maps.event.addDomListener(window, 'load', initialize);
+
     function initialize() {
         autocomplete = new google.maps.places.Autocomplete(
-            (document.getElementById('autocomplete')),
-            {types: ['geocode']}
+            (document.getElementById('autocomplete')), {
+                types: ['geocode']
+            }
         );
 
-        google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        google.maps.event.addListener(autocomplete, 'place_changed', function() {
             var place = autocomplete.getPlace();
-            let selectMile =$('#miles-select').val();
+            let selectMile = $('#miles-select').val();
             lon = place.geometry.location.lng();
             lat = place.geometry.location.lat();
             locationApi(place.geometry.location.lat(), place.geometry.location.lng(), selectMile);
             map.setView(new L.LatLng(lat, lon), 8);
-        }); 
+        });
     }
 
     jQuery(document).on('change', '#miles-select', function(res) {
@@ -239,14 +243,12 @@
 
     locationApi('', '', '');
 
-    function locationApi(lat, lon, selectMile, id=null)
-    {
+    function locationApi(lat, lon, selectMile, id = null) {
         $('.loader-side').removeClass('d-none');
         fetch(`/location-api?lat1=${lat}&lon1=${lon}&selectMile=${selectMile}&fun=dis`)
             .then(response => response.json())
             .then(dis => {
-                if(!dis?.length)
-                {
+                if (!dis?.length) {
                     $('#accordionFlushExample').html(`
                         <p class="font-weight-light">No Store Found!</p>
                     `);
@@ -255,7 +257,7 @@
                 }
 
                 $allEle = '';
-                dis.forEach(res=> {
+                dis.forEach(res => {
                     $allEle += `<div class="accordion-item mb-0 acc-${res.ID}">
                         <h2 class="accordion-header" id="flush-${res.ID}">
                             <button style="border-bottom: 1px solid #EFEFF5; border-radius: 0" class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${res.ID}" aria-expanded="false" aria-controls="flush-collapse${res.ID}">
@@ -287,7 +289,7 @@
                 $('.loader').addClass('d-none');
                 $('.loader-side').addClass('d-none');
 
-                if(id){
+                if (id) {
                     $('.accordion-item').hide();
                     $(`.acc-${id}`).show();
                 }
@@ -298,14 +300,12 @@
 
 
 <script>
-
     $(function() {
         let userLocation = localStorage.getItem('user-location');
-        if(userLocation)
-        {
+        if (userLocation) {
             userLocation = JSON.parse(userLocation);
             jQuery('#exampleModalCenter').modal('hide');
-        }else{
+        } else {
             jQuery('#exampleModalCenter').modal('show');
         }
     })
@@ -327,9 +327,9 @@
     let marker = {};
 
     store.forEach(res => {
-        marker[res.ID] = new L.marker([res.lat.replace(',', ''),res.long.replace(',', '')])
-        .bindPopup(res.post_title)
-        .addTo(map);
+        marker[res.ID] = new L.marker([res.lat.replace(',', ''), res.long.replace(',', '')])
+            .bindPopup(res.post_title)
+            .addTo(map);
 
         marker[res.ID].addTo(map);
 
@@ -337,7 +337,6 @@
             locationApi('', '', '', res.ID);
         })
     });
-
 </script>
 
 <script>
@@ -347,45 +346,41 @@
 <script>
     var x = document.getElementById("demo");
 
-    function searchStore(e)
-    {
-        let selectMile =$('#miles-select').val();
+    function searchStore(e) {
+        let selectMile = $('#miles-select').val();
         $('#searchResult').removeClass('d-none');
 
         let userLocation = localStorage.getItem('user-location');
-        if(userLocation)
-        {
+        if (userLocation) {
             userLocation = JSON.parse(userLocation);
         }
 
         fetch(`/location-api?lat1=${userLocation.lat}&lon1=${userLocation.lon}&fun=searchStore&search=${e.target.value}&selectMile=${selectMile}`)
-        .then(response => response.json())
-        .then(res => {
+            .then(response => response.json())
+            .then(res => {
 
-            if(res == '')
-            {
-                document.getElementById('searchResult').innerHTML = '<p class="p-5">No Data Found!</p>';
-                return;
-            }
+                if (res == '') {
+                    document.getElementById('searchResult').innerHTML = '<p class="p-5">No Data Found!</p>';
+                    return;
+                }
 
-            $all = `<p data-id="reset" class=" border p-1 rounded-[6px] px-2 pb-1 mb-2 border-bottom cursor-pointer search-option hover:bg-[#f0f0f0]">&times; Reset Search</p>`
+                $all = `<p data-id="reset" class=" border p-1 rounded-[6px] px-2 pb-1 mb-2 border-bottom cursor-pointer search-option hover:bg-[#f0f0f0]">&times; Reset Search</p>`
 
-            res.forEach(search => {
-                $all += `<p data-id="${search.ID}" data-lat="${search['lat']}" data-long="${search['long']}" class="pb-1 mb-2 border-bottom cursor-pointer search-option hover:bg-[#f0f0f0]"> ${search['name']} </p>`
+                res.forEach(search => {
+                    $all += `<p data-id="${search.ID}" data-lat="${search['lat']}" data-long="${search['long']}" class="pb-1 mb-2 border-bottom cursor-pointer search-option hover:bg-[#f0f0f0]"> ${search['name']} </p>`
+                })
+
+                document.getElementById('searchResult').innerHTML = $all
             })
-
-            document.getElementById('searchResult').innerHTML = $all
-        })
-        .catch(err => console.log(err))
+            .catch(err => console.log(err))
     }
 
     // document.getElementById('seachInput')
     // .addEventListener('keyup', searchStore)
 
-    $(document).on('click', '.search-option', function(){
+    $(document).on('click', '.search-option', function() {
 
-        if($(this).attr('data-id') == 'reset')
-        {
+        if ($(this).attr('data-id') == 'reset') {
             $('.accordion-item').show();
             return
         }
@@ -397,19 +392,18 @@
         $(`.acc-${$(this).attr('data-id')}`).show();
     })
 
-    $(document).on('focusin', '#seachInput', function(){
-        $('#searchResult').removeClass('d-none'); 
+    $(document).on('focusin', '#seachInput', function() {
+        $('#searchResult').removeClass('d-none');
     });
 
-    $(document).on('click', '.accordion-item', function(){
+    $(document).on('click', '.accordion-item', function() {
         var id = $(this).find('.accordion-header').attr('id').replace('flush-', '');
         var lat = $(this).find('.accordion-body').attr('data-lat');
         var lon = $(this).find('.accordion-body').attr('data-lon');
 
         map.setView(new L.LatLng(lat, lon), 15);
         marker[id].openPopup();
-    })  
-
+    })
 </script>
 
 <?php get_footer(); ?>
