@@ -276,3 +276,8 @@ body .collection .h2:after {
   bottom: -10px;
   width: 4rem;
 }
+
+.bi-navbar .nav-item.active .nav-link::before {
+  width: 60%;
+  border-color: #e20e37;
+}
