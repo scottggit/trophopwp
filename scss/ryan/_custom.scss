@@ -98,3 +98,10 @@ div.btn-wrap>a {
         font-size: 157px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .img-2-lg-bg {
+        margin-bottom: -12rem;
+    }
+
+}

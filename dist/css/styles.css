@@ -26514,6 +26514,11 @@ div.btn-wrap > a:hover, div.btn-wrap > a:focus {
     font-size: 157px;
   }
 }
+@media screen and (max-width: 767px) {
+  .img-2-lg-bg {
+    margin-bottom: -12rem;
+  }
+}
 @media screen and (min-width: 1400px) {
   .gutters-50 {
     margin-left: -5rem;
