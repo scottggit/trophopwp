@@ -501,4 +501,11 @@ body {
   .page-banner .searchwrap {
     margin-left: 0rem;
   }
+  .page-banner .searchwrap {
+    margin-left: 0;
+  }
+}
+
+body .page-banner .searchwrap .searchandfilter {
+  width: 75%;
 }
