@@ -34,7 +34,7 @@
                 <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
                     <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100 rep-banner">
                 </div>
-                <div class="col-lg-4 col-md-6 offset-lg-1 order-md-1">
+                <div class="col-lg-5 col-md-6 order-md-1">
                     <div class="d-flex align-items-center h-100">
                         <div class="searchwrap stores-search">
                             <h1 class="display-1 mb-4"><span class="bg-title-light position-relative pe-lg-2 z-2">Distribution</span></h1>

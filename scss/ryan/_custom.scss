@@ -70,7 +70,7 @@ div.btn-wrap>a {
     }
 }
 
-.stores-search {
+.searchwrap {
     button {
         padding: 0 1rem;
     }
@@ -104,4 +104,80 @@ div.btn-wrap>a {
         margin-bottom: -12rem;
     }
 
+}
+
+/* Old SCSS */
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 6px 2px #f4f4fb;
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .price {
+        font-size: 24px;
+        color: #3E4852;
+        font-family: "Athiti-Bold";
+        margin-bottom: 1rem;
+    }
+}
+
+.product-img-container {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.bg-light-c {
+    background-color: #F9F9FC;
+}
+
+
+.btn-hover-dark {
+
+    &:hover,
+    &:focus {
+        border-color: #353c42;
+        background-color: #3E4852;
+        color: #FFFFFF;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-container {
+        p {
+            min-height: 60px;
+        }
+    }
+
+    /* Equal height Slider */
+    .slick-track {
+        display: flex !important;
+    }
+
+    .slick-slide {
+        height: inherit !important;
+    }
+
+    .slick-dots {
+        bottom: -50px;
+    }
 }

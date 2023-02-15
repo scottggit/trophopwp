@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Search & Filter Pro 
  *
@@ -22,47 +23,45 @@
  *
  */
 
-$count=0;
-if ( $query->have_posts() ){
+$count = 0;
+if ($query->have_posts()) {
 	$total_posts = $query->found_posts;
-	?>
+?>
 	<?php
 
 
-?>
+	?>
 
 	<div class="row text-center product-list">
 		<?php
-			while ($query->have_posts()){
+		while ($query->have_posts()) {
 			$query->the_post();
 		?>
-	  <div class="col-lg-3 col-md-6 mb-4">
-	  <div class="product-container bg-light-c">
-                                <p><?php echo get_the_title(); ?></p>
-                                <div class="price">
-                                    <?php if (get_field('price')) {
-                                        echo '$' . get_field('price');
-                                    } else {
-                                        echo 'Sold Out';
-                                    } ?>
-                                </div>
-                                <div class="product-img-container">
-                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
-                                </div>
-                                <a href="<?php echo get_field('product_url'); ?>" class="btn add-to-cart">View Product</a>
-                            </div>
-		</div>
-		<?php  $count++; ?>
+			<div class="col-lg-3 col-md-6 mb-4">
+				<div class="product-container bg-light-c">
+					<p><?php echo get_the_title(); ?></p>
+					<div class="price">
+						<?php if (get_field('price')) {
+							echo '$' . get_field('price');
+						} else {
+							echo 'Sold Out';
+						} ?>
+					</div>
+					<div class="product-img-container">
+						<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
+					</div>
+					<a href="<?php echo get_field('product_url'); ?>" class="btn btn-white btn-hover-dark add-to-cart">View Product</a>
+				</div>
+			</div>
+			<?php $count++; ?>
 		<?php
-			}
+		}
 		?>
-			
+
 	</div>
 
-	<?php
-}
-else
-{
+<?php
+} else {
 	echo "No Results Found";
 }
 ?>

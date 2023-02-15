@@ -3,19 +3,17 @@
     <section class="page-banner mb-5 pb-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-6 offset-lg-1">
-                    <div class="d-flex align-items-center h-100">
-
-                        <div class="searchwrap shop-search">
-                            <h1 class="display-1">Shop</h1>
-                            <?PHP  echo do_shortcode('[searchandfilter id="491"]'); ?>
-                 
-                        </div>
-
-                    </div>
+                <div class="col-lg-6 col-md-6 p-0 offset-lg-1 order-md-2 mb-4 mb-md-0">
+                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100 rep-banner">
                 </div>
-                <div class="lg-6 col-md-6 p-0 offset-lg-1">
-                    <img src="<?php bloginfo('template_directory') ?>/dist/img/representative-banner.png" alt="" class="w-100">
+                <div class="col-lg-5 col-md-6 order-md-1">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="searchwrap stores-search">
+                            <h1 class="display-1 mb-4"><span class="bg-title-light position-relative pe-lg-2 z-2">Shop</span></h1>
+                            <?PHP echo do_shortcode('[searchandfilter id="491"]'); ?>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,13 +26,13 @@
                     <h2 class="display-3 mb-5">Other Products</h2>
                 </div>
             </div>
-      
-            <?php   echo do_shortcode('[searchandfilter id="491" show="results"]'); ?>
-              
-          
+
+            <?php echo do_shortcode('[searchandfilter id="491" show="results"]'); ?>
+
+
             <div class="row mt-5 justify-content-center mb-5">
                 <div class="col-md-auto">
-                    <a  class="view-all">View All</a>
+                    <a class="view-all">View All</a>
                 </div>
             </div>
         </div>
