@@ -4,7 +4,7 @@
     margin-right: -5rem;
   }
 
-  .gutters-50>[class*="col-"] {
+  .gutters-50 > [class*="col-"] {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -14,7 +14,7 @@
     margin-right: -4rem;
   }
 
-  .gutters-40>[class*="col-"] {
+  .gutters-40 > [class*="col-"] {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -24,7 +24,7 @@
     margin-right: -3rem;
   }
 
-  .gutters-30>[class*="col-"] {
+  .gutters-30 > [class*="col-"] {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -69,7 +69,7 @@
   h1 {
     font-family: "DaylightDreams";
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (min-width: 1400px) {
       font-size: 7rem;
     }
   }
@@ -169,7 +169,6 @@
 }
 
 .hat-img_carousel {
-
   /* .slick-list::before,
   .slick-list::after {
     background: #fff !important;
@@ -285,7 +284,7 @@
 .btn-wrap {
   margin-top: 2rem;
 
-  &>a {
+  & > a {
     padding: 0.5rem;
     font-family: "Athiti-Bold";
     color: #3e4852;
@@ -418,26 +417,26 @@
   }
 
   .row {
-    &>div {
+    & > div {
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
 
     @media screen and (min-width: 1400px) {
-      &>div {
+      & > div {
         padding: 3rem;
       }
     }
 
-    &>div:first-child {
+    & > div:first-child {
       background-color: #fdf5f4;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       background-color: #e8ffff;
     }
 
-    &>div:last-child {
+    & > div:last-child {
       background-color: #f0f8f1;
     }
   }

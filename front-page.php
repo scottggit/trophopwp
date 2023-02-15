@@ -23,11 +23,12 @@ html {
     <section class="home-banner mb-5 pb-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-12 offset-lg-2 offset-md-1 mb-5 mb-lg-0 order-lg-1 order-1">
+                <div
+                    class="col-lg-5  offset-custom-md col-md-5 col-12 offset-lg-2 offset-md-1 mb-5 mb-lg-0 order-lg-1 order-2">
                     <div class="d-flex align-items-center h-100">
                         <div class="banner-left-wrap">
                             <h4 class=" animate__animated" data-animate="fadeIn">Authenticity in every sip</h4>
-                            <h1 class="display-1 animate__animated" data-animate="fadeIn">TROP HOP</h1>
+                            <h1 class="display-2 animate__animated" data-animate="fadeIn">TROP HOP</h1>
                             <p class=" animate__animated" data-animate="fadeIn">“Trophop was developed to be
                                 appreciable, tropical, and easy drinking.”</p>
                             <a href="<?php echo get_site_url() ?>/shop"
@@ -37,7 +38,7 @@ html {
                     </div>
                 </div>
                 <div
-                    class="col-md-6 col-12 col-lg-5 p-md-0 p-lg-0 position-relative  order-lg-2 order-2 pb-lg-0 pb-5 mb-lg-0 mb-5">
+                    class="col-md-6 col-12 col-xl-5 col-lg-6-custom p-md-0 p-lg-0 position-relative  order-lg-2 order-1 pb-lg-0 pb-5 mb-lg-0 mb-5">
                     <div class="img-wrap">
                         <img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner.jpg" alt=""
                             class="w-100">
