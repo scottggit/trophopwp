@@ -48,14 +48,17 @@ h1 {
     background: url(../../dist/img/cart-blue.svg);
   }
 }
+
 .add-to-cart.green {
   &:before {
     background: url(../../dist/img/cart-green.svg);
   }
 }
+
 .search-form {
   position: relative;
 }
+
 .search-form button {
   background-color: transparent;
   border: none;
@@ -68,6 +71,7 @@ h1 {
   padding: 0 2rem;
   transition: all 0.3s ease;
 }
+
 .searchwrap {
   width: 100%;
 }
@@ -95,6 +99,7 @@ h1 {
   font-family: "Athiti-Bold";
   background: #ffff;
   position: relative;
+
   &:before {
     content: "";
     position: absolute;
@@ -126,6 +131,7 @@ h1 {
     @media screen and (min-width: 1440px) {
       margin-left: 5rem;
     }
+
     .search-form {
       @media screen and (min-width: 1440px) {
         width: 80%;
@@ -138,6 +144,7 @@ h1 {
   a.add-to-cart.btn {
     margin-top: 2rem;
   }
+
   h5 {
     margin-bottom: 2rem;
   }
@@ -183,9 +190,11 @@ footer {
     letter-spacing: 11px;
   }
 }
+
 body .tropical-fruited h1 {
   position: relative;
 }
+
 body .tropical-fruited h1:after {
   content: "";
   position: absolute;
@@ -211,6 +220,7 @@ body section.light-lager h3 {
   color: #3e4852;
   font-family: "Athiti-ExtraLight";
 }
+
 section.light-lager h1 {
   letter-spacing: 4px;
   position: relative;
@@ -269,12 +279,6 @@ body .collection h3,
 body .collection .h3 {
   line-height: 1.2rem;
   margin-bottom: 0;
-}
-
-body .collection h2:after,
-body .collection .h2:after {
-  bottom: -10px;
-  width: 4rem;
 }
 
 .bi-navbar .nav-item.active .nav-link::before {

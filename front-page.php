@@ -18,8 +18,6 @@
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
 	}
-
-
 </style>
 <div class="content">
 	<section class="home-banner mb-5 pb-5">
@@ -119,9 +117,8 @@
 			<div class="row mb-5">
 
 				<div class="col-md-12 text-center">
-
-					<h3 class="animate__animated" data-animate="slideInUp">Shop</h3>
-					<h2 class="display-3 animate__animated" data-animate="slideInUp">Products</h2>
+					<h3 class="h1 animate__animated mb-n-2" data-animate="slideInUp">Shop</h3>
+					<h2 class="display-1 animate__animated" data-animate="slideInUp">Products</h2>
 				</div>
 
 			</div>
@@ -141,7 +138,9 @@
 						?>
 								<div class="product-container bg-light-c">
 									<p><?php echo get_the_title(); ?></p>
-									<div class="price">
+									<div class="price <?php if (!get_field('price')) {
+															echo 'text-primary';
+														} ?>">
 										<?php if (get_field('price')) {
 											echo '$' . get_field('price');
 										} else {
@@ -151,7 +150,7 @@
 									<div class="product-img-container">
 										<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Logo" class="img-fluid">
 									</div>
-									<a href="<?php echo get_field('product_url'); ?>" class="btn add-to-cart">View Product</a>
+									<a href="<?php echo get_field('product_url'); ?>" class="btn btn-white btn-hover-dark add-to-cart">View Product</a>
 								</div>
 						<?php
 							} // end while

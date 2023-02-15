@@ -4,7 +4,7 @@
     margin-right: -5rem;
   }
 
-  .gutters-50 > [class*="col-"] {
+  .gutters-50>[class*="col-"] {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -14,7 +14,7 @@
     margin-right: -4rem;
   }
 
-  .gutters-40 > [class*="col-"] {
+  .gutters-40>[class*="col-"] {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -24,7 +24,7 @@
     margin-right: -3rem;
   }
 
-  .gutters-30 > [class*="col-"] {
+  .gutters-30>[class*="col-"] {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -60,16 +60,20 @@
   @media screen and (min-width: 1800px) {
     margin-top: -20rem;
   }
+
   h4 {
     font-family: "Athiti-Light";
     color: #dbb383;
   }
+
   h1 {
     font-family: "DaylightDreams";
+
     @media screen and (max-width: 1400px) {
       font-size: 7rem;
     }
   }
+
   p {
     @media screen and (min-width: 1400px) {
       max-width: 30rem;
@@ -82,6 +86,7 @@
 
   li {
     position: relative;
+
     &:before {
       content: "";
       background: url(../../dist/img/check.svg);
@@ -105,10 +110,12 @@
     @media screen and (min-width: 1400px) {
       letter-spacing: 20px;
     }
+
     font-family: "Athiti-ExtraLight";
     font-size: 3rem;
     text-transform: uppercase;
   }
+
   h1 {
     font-family: "DaylightDreams";
   }
@@ -116,9 +123,7 @@
 
 .collection {
   h3 {
-    font-family: "Atithi-ExtraLight";
     font-family: "Athiti-ExtraLight";
-    font-size: 2rem;
     letter-spacing: 20px;
     text-transform: uppercase;
   }
@@ -126,12 +131,13 @@
   h2 {
     font-family: "DaylightDreams";
     position: relative;
+
     &:after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 50%;
-      width: 6rem;
+      width: 80px;
       transform: translate(-50%, 0);
       border-bottom: 5px solid #dbb383;
     }
@@ -147,11 +153,13 @@
 
 .logo-img_container {
   text-align: center;
+
   p {
     margin-bottom: 0rem;
     font-size: 1.3rem;
     line-height: 1.3;
   }
+
   .price {
     margin-bottom: 1rem;
     font-family: "Athiti-Bold";
@@ -161,6 +169,7 @@
 }
 
 .hat-img_carousel {
+
   /* .slick-list::before,
   .slick-list::after {
     background: #fff !important;
@@ -173,21 +182,25 @@
     color: #000 !important;
     box-shadow: 0px 6px 16px #475b9324;
   }
+
   .slick-next::before,
   .custom_nav_container .fake-prev::before,
   .custom_nav_container .fake-next::before,
   .slick-prev::before {
     color: #000 !important;
   }
+
   .slick-dots li.slick-active button:before {
     color: #dbb383 !important;
   }
+
   .slick-dots li button:before {
     content: "" !important;
     border: 1px solid #707070;
   }
+
   .slick-active button:before {
-    background-color: #dbb383 !important ;
+    background-color: #dbb383 !important;
     border: 0 !important;
   }
 }
@@ -197,6 +210,7 @@
   padding: 2rem;
   margin-bottom: 8rem;
   position: relative;
+
   .logo {
     position: absolute;
     border: 1px solid #dbb3833c;
@@ -209,18 +223,22 @@
     justify-content: center;
     top: -5rem;
     background: #fff;
+
     img {
       width: 100%;
     }
   }
+
   .desc-wrap {
     padding-top: 5rem;
     font-family: "Athiti";
+
     h3 {
       font-family: "Athiti-Bold";
       text-transform: uppercase;
       font-size: 1.5rem;
     }
+
     img {
       width: 1rem;
       height: 1rem;
@@ -233,6 +251,7 @@
   ul {
     list-style: none;
     margin-bottom: 5rem;
+
     li {
       a {
         padding: 0.5rem;
@@ -241,6 +260,7 @@
         line-height: 0.7;
         color: #3e4852;
       }
+
       span.current {
         padding: 0.5rem;
         border: #3e4852 1px solid;
@@ -249,6 +269,7 @@
         background-color: #3e4852;
         color: #fff;
       }
+
       .next {
         padding: 0.5rem;
         border: #3e4852 1px solid;
@@ -263,12 +284,14 @@
 
 .btn-wrap {
   margin-top: 2rem;
-  & > a {
+
+  &>a {
     padding: 0.5rem;
     font-family: "Athiti-Bold";
     color: #3e4852;
     text-transform: uppercase;
   }
+
   .directions {
     border: 1px solid #3e4852;
     color: #fff;
@@ -283,6 +306,7 @@
 .img-back {
   position: relative;
 }
+
 .blueback {
   &:before {
     position: absolute;
@@ -326,11 +350,13 @@
   .img-wrap {
     width: 10rem;
   }
+
   h4 {
     font-family: "Athiti-Light";
     text-transform: uppercase;
     margin-top: 2rem;
   }
+
   h3 {
     font-family: "Athiti-Medium";
     text-transform: uppercase;
@@ -341,13 +367,16 @@
   h2 {
     font-family: "DaylightDreams";
   }
+
   h5 {
     font-family: "Athiti-Bold";
   }
+
   .other-wrap {
     margin-bottom: 2rem;
     background: #f9f9fc;
     padding: 2rem;
+
     p {
       line-height: 1.3;
     }
@@ -359,13 +388,16 @@
     padding: 3rem 0;
   }
 }
+
 .aboutus-section {
   b {
     color: #3e4852;
   }
+
   h2 {
     font-family: "DaylightDreams";
   }
+
   .about-desc {
     @media screen and (min-width: 1400px) {
       margin-bottom: 20rem;
@@ -384,26 +416,32 @@
   @media screen and (min-width: 1400px) {
     margin-top: -25rem;
   }
+
   .row {
-    & > div {
+    &>div {
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
+
     @media screen and (min-width: 1400px) {
-      & > div {
+      &>div {
         padding: 3rem;
       }
     }
-    & > div:first-child {
+
+    &>div:first-child {
       background-color: #fdf5f4;
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       background-color: #e8ffff;
     }
-    & > div:last-child {
+
+    &>div:last-child {
       background-color: #f0f8f1;
     }
   }
+
   h2 {
     font-family: "Athiti-Medium";
     text-transform: uppercase;
@@ -412,15 +450,18 @@
 
 #stores {
   padding-top: 2rem;
+
   @media screen and (min-width: 1400px) {
     padding-top: 10rem;
   }
 }
+
 body {
   .wp-pagenavi {
     margin: auto;
     width: auto;
     margin-bottom: 5rem;
+
     a {
       padding: 0.5rem;
       border: #3e4852 1px solid;
@@ -431,11 +472,13 @@ body {
       padding: 3px 5px;
       margin-right: 1rem;
     }
+
     span {
       border: 1px solid #bfbfbf;
       padding: 3px 5px;
       margin-right: 1rem;
     }
+
     .current {
       padding: 0.5rem;
       border: #3e4852 1px solid;
@@ -449,6 +492,7 @@ body {
 
 .page-banner .searchwrap .searchandfilter {
   width: 100%;
+
   label {
     width: 100%;
   }
