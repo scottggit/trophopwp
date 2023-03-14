@@ -104,10 +104,11 @@
 $("#reset-session").click(function() {
     $(".popup-banner-left-wrap").append(
         " <p style='color: red;font-size: 1.2rem;margin-top: 1rem;font-weight: 600;}'>YOU MUST BE OF LEGAL DRINKING AGE TO VIEW THIS SITE</p>."
-        );
+    );
 });
 
-window.onload = function() {
+$(document).ready(function() {
+
     if (sessionStorage.getItem('advertOnce') !== 'true') {
         //sessionStorage.setItem('advertOnce','true');
         $('#popup').show();
@@ -134,7 +135,8 @@ window.onload = function() {
         setTimeout(() => popup.classList.add("hidden"), 300);
         sessionStorage.setItem('advertOnce', 'true');
     });
-};
+
+});
 
 $(".product-list>div").hide();
 $(".product-list>div:lt(8)").show();
