@@ -110,8 +110,8 @@ h1 {
     width: 1rem;
     height: 1rem;
     background-size: contain;
-    transform: translate(-500%, -50%);
-    left: 50%;
+    transform: translate(-50%, -50%);
+    left: 2rem;
     top: 50%;
   }
 
@@ -129,7 +129,7 @@ h1 {
 
 .content {
   @media screen and (max-width: 768px) {
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
 }
 
@@ -305,11 +305,11 @@ body footer li a {
 }
 
 footer .current_page_item a {
-  color: #dbb383 !important;
+  color: #dbb383;
 }
 
 .nav-menu>li.active:first-child a {
-  color: #dbb383 !important;
+  color: #dbb383;
 }
 
 footer .email-wrap div {

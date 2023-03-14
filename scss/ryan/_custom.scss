@@ -168,6 +168,10 @@ div.btn-wrap>a {
     letter-spacing: 10px;
 }
 
+.ls-20 {
+    letter-spacing: 20px;
+}
+
 .line-divide {
     width: 20px;
     height: 4px;
@@ -186,6 +190,100 @@ div.btn-wrap>a {
         background: #EBDFC5;
     }
 }
+
+.beer-section {
+    position: relative;
+}
+
+.beer-item {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    $color : var(--primary-color);
+
+    .beer-volume {
+        color: var(--primary-color);
+    }
+
+    &::after {
+        content: '';
+        width: 90%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--bg-primary);
+        z-index: -1;
+    }
+}
+
+.beer-list {
+    list-style: none;
+
+    li {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background-color: $white;
+            background-position: center;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -1.4rem;
+            top: 8px;
+        }
+    }
+}
+
+.check-1 {
+    li {
+        &::before {
+            background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='8.24' height='6.549' viewBox='0 0 8.24 6.549' ><path id='Icon_feather-check' data-name='Icon feather-check' d='M11.412,9,7.691,12.721,6,11.03' transform='translate(-4.586 -7.586)' fill='rgba(255,255,255,0)' stroke='%2392D2DC' stroke-linecap='round' stroke-width='2' /></svg>");
+        }
+    }
+}
+
+.check-2 {
+    li {
+        &::before {
+            background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='8.24' height='6.549' viewBox='0 0 8.24 6.549' ><path id='Icon_feather-check' data-name='Icon feather-check' d='M11.412,9,7.691,12.721,6,11.03' transform='translate(-4.586 -7.586)' fill='rgba(255,255,255,0)' stroke='%23ACB588' stroke-linecap='round' stroke-width='2' /></svg>");
+        }
+    }
+}
+
+.check-3 {
+    li {
+        &::before {
+            background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='8.24' height='6.549' viewBox='0 0 8.24 6.549' ><path id='Icon_feather-check' data-name='Icon feather-check' d='M11.412,9,7.691,12.721,6,11.03' transform='translate(-4.586 -7.586)' fill='rgba(255,255,255,0)' stroke='%23DAB189' stroke-linecap='round' stroke-width='2' /></svg>");
+        }
+    }
+}
+
+.beer-nav-toggle {
+    transition: all 0.3s ease;
+}
+
+.bg-gray {
+    background-color: ghostwhite;
+}
+
+.btn-yellow {
+    background-color: $yellow;
+    color: $white;
+    border: $yellow;
+
+    &:hover,
+    &:focus {
+        background-color: #3E4852;
+        color: $white;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .product-container {
@@ -206,6 +304,14 @@ div.btn-wrap>a {
     .slick-dots {
         bottom: -50px;
     }
+
+    .beer-item {
+        min-height: 100vh;
+
+        &::after {
+            width: 75%;
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -220,6 +326,12 @@ div.btn-wrap>a {
     .collection {
         h2 {
             font-size: 100px;
+        }
+    }
+
+    .beer-item {
+        .display-1 {
+            font-size: 150px;
         }
     }
 }

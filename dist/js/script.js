@@ -104,9 +104,10 @@ $(document).ready(function () {
   }); //missing );
 
   /* Element Animate */
-  $(".animate__animated").scrolla({
-    once: true,
+  $('.animate__animated:not(.mobile__animate)').scrolla({
+    once: true
   });
+  $('.animate__animated.mobile__animate').scrolla();
 
   /* Scroll Script */
   window.addEventListener(
