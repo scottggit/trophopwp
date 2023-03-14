@@ -26157,11 +26157,12 @@ footer .footer-mn {
 }
 @media screen and (min-width: 1400px) {
   .bi-navbar .nav-item .nav-link {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .bi-navbar .nav-item .nav-link::before {
-    left: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, 0px);
   }
 }
 .header-social li {
@@ -27128,7 +27129,7 @@ div.btn-wrap > a:hover, div.btn-wrap > a:focus {
 @media screen and (min-width: 1400px) {
   .aboutus-section .about-desc {
     margin-bottom: 20rem;
-    max-width: 70%;
+    max-width: 45%;
   }
 }
 
@@ -27208,6 +27209,173 @@ body .wp-pagenavi .current {
 }
 .page-banner .searchwrap .searchandfilter label {
   width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .page-banner .searchwrap {
+    margin-left: 0rem;
+  }
+
+  .page-banner .searchwrap {
+    margin-left: 0;
+  }
+}
+body .page-banner .searchwrap .searchandfilter {
+  width: 75%;
+}
+
+/* ----- CSS ----- */
+#popup {
+  z-index: 9999;
+  border-top: 10px solid #dbb383;
+  display: inline-block;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  background: #f8f8fe;
+  box-shadow: 1px 1px 0.5em 0 rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+@media screen and (max-width: 768px) {
+  #popup .popup-banner-left-wrap {
+    padding: 2rem;
+  }
+}
+#popup h1, #popup .h1 {
+  font-size: 7rem;
+}
+@media screen and (max-width: 1748px) {
+  #popup h1, #popup .h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #popup h1, #popup .h1 {
+    font-size: 3rem;
+  }
+}
+#popup p {
+  font-size: 3rem;
+  font-family: "Athiti-Light";
+}
+@media screen and (max-width: 1748px) {
+  #popup p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #popup p {
+    font-size: 1.3rem;
+  }
+}
+#popup a {
+  font-family: "Athiti-Bold";
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+}
+@media screen and (max-width: 1748px) {
+  #popup a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #popup a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+#popup .popup-big-can-img {
+  text-align: center;
+}
+#popup .popup-big-can-img img {
+  width: 60%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  #popup .popup-big-can-img img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #popup .popup-big-can-img {
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    width: 100%;
+    max-width: 100%;
+  }
+  #popup .popup-big-can-img img {
+    width: 100%;
+  }
+}
+
+#popup.hidden {
+  display: none;
+  z-index: 0;
+}
+
+#popup.fade-in {
+  opacity: 1;
+}
+
+#stores h5, #stores .h5 {
+  font-family: "Athiti-Light";
+  letter-spacing: 5px;
+}
+#stores h2, #stores .h2 {
+  font-family: "Athiti-MEDIUM";
+}
+
+.aboutus-section-2,
+.aboutus-section-3 {
+  overflow: hidden;
+  position: relative;
+}
+.aboutus-section-2 .section-content,
+.aboutus-section-3 .section-content {
+  position: relative;
+}
+
+.aboutus-section-2::before {
+  background-color: #f5f5e9;
+}
+
+.aboutus-section-3::before {
+  background-color: #edf0f8;
+}
+
+.aboutus-section-2::before,
+.aboutus-section-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+}
+
+#stores h2, #stores .h2 {
+  position: relative;
+}
+
+#stores h2:after, #stores .h2:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 1rem;
+  transform: translate(0%, 0);
+  border-bottom: 5px solid #ebdfc5;
 }
 
 /*# sourceMappingURL=styles.css.map */

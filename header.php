@@ -12,47 +12,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
-    <?php wp_head();?>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/dist/css/styles.css?v=0.0.03" />
+    <?php wp_head(); ?>
+    <style>
+    .bi-navbar {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+    }
+    </style>
 </head>
 
 <body>
+
+    <!----- HTML ----->
+    <div id="popup" class="hidden">
+        <section class="popup-banner h-100">
+            <div class="container-fluid h-100">
+                <div class="row align-items-center h-100">
+                    <div
+                        class="col-lg-4 offset-custom-md col-md-4 col-12 offset-lg-1 offset-md-1 mb-5 mb-lg-0 order-lg-1 order-2">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="popup-banner-left-wrap">
+                                <h1 class="animate__animated" data-animate="fadeIn">YOU MUST BE <span
+                                        style="color:#DBB383;">21</span> YERS OLD TO
+                                    VISIT THIS SITE</h1>
+                                <p class=" animate__animated" data-animate="fadeIn">PLEASE, VERIFY YOUR AGE.</p>
+                                <div class="btn-wrap d-flex flex-wrap gap-2">
+
+                                    <a id="refresh-page" class="btn  btn-hover-dark  animate__animated"
+                                        data-animate="fadeIn" style="background:#DBB383;color:#fff;">YES, I
+                                        AM OVER 21</a>
+                                    <a href="<?php echo get_site_url() ?>/404" id="reset-session"
+                                        class="btn btn-white btn-hover-dark  animate__animated"
+                                        data-animate="fadeIn">NO, I AM UNDER 21</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-5 col-12 col-xl-5  p-md-0 p-lg-0 offset-lg-2 offset-md-1 position-relative  order-lg-2 order-1 pb-lg-0  mb-lg-0">
+                        <div class="img-wrap">
+                            <div class="popup-big-can-img">
+                                <div class=" animate__animated" data-animate="fadeInRight">
+                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/popup.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
     <span class="bg-grad"></span>
-    <nav class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4">
-        <div class="container-lg container-fluid px-lg-3">
+    <nav class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-4 py-lg-3">
+        <div class="container-lg container-fluid">
             <a class="navbar-brand logo" href="<?php echo get_site_url() ?>">
-                <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt="Logo" class="img-fluid" /></a>
+                <img src="<?php bloginfo('template_directory') ?>/dist/img/logo.png" alt="Logo" class="img-fluid" /></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bi-navbar"
                 aria-controls="bi-navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-            <div class="collapse navbar-collapse justify-content-lg-between pt-lg-0 pt-3" id="bi-navbar">
+            <div class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5 pt-lg-0 pt-3"
+                id="bi-navbar">
 
-                <div class="d-lg-flex">
-                    <?php 
-            
-            // Primary navigation menu.
-wp_nav_menu( array(
-    'menu_class'     => 'nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0',
-    'theme_location' => 'main',
-    'link_before'    => '',
-    'walker'         => new trop_menu_walker(),
-) );
+                <div class="d-lg-flex w-100 justify-content-lg-center">
+                    <?php
 
-            ?>
+                    // Primary navigation menu.
+                    wp_nav_menu(array(
+                        'menu_class'     => 'nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0',
+                        'theme_location' => 'main',
+                        'link_before'    => '',
+                        'walker'         => new trop_menu_walker(),
+                    ));
 
-                    <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>"
-                        class="search-box">
-                        <input type="text" value="<?php get_search_query() ?>" name="s" id="s" placeholder="Search.."
-                            required />
-                        <button class="btn-search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
+                    ?>
 
                 </div>
 
-                <ul class="header-social d-lg-none d-xl-flex d-flex">
+                <ul class="header-social d-none d-lg-nones d-xl-flexs d-flexs">
                     <li class="d-none">
                         <a href="#">Facebook</a>
                     </li>
@@ -65,7 +102,7 @@ wp_nav_menu( array(
 
                 </ul>
 
-                <ul class="nav woocommerce-nav">
+                <ul class="nav woocommerce-nav d-none">
                     <li>
                         <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15.37" height="14.762"
@@ -109,5 +146,13 @@ wp_nav_menu( array(
                     </li>
                 </ul>
             </div>
+            <form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>"
+                class="search-box d-none d-lg-block">
+                <input type="text" value="<?php get_search_query() ?>" name="s" id="s" placeholder="Search.."
+                    required />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
     </nav>

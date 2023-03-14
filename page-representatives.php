@@ -40,7 +40,7 @@
                         <div class="searchwrap stores-search">
                             <h1 class="display-1 mb-4"><span
                                     class="bg-title-light position-relative pe-lg-2 z-2">Distribution</span></h1>
-                            <?PHP echo do_shortcode('[searchandfilter id="492"]'); ?>
+                            <?PHP /* echo do_shortcode('[searchandfilter id="492"]'); */?>
 
                         </div>
                     </div>
@@ -49,9 +49,66 @@
         </div>
     </section>
 
-    <section class="stores " id="stores">
+    <section class="stores pb-5" id="stores">
         <div class="container">
-            <?PHP echo do_shortcode('[searchandfilter id="492" show="results"]'); ?>
+
+
+            <?php
+						$args = array(
+							'post_type'        => 'representative',
+							'posts_per_page'   => -1,
+                            'orderby' => 'menu_order',
+                            'order'=>'DESC'
+						);
+						$query = new WP_Query($args);
+						if ($query->have_posts()) {
+                            $i=1;
+							while ($query->have_posts()) {
+								$query->the_post();
+						?>
+
+            <?php if($i%2==0){
+?>
+            <div class="row py-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="w-100 pb-5 pb-lg-0">
+                </div>
+                <div class="col-md-4 offset-md-2  order-md-1">
+                    <h5><?php echo get_field('state')?></h5>
+                    <h2 class="mb-5"><?php the_title(); ?></h2>
+                    <a class="btn btn-white btn-hover-dark animate__animated"
+                        href="<?php echo get_field('link')['url']?>"><?php echo get_field('link')['title']; ?></a>
+                </div>
+
+
+
+            </div>
+            <?php
+                        }else{
+?>
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="w-100 pb-5 pb-lg-0">
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <h5><?php echo get_field('state')?></h5>
+                    <h2 class="mb-5"><?php the_title(); ?></h2>
+                    <a class="btn btn-white btn-hover-dark animate__animated"
+                        href="<?php echo get_field('link')['url']?>"><?php echo get_field('link')['title']; ?></a>
+                </div>
+
+
+
+            </div>
+            <?php                      } ?>
+
+            <?php
+            $i++;
+							} // end while
+						} // end if
+						wp_reset_query();
+						?>
+
 
     </section>
 </div>

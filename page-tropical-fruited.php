@@ -33,11 +33,13 @@
                                     <p class="h3 text-end"><strong>IP 6.1%</strong></p>
                                 </div>
                             </div>
+<?php /*
                             <div class="col-xxl-5 col-lg-6">
                                 <p class="font-smaller">
                                     Compellingly optimize backend leadership is-a-vis collaborative technology. Compellingly implement orthogonal
                                 </p>
                             </div>
+*/ ?>
                         </div>
                     </div>
                 </div>
@@ -55,10 +57,11 @@
 
                         <div class="row justify-content-lg-end">
                             <div class="col-xxl-5 offset-xxl-7 col-lg-8 offset-lg-4">
-                                <p class="font-smaller">
+                              <?php /*  <p class="font-smaller">
                                     Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal products after intermandated outsourcing.
                                 </p>
-                                <a href="<?php echo get_site_url(); ?>/representatives/" class="btn btn-dark">OUR DISTRIBUTION</a>
+                                */ ?>
+                                <a href="<?php echo get_site_url(); ?>/representatives/" class="btn btn-dark">Contact a Representative</a>
                             </div>
                         </div>
                     </div>
@@ -80,10 +83,11 @@
 
                         <div class="row justify-content-lg-end">
                             <div class="col-xxl-5 offset-xxl-7 col-lg-8 offset-lg-4">
-                                <p class="font-smaller">
+                                           <?php /*   <p class="font-smaller">
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                                 </p>
-                                <a href="<?php echo get_site_url(); ?>/where-to-buy/" class="btn btn-dark">WHERE TO BUY</a>
+                                        */ ?>
+                                <a href="<?php echo get_site_url(); ?>/where-to-buy/" class="btn btn-dark">View Store Locator</a>
                             </div>
                         </div>
                     </div>
