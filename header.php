@@ -42,7 +42,7 @@
                                     <a id="refresh-page" class="btn  btn-hover-dark  animate__animated"
                                         data-animate="fadeIn" style="background:#DBB383;color:#fff;">YES, I
                                         AM OVER 21</a>
-                                    <a href="<?php echo get_site_url() ?>/404" id="reset-session"
+                                    <a href="#" id="reset-session"
                                         class="btn btn-white btn-hover-dark  animate__animated"
                                         data-animate="fadeIn">NO, I AM UNDER 21</a>
                                 </div>
