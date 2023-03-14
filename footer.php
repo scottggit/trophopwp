@@ -101,6 +101,12 @@
 <script>
 /* ----- JavaScript ----- */
 
+$("#reset-session").click(function() {
+    $(".popup-banner-left-wrap").append(
+        " <p style='color: red;font-size: 1.2rem;margin-top: 1rem;font-weight: 600;}'>YOU MUST BE OF LEGAL DRINKING AGE TO VIEW THIS SITE</p>."
+        );
+});
+
 window.onload = function() {
     if (sessionStorage.getItem('advertOnce') !== 'true') {
         //sessionStorage.setItem('advertOnce','true');
