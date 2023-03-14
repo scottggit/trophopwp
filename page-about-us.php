@@ -129,8 +129,8 @@
                                     Compellingly optimize backend leadership vis-a-vis collaborative technology. Compellingly implement orthogonal products after intermandated outsourcing.
                                 </p>
                                 */ ?>
-                            <a href="<?php echo get_site_url(); ?>/representatives/" class="btn btn-dark">Contact a
-                                Representative</a>
+                            <a href="<?php echo get_site_url(); ?>/representatives/" class="btn btn-dark">OUR
+                                DISTRIBUTION</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                                 </p>
                                         */ ?>
-                            <a href="<?php echo get_site_url(); ?>/where-to-buy/" class="btn btn-dark">View Store
+                            <a href="<?php echo get_site_url(); ?>/where-to-buy/" class="btn btn-dark">WHERE TO BUY
                                 Locator</a>
                         </div>
                     </div>
