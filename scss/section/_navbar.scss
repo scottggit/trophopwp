@@ -105,7 +105,7 @@
     font-size: 1.25em;
     line-height: 0.05em;
     vertical-align: -0.075em;
-    color: #000;
+    color: $primary;
   }
 
   &:focus {
@@ -172,7 +172,60 @@
   }
 }
 
+div.offcanvas-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: $primary;
+
+  .btn-close {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  }
+
+  ul.nav-menu {
+    a.nav-link {
+      font-family: $font-family-bold;
+      color: $white;
+      font-size: 40px;
+      line-height: 60px;
+      font-weight: normal;
+
+      border-bottom: 1px solid #eacba6;
+    }
+
+    .show>.nav-link,
+    .nav-link.active {
+      color: $white;
+      font-weight: normal;
+    }
+  }
+
+  .shop-home,
+  .shop-bg-sm {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  div.offcanvas-menu ul.nav-menu a.nav-link {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  div.big-can-img {
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .bi-navbar .navbar-brand.logo {
+    padding: 0;
+  }
+
   .bi-navbar {
     .nav-item {
       .nav-link {

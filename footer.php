@@ -2,11 +2,13 @@
 
     <div class="footer-lg py-5">
         <div class="container">
-            <div class="d-flex flex-wrap gap-4 justify-content-around justify-content-md-between align-items-center">
+            <div class="d-flex flex-column flex-md-row flex-wrap gap-4 justify-content-around justify-content-lg-between align-items-center">
                 <img src="<?php bloginfo('template_directory') ?>/dist/img/footer-logo.png" alt="Logo" class="footer-logo mb-5 mb-md-0 w-100" />
-                <?php echo clm_footer1_nav(); ?>
+                <div class=" text-center text-md-start">
+                    <?php echo clm_footer1_nav(); ?>
+                </div>
 
-                <div class="d-flex align-items-center lh-2 mb-5">
+                <div class="d-flex align-items-center lh-2">
                     <div class="icon-wrap">
                         <img src="<?php bloginfo('template_directory') ?>/dist/img/email.svg" alt="Phone" class="icon-email" />
                     </div>
@@ -20,9 +22,8 @@
     </div>
     <div class="footer-mn">
         <div class="container">
-            <div class="footer-cprt d-flex justify-content-center justify-content-md-between flex-wrap gap-3">
-                <span>© <?php echo date('Y') ?>, Trophop Beers</span>
-                <ul class="social-container">
+            <div class="footer-cprt d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap gap-3">
+                <ul class="social-container order-lg-2">
                     <li class="d-none"><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
                     <li class="mb-0"><a href="https://www.instagram.com/trophopbeers/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -35,7 +36,8 @@
                         </a></li>
                     <li class="d-none"><a href=""><i class="fa fa-brands fa-youtube"></i></a></li>
                 </ul>
-                <ul class="nav d-flex flex-wrap gap-3">
+                <span class="order-lg-1">© <?php echo date('Y') ?>, Trophop Beers</span>
+                <ul class="nav d-flex flex-wrap gap-3 order-lg-3 footer-privacy">
                     <li class="mb-0">
                         <a href="">Privacy Policy</a>
                     </li>
@@ -43,7 +45,7 @@
                         <a href="">Terms Of Use</a>
                     </li>
                 </ul>
-                <span>Designed & Developed by <a href="https://revealize.com/" target="_blank"><strong>Revealize</strong></span></a>
+                <span class="order-lg-4">Designed & Developed by <a href="https://revealize.com/" target="_blank"><strong>Revealize</strong></span></a>
             </div>
         </div>
     </div>
@@ -58,9 +60,7 @@
     /* ----- JavaScript ----- */
 
     $("#reset-session").click(function() {
-        $(".popup-banner-left-wrap").append(
-            " <p style='color: red;font-size: 1.2rem;margin-top: 1rem;font-weight: 600;}'>YOU MUST BE OF LEGAL DRINKING AGE TO VIEW THIS SITE</p>."
-        );
+        $(".not-legal-age").html("YOU MUST BE OF LEGAL DRINKING AGE TO VIEW THIS SITE").slideDown('fast');
     });
 
     $(document).ready(function() {
@@ -133,7 +133,6 @@
     });
     jQuery(document).scroll(function() {
         var windowTop = $(window).scrollTop();
-        console.log(windowTop);
         if (windowTop > 100) {
             $('.navbar.bi-navbar').removeClass('py-lg-3').addClass('py-lg-1');
         } else {

@@ -119,8 +119,6 @@ footer {
 footer {
   .nav {
     li {
-      margin-right: 1rem;
-
       a {
         font-family: "Athiti";
         text-transform: capitalize;
@@ -180,6 +178,10 @@ footer li a {
     justify-content: center;
   }
 
+  .footer-privacy {
+    flex-basis: 100%;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -43,9 +43,11 @@
     width: 30rem;
   }
 
-  @media screen and (max-width: 768px) {
-    transform: translate(0, 0);
-    width: 18rem;
+  @media screen and (max-width: 767px) {
+    transform: translate(-50%, 3rem);
+    max-width: 370px;
+    bottom: 0;
+    left: 50%;
     top: auto;
   }
 

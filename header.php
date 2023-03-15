@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="not-legal-age mt-4 mb-0 alert alert-danger" style="display: none;"></p>
+                        <p class="not-legal-age mt-4 mb-0 alert alert-danger text-center" style="display: none;"></p>
                     </div>
                 </div>
         </section>
@@ -53,8 +53,6 @@
         <div class="container-lg container-fluid">
             <a class="navbar-brand logo" href="<?php echo get_site_url() ?>">
                 <img src="<?php bloginfo('template_directory') ?>/dist/img/logo.png" alt="Logo" class="img-fluid" /></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bi-navbar" aria-controls="bi-navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
 
             <div class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5 pt-lg-0 pt-3" id="bi-navbar">
 
@@ -118,5 +116,43 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+            <div class="offcanvas offcanvas-start offcanvas-menu d-block d-lg-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header justify-content-end pb-0">
+
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <?php
+
+                    // Primary navigation menu.
+                    wp_nav_menu(array(
+                        'menu_class'     => 'nav-menu navbar-nav',
+                        'theme_location' => 'main',
+                        'link_before'    => '',
+                        'walker'         => new trop_menu_walker(),
+                    ));
+
+                    ?>
+                    <div class="bg-gray shop-home home-shop py-5 py-md-0 position-relative">
+                        <div class="shop-bg-sm d-block d-md-none bg-img opacity-50" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img-sm.png"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-5 offset-lg-1 py-md-5 animate__animated" data-animate="fadeIn">
+                                    <h3 class="font-extralight text-center h1 ls-20 mb-0 mt-md-5">SHOP</h3>
+                                    <h3 class="font-daylight title-sm text-center display-1 mb-4">PRODUCTS</h3>
+                                    <div class="text-center text-lg-start">
+                                        <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow mb-md-5" target="_blank">VIEW ALL PRODUCTS</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-none d-md-block p-0 animate__animated bg-img bg-min-25" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img.png" data-animate="fadeIn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>

@@ -23,11 +23,11 @@
     <section class="home-banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5 offset-custom-md col-md-5 col-12 offset-lg-2 offset-md-1 mb-5 mb-lg-0 order-lg-1 order-2">
+                <div class="col-lg-5 offset-custom-md col-md-5 col-12 offset-lg-2 offset-md-1 mb-5 mb-lg-0 order-md-1 order-2">
                     <div class="d-flex align-items-center h-100">
                         <div class="banner-left-wrap">
-                            <h4 class=" animate__animated" data-animate="fadeIn">Authenticity in every sip</h4>
-                            <h1 class="display-2 animate__animated" data-animate="fadeIn">TROP HOP</h1>
+                            <h4 class="subtitle-sm animate__animated" data-animate="fadeIn">Authenticity in every sip</h4>
+                            <h1 class="title-sm display-2 animate__animated" data-animate="fadeIn">TROP HOP</h1>
                             <p class=" animate__animated" data-animate="fadeIn">“Trophop was developed to be
                                 appreciable, tropical, and easy drinking.”</p>
                             <a href="https://kingscallingbrewing.com/collections/all" target="_blank" class="btn btn-white btn-hover-dark shop animate__animated" data-animate="fadeIn">Shop
@@ -35,13 +35,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 col-xl-5 col-lg-6-custom p-md-0 p-lg-0 position-relative  order-lg-2 order-1 pb-lg-0 pb-5 mb-lg-0 mb-5">
-                    <div class="img-wrap">
+                <div class="col-md-6 col-12 col-xl-5 col-lg-6-custom p-0 pb-lg-0 pb-5 position-relative  order-md-2 order-1 mb-md-0 mb-5">
+                    <div class="img-wrap home-banner-img position-relative">
                         <img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner-uncompressed.jpg" alt="" class="w-100">
-                    </div>
-                    <div class="big-can-img">
-                        <div class=" animate__animated" data-animate="fadeInRight">
-                            <img src="<?php bloginfo('template_directory') ?>/dist/img/bigcan2.png" alt="">
+                        <div class="big-can-img">
+                            <div class=" animate__animated" data-animate="fadeInRight">
+                                <img src="<?php bloginfo('template_directory') ?>/dist/img/bigcan2.png" alt="" class="d-none d-md-block">
+                            </div>
+                            <div class=" animate__animated" data-animate="fadeIn">
+                                <img src="<?php bloginfo('template_directory') ?>/dist/img/bigcan2-sm.png" alt="" class="d-block d-md-none">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,19 +58,20 @@
                 <div class="container py-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
-                            <div class="product-tri-v2">
+                            <div class="product-tri-v2 d-none d-lg-block">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can-v2 can-v2-1">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can-v2 can-v2-2">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="" class="can-v2 can-v2-3">
                             </div>
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-sm.png" alt="" class="img-fluid d-block d-lg-none">
                         </div>
                         <div class="col-lg-6 order-lg-1">
-                            <p class="mb-0 animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
-                            <h3 class="display-1 font-daylight animate__animated" data-animate="fadeIn">TROPICAL FRUITED</h3>
+                            <p class="mb-0 text-center text-lg-start animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
+                            <h3 class="display-1 text-center text-lg-start title-md font-daylight animate__animated" data-animate="fadeIn">TROPICAL FRUITED</h3>
                             <div class="row justify-content-lg-end">
                                 <div class="col-lg-6">
-                                    <p class="h2 font-bold beer-volume animate__animated" data-animate="fadeIn">6.1% ALC./VOL</p>
-                                    <ul class="beer-list check-1 animate__animated" data-animate="fadeIn">
+                                    <p class="h2 text-center text-lg-start font-bold beer-volume animate__animated" data-animate="fadeIn">6.1% ALC./VOL</p>
+                                    <ul class="beer-list-ul check-1 animate__animated" data-animate="fadeIn">
                                         <li>This IPA was developed to be appreciable, tropical, and easy drinking</li>
                                         <li>An India Pale Ale with grapefruit and passionfruit flavor</li>
                                     </ul>
@@ -81,19 +85,20 @@
                 <div class="container py-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
-                            <div class="product-tri-v2">
+                            <div class="product-tri-v2 d-none d-lg-block">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="" class="can-v2 can-v2-1">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="" class="can-v2 can-v2-2">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-single.png" alt="" class="can-v2 can-v2-3">
                             </div>
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/luxury-lightlager-sm.png" alt="" class="img-fluid d-block d-lg-none">
                         </div>
                         <div class="col-lg-6 order-lg-1">
-                            <p class="mb-0 animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
-                            <h3 class="display-1 font-daylight animate__animated" data-animate="fadeIn">LUXURY LIGHTLAGER</h3>
+                            <p class="mb-0 text-center text-lg-start animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
+                            <h3 class="display-1 text-center text-lg-start title-md font-daylight animate__animated" data-animate="fadeIn">LUXURY LIGHTLAGER</h3>
                             <div class="row justify-content-lg-end">
                                 <div class="col-lg-6">
-                                    <p class="h2 font-bold beer-volume animate__animated" data-animate="fadeIn">4.0% ALC./VOL</p>
-                                    <ul class="beer-list check-2 animate__animated" data-animate="fadeIn">
+                                    <p class="h2 text-center text-lg-start font-bold beer-volume animate__animated" data-animate="fadeIn">4.0% ALC./VOL</p>
+                                    <ul class="beer-list-ul check-2 animate__animated" data-animate="fadeIn">
                                         <li>This release is crafted to be just as approachable as the original</li>
                                         <li>95 calories</li>
                                     </ul>
@@ -107,19 +112,20 @@
                 <div class="container py-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
-                            <div class="product-tri-v2">
+                            <div class="product-tri-v2 d-none d-lg-block">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="" class="can-v2 can-v2-1">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="" class="can-v2 can-v2-2">
                                 <img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-single.png" alt="" class="can-v2 can-v2-3">
                             </div>
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/beach-wheat-ale-sm.png" alt="" class="img-fluid d-block d-lg-none">
                         </div>
                         <div class="col-lg-6 order-lg-1">
-                            <p class="mb-0 animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
-                            <h3 class="display-1 font-daylight animate__animated" data-animate="fadeIn">BEACHY WHEAT ALE</h3>
+                            <p class="mb-0 text-center text-lg-start animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
+                            <h3 class="display-1 text-center text-lg-start title-md font-daylight animate__animated" data-animate="fadeIn">BEACHY WHEAT ALE</h3>
                             <div class="row justify-content-lg-end">
                                 <div class="col-lg-6">
-                                    <p class="h2 font-bold beer-volume animate__animated" data-animate="fadeIn">4.5% ALC./VOL</p>
-                                    <ul class="beer-list check-3 animate__animated" data-animate="fadeIn">
+                                    <p class="h2 text-center text-lg-start font-bold beer-volume animate__animated" data-animate="fadeIn">4.5% ALC./VOL</p>
+                                    <ul class="beer-list-ul check-3 animate__animated" data-animate="fadeIn">
                                         <li>This release is crafted to be just as approachable as the original</li>
                                     </ul>
                                 </div>
@@ -130,7 +136,7 @@
             </div>
         </div>
 
-        <div class="product-nav beer-nav-toggle d-none d-md-block opacity-0">
+        <div class="product-nav beer-nav-toggle visually-hidden opacity-0">
             <small>OUR BEERS</small>
             <ul>
                 <li><a href="#tropical-fruited" class="opacity-50"><img src="<?php bloginfo('template_directory') ?>/dist/img/tropical-fruited-single.png" alt="Tropical Fruited"></a></li>
@@ -139,7 +145,7 @@
             </ul>
         </div>
 
-        <div class="arrow-nav beer-nav-toggle d-none d-md-block opacity-0">
+        <div class="arrow-nav beer-nav-toggle visually-hidden opacity-0">
             <span class="up-section">
                 <img src="<?php bloginfo('template_directory') ?>/dist/img/arrow-up.svg" alt="" class="arrow-up">
             </span>
@@ -149,15 +155,18 @@
         </div>
     </section>
 
-    <section class="bg-gray home-shop pb-5 pb-md-0">
+    <section class="bg-gray shop-home home-shop py-5 py-md-0 position-relative">
+        <div class="shop-bg-sm d-block d-md-none bg-img" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img-sm.png"></div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 order-md-2 p-0 animate__animated bg-img bg-min-25" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img.png" data-animate="fadeIn">
+                <div class="col-md-6 col-lg-5 offset-lg-1 py-md-5 animate__animated" data-animate="fadeIn">
+                    <h3 class="font-extralight text-center text-lg-start h1 ls-20 mb-0 mt-md-5">SHOP</h3>
+                    <h3 class="font-daylight title-sm text-center text-lg-start display-1 mb-4">PRODUCTS</h3>
+                    <div class="text-center text-lg-start">
+                        <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow mb-md-5" target="_blank">VIEW ALL PRODUCTS</a>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-5 offset-lg-1 order-md-1 pt-4 py-md-5 animate__animated" data-animate="fadeIn">
-                    <h3 class="font-extralight h1 ls-20 mb-0 mt-md-5">SHOP</h3>
-                    <h3 class="font-daylight display-1 mb-5">PRODUCTS</h3>
-                    <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow mb-md-5" target="_blank">VIEW ALL PRODUCTS</a>
+                <div class="col-md-6 d-none d-md-block p-0 animate__animated bg-img bg-min-25" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img.png" data-animate="fadeIn">
                 </div>
             </div>
         </div>
@@ -347,9 +356,9 @@
             var section3Bottom = section3Top + $('.beer-item:nth-child(3)').outerHeight(true);
 
             if ((activateTop > sectionTop) && (windowTop < sectionBottom)) {
-                $('.beer-nav-toggle').addClass('opacity-100');
+                $('.beer-nav-toggle').addClass('opacity-100 position-fixed').removeClass('visually-hidden');
             } else {
-                $('.beer-nav-toggle').removeClass('opacity-100');
+                $('.beer-nav-toggle').removeClass('opacity-100 position-fixed').addClass('visually-hidden');
             }
 
             if (windowBottom < section1Bottom) {
@@ -357,16 +366,20 @@
                 $('.product-nav li:first-child a').addClass('opacity-50');
                 $('.beer-item').removeClass('active');
                 $('.beer-item:first-child').addClass('active');
+                $('.up-section').addClass('opacity-25')
             } else if (activateBottom < section2Bottom) {
                 $('.product-nav li a').removeClass('opacity-50');
                 $('.product-nav li:nth-child(2) a').addClass('opacity-50');
                 $('.beer-item').removeClass('active');
                 $('.beer-item:nth-child(2)').addClass('active');
+                $('.up-section').removeClass('opacity-25')
+                $('.down-section').removeClass('opacity-25')
             } else if (activateBottom < section3Bottom) {
                 $('.product-nav li a').removeClass('opacity-50');
                 $('.product-nav li:nth-child(3) a').addClass('opacity-50');
                 $('.beer-item').removeClass('active');
                 $('.beer-item:nth-child(3)').addClass('active');
+                $('.down-section').addClass('opacity-25')
             }
         });
 
@@ -407,7 +420,6 @@
                 $(this).removeClass('opacity-25');
             } else {
                 $(this).addClass('opacity-25');
-                nth - child(2)
             }
             var prev = $(".beer-item.active").prev();
             if (prev.length != 0) {

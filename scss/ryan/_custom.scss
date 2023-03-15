@@ -219,7 +219,7 @@ div.btn-wrap>a {
     }
 }
 
-.beer-list {
+.beer-list-ul {
     list-style: none;
 
     li {
@@ -284,6 +284,35 @@ div.btn-wrap>a {
     }
 }
 
+
+@media screen and (max-width: 991px) {
+    .beer-item {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    .beer-list-ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0;
+
+        li {
+            flex-basis: 50%;
+            background-color: $white;
+            padding: 1.5rem;
+            padding-top: 3rem;
+            border-radius: 5px;
+
+            &::before {
+                background-color: var(--bg-primary);
+                left: 1.5rem;
+                top: 1.5rem;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     .product-container {
