@@ -151,14 +151,13 @@
 
     <section class="bg-gray home-shop pb-5 pb-md-0">
         <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-lg-2 p-0 animate__animated mb-4 mb-md-0" data-animate="fadeIn">
-                    <img src="<?php bloginfo('template_directory') ?>/dist/img/shop-img.png" alt="" class="img-fluid w-100">
+            <div class="row">
+                <div class="col-md-6 order-md-2 p-0 animate__animated bg-img bg-min-25" data-background-image="<?php bloginfo('template_directory') ?>/dist/img/shop-img.png" data-animate="fadeIn">
                 </div>
-                <div class="col-md-6 col-lg-5 offset-lg-1 order-lg-1 animate__animated" data-animate="fadeIn">
-                    <h3 class="font-extralight h1 ls-20 mb-0">SHOP</h3>
+                <div class="col-md-6 col-lg-5 offset-lg-1 order-md-1 pt-4 py-md-5 animate__animated" data-animate="fadeIn">
+                    <h3 class="font-extralight h1 ls-20 mb-0 mt-md-5">SHOP</h3>
                     <h3 class="font-daylight display-1 mb-5">PRODUCTS</h3>
-                    <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow" target="_blank">VIEW ALL PRODUCTS</a>
+                    <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow mb-md-5" target="_blank">VIEW ALL PRODUCTS</a>
                 </div>
             </div>
         </div>

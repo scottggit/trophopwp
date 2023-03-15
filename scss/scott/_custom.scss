@@ -535,14 +535,14 @@ body .page-banner .searchwrap .searchandfilter {
 
   .popup-banner-left-wrap {
     @media screen and (max-width: 768px) {
-      padding: 2rem;
+      padding: 0;
     }
   }
 
   h1 {
     font-size: 7rem;
 
-    @media screen and (max-width: 1748px) {
+    @media screen and (max-width: 1399px) {
       font-size: 5rem;
     }
 
@@ -551,11 +551,11 @@ body .page-banner .searchwrap .searchandfilter {
     }
   }
 
-  p {
+  .popup-subtitle {
     font-size: 3rem;
     font-family: "Athiti-Light";
 
-    @media screen and (max-width: 1748px) {
+    @media screen and (max-width: 1399px) {
       font-size: 2rem;
     }
 
@@ -565,18 +565,12 @@ body .page-banner .searchwrap .searchandfilter {
   }
 
   a {
-    font-family: "Athiti-Bold";
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-
-    @media screen and (max-width: 1748px) {
-      font-size: 1rem;
+    @media screen and (max-width: 1199px) {
       padding: 0.5rem 1rem;
     }
 
     @media screen and (max-width: 768px) {
       padding: 0.5rem 1rem;
-      font-size: 0.8rem;
     }
   }
 

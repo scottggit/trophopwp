@@ -337,3 +337,46 @@ footer .footer-mn {
     width: 50%;
   }
 }
+
+.bg-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+
+  &.bg-contain {
+    background-size: contain;
+  }
+
+  &.bg-top {
+    background-position: top center;
+  }
+
+  &.bg-bottom {
+    background-position: bottom center;
+  }
+
+  &.bg-right {
+    background-position: center right;
+  }
+
+  &.bg-left {
+    background-position: center left;
+  }
+
+  &.bg-top-left {
+    background-position: top left;
+  }
+
+  &.bg-50 {
+    background-size: 50%;
+  }
+
+  &.bg-50 {
+    background-size: 50%;
+  }
+
+  &.bg-min-25 {
+    min-height: 25rem;
+  }
+}

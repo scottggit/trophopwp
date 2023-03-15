@@ -2,19 +2,23 @@ footer {
   padding-block: 2rem;
   width: 100%;
 }
+
 .nav-footer {
   font-size: $smaller-font-size;
   column-count: 2;
+
   .nav-link {
     color: $sub-header-color;
     @extend %hover-underline;
   }
+
   .nav-item.active {
     .nav-link {
       font-weight: bold;
     }
   }
 }
+
 .copyright {
   font-size: $smaller-font-size;
   color: #c3ccdd;
@@ -25,6 +29,7 @@ footer {
     padding: 0.5rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .nav-footer {
     display: flex;
@@ -35,12 +40,15 @@ footer {
 footer {
   background: url(../img/footerback.png) no-repeat;
   background-size: cover;
+
   h4 {
     font-size: 2rem;
     font-family: "Athiti-Light";
   }
+
   li {
     margin-bottom: 1rem;
+
     a {
       color: #3e4852;
       text-transform: uppercase;
@@ -48,16 +56,19 @@ footer {
       font-family: "Athiti-Bold";
     }
   }
+
   .phone-wrap {
     a {
       color: #3e4852;
     }
   }
+
   .email-wrap {
     a {
       color: #3e4852;
     }
   }
+
   .icon-wrap {
     background: #fff;
     border-radius: 50%;
@@ -68,6 +79,7 @@ footer {
     align-items: center;
 
     margin-right: 1rem;
+
     img {
       margin: 0;
     }
@@ -77,11 +89,13 @@ footer {
 .footer-mn .social-container {
   list-style: none;
   display: flex;
+
   @media screen and (min-width: 768px) {
     justify-content: center;
 
     margin: 0 2rem;
   }
+
   padding: 0;
 }
 
@@ -106,6 +120,7 @@ footer {
   .nav {
     li {
       margin-right: 1rem;
+
       a {
         font-family: "Athiti";
         text-transform: capitalize;
@@ -115,6 +130,7 @@ footer {
     }
   }
 }
+
 @media screen and (max-width: 990px) {
   footer {
     .nav {
@@ -127,5 +143,49 @@ footer {
 .footer-logo {
   @media screen and (max-width: 768px) {
     max-width: 7rem;
+  }
+}
+
+.bi-navbar {
+  transition: all 0.3s ease;
+}
+
+#menu-footer-menu {
+  margin-bottom: 0;
+}
+
+footer li a {
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.fixednav svg path {
+  stroke: #fff;
+}
+
+.footer-mn .social-container a {
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer-logo {
+  max-width: 8rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .social-container {
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  #menu-footer-menu {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 0;
   }
 }
