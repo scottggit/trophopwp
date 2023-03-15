@@ -77,7 +77,7 @@
                     <h5><?php echo get_field('state')?></h5>
                     <h2 class="mb-5"><?php the_title(); ?></h2>
                     <a class="btn btn-white btn-hover-dark animate__animated"
-                        href="<?php echo get_field('link')['url']?>"><?php echo get_field('link')['title']; ?></a>
+                        href="mailto:<?php echo get_field('link')?>"><?php echo get_field('link'); ?></a>
                 </div>
 
 
@@ -94,7 +94,7 @@
                     <h5><?php echo get_field('state')?></h5>
                     <h2 class="mb-5"><?php the_title(); ?></h2>
                     <a class="btn btn-white btn-hover-dark animate__animated"
-                        href="<?php echo get_field('link')['url']?>"><?php echo get_field('link')['title']; ?></a>
+                        href="mailto:<?php echo get_field('link')?>"><?php echo get_field('link'); ?></a>
                 </div>
 
 

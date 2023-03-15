@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <style>
+    @media screen and (min-width: 1400px){
+    .aboutus-section .about-desc{margin-bottom:0;}
+    }
 @media screen and (min-width: 768px) {
     .bg-title-white {
         position: relative;

@@ -30,14 +30,14 @@
                             <h1 class="display-2 animate__animated" data-animate="fadeIn">TROP HOP</h1>
                             <p class=" animate__animated" data-animate="fadeIn">“Trophop was developed to be
                                 appreciable, tropical, and easy drinking.”</p>
-                            <a href="<?php echo get_site_url() ?>/shop" class="btn btn-white btn-hover-dark shop animate__animated" data-animate="fadeIn">Shop
+                            <a href="https://kingscallingbrewing.com/collections/all" target="_blank" class="btn btn-white btn-hover-dark shop animate__animated" data-animate="fadeIn">Shop
                                 Merchandise</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12 col-xl-5 col-lg-6-custom p-md-0 p-lg-0 position-relative  order-lg-2 order-1 pb-lg-0 pb-5 mb-lg-0 mb-5">
                     <div class="img-wrap">
-                        <img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner.jpg" alt="" class="w-100">
+                        <img src="<?php bloginfo('template_directory') ?>/dist/img/home-banner-uncompressed.jpg" alt="" class="w-100">
                     </div>
                     <div class="big-can-img">
                         <div class=" animate__animated" data-animate="fadeInRight">
@@ -46,6 +46,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="beer-section">
@@ -114,7 +115,7 @@
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <p class="mb-0 animate__animated" data-animate="fadeIn">Authenticity in every sip</p>
-                            <h3 class="display-1 font-daylight animate__animated" data-animate="fadeIn">BEACH WHEAT ALE</h3>
+                            <h3 class="display-1 font-daylight animate__animated" data-animate="fadeIn">BEACHY WHEAT ALE</h3>
                             <div class="row justify-content-lg-end">
                                 <div class="col-lg-6">
                                     <p class="h2 font-bold beer-volume animate__animated" data-animate="fadeIn">4.5% ALC./VOL</p>
@@ -157,7 +158,7 @@
                 <div class="col-md-6 col-lg-5 offset-lg-1 order-lg-1 animate__animated" data-animate="fadeIn">
                     <h3 class="font-extralight h1 ls-20 mb-0">SHOP</h3>
                     <h3 class="font-daylight display-1 mb-5">PRODUCTS</h3>
-                    <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow" target="">VIEW ALL PRODUCTS</a>
+                    <a href="https://kingscallingbrewing.com/collections/all" class="btn btn-lg btn-yellow" target="_blank">VIEW ALL PRODUCTS</a>
                 </div>
             </div>
         </div>
@@ -291,41 +292,43 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 <script>
     window.addEventListener("load", function() {
-        gsap.set(".can-v2", {
-            y: 200,
-            opacity: 0,
-        });
+        if ($(window).width() >= 768) {
+            gsap.set(".can-v2", {
+                y: 200,
+                opacity: 0,
+            });
 
-        ScrollTrigger.batch(".can-v2", {
-            interval: 0.1, // time window (in seconds) for batching to occur. 
-            //batchMax: 3,   // maximum batch size (targets),
-            onEnter: batch => gsap.to(batch, {
-                opacity: 1,
-                y: 0,
-                stagger: 0.15,
-                overwrite: true
-            }),
-            onLeave: batch => gsap.to(batch, {
-                opacity: 0,
-                y: -400,
-                stagger: 0.15,
-                overwrite: true
-            }),
-            onEnterBack: batch => gsap.to(batch, {
-                opacity: 1,
-                y: 0,
-                stagger: 0.15,
-                overwrite: true
-            }),
-            onLeaveBack: batch => gsap.set(batch, {
-                opacity: 0,
-                y: 400,
-                overwrite: true
-            }),
-            start: "top bottom",
-            end: "bottom-=300 top+=200"
-            // you can also define things like start, end, etc.
-        });
+            ScrollTrigger.batch(".can-v2", {
+                interval: 0.1, // time window (in seconds) for batching to occur. 
+                //batchMax: 3,   // maximum batch size (targets),
+                onEnter: batch => gsap.to(batch, {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.15,
+                    overwrite: true
+                }),
+                onLeave: batch => gsap.to(batch, {
+                    opacity: 0,
+                    y: -400,
+                    stagger: 0.15,
+                    overwrite: true
+                }),
+                onEnterBack: batch => gsap.to(batch, {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.15,
+                    overwrite: true
+                }),
+                onLeaveBack: batch => gsap.set(batch, {
+                    opacity: 0,
+                    y: 400,
+                    overwrite: true
+                }),
+                start: "top bottom",
+                end: "bottom-=300 top+=200"
+                // you can also define things like start, end, etc.
+            });
+        }
 
         jQuery(document).scroll(function() {
             var windowTop = $(window).scrollTop();

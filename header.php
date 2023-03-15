@@ -34,7 +34,7 @@
                         <div class="d-flex align-items-center h-100">
                             <div class="popup-banner-left-wrap">
                                 <h1 class="animate__animated" data-animate="fadeIn">YOU MUST BE <span
-                                        style="color:#DBB383;">21</span> YERS OLD TO
+                                        style="color:#DBB383;">21</span> YEARS OLD TO
                                     VISIT THIS SITE</h1>
                                 <p class=" animate__animated" data-animate="fadeIn">PLEASE, VERIFY YOUR AGE.</p>
                                 <div class="btn-wrap d-flex flex-wrap gap-2">
