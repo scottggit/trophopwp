@@ -191,6 +191,11 @@ footer {
   padding-left: 0;
 }
 
+.accordion .accordion-button:not(.collapsed),
+.accordion-flush .accordion-collapse.show {
+  background-color: ghostwhite !important;
+}
+
 @media screen and (min-width: 1400px) {
 
   body .tropical-fruited h3,

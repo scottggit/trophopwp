@@ -110,15 +110,16 @@
                     </li>
                 </ul>
             </div>
-            <form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>" class="search-box d-none d-lg-block">
-                <input type="text" value="<?php get_search_query() ?>" name="s" id="s" placeholder="Search.." required />
-                <button class="btn-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
+            <div class="d-flex gap-3">
+                <form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>" class="search-box">
+                    <input type="text" value="<?php get_search_query() ?>" name="s" id="s" placeholder="Search.." required />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation"></button>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation"></button>
+            </div>
             <div class="offcanvas offcanvas-start offcanvas-menu d-block d-lg-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
                 <div class="offcanvas-header justify-content-end pb-0">
 

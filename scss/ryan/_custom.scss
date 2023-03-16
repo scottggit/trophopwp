@@ -285,6 +285,24 @@ div.btn-wrap>a {
 }
 
 
+@media screen and (max-width: 767px) {
+
+    div#map {
+        height: 40vh;
+    }
+
+    section.aboutus-section-2::before,
+    section.aboutus-section-3::before {
+        width: 100%;
+    }
+
+    .stores#stores h2::after,
+    .stores#stores .h2::after {
+        bottom: -20px;
+        left: 50%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .beer-item {
         &::after {
@@ -340,6 +358,10 @@ div.btn-wrap>a {
         &::after {
             width: 75%;
         }
+    }
+
+    .mh-md-60 {
+        min-height: 60vh;
     }
 }
 
